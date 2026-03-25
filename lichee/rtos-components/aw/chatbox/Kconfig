@@ -1,0 +1,4 @@
+config COMPONENTS_CHAT_BOX
+	bool "chat box"
+	select COMPONENTS_WEBSOCKET
+	default n

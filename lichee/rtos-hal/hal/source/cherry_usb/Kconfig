@@ -1,0 +1,121 @@
+menu "CHERRY USB Drivers"
+config DRIVERS_CHERRY_USB
+	bool "enable CHERRY USB Drivers"
+	default n
+
+menu "CHERRY USB Class"
+	depends on DRIVERS_CHERRY_USB
+
+config CHERRY_USB_HOST_CLASS
+	bool "enable CHERRY USB host"
+	default n
+	menu "CHERRY USB HOST Class Drivers"
+		depends on CHERRY_USB_HOST_CLASS
+
+		config CHERRY_USB_HOST_HUB
+		    bool "support usb host: hub"
+		    default y
+		config CHERRY_USB_HOST_MSC
+		    bool "support usb host: msc"
+		    select CHERRY_USB_HOST_HUB
+		    default n
+		config CHERRY_USB_HOST_CDC_ECM
+		    bool "support usb host: cdc_ecm"
+		    default n
+		config CHERRY_USB_HOST_CDC_ACM
+		    bool "support usb host: cdc_acm"
+		    default n
+		config CHERRY_USB_HOST_AUDIO
+		    bool "support usb host: audio"
+		    default n
+		config CHERRY_USB_HOST_DFU
+		    bool "support usb host: dfu"
+		    default n
+		config CHERRY_USB_HOST_HID
+		    bool "support usb host: hid"
+		    default n
+		config CHERRY_USB_HOST_VIDEO
+		    bool "support usb host: video"
+		    default n
+		config CHERRY_USB_HOST_WIRELESS
+		    bool "support usb host: wireless"
+		    default n
+
+	endmenu
+
+config CHERRY_USB_DEVICE_CLASS
+	bool "enable CHERRY USB device"
+	default n
+
+	menu "CHERRY USB DEVICE Class Drivers"
+		depends on CHERRY_USB_DEVICE_CLASS
+
+		config CHERRY_USB_DEVICE_MSC
+		    bool "support usb device: msc"
+		    default n
+		config CHERRY_USB_DEVICE_CDC_ECM
+		    bool "support usb device: cdc_ecm"
+		    default n
+		config CHERRY_USB_DEVICE_CDC_ACM
+		    bool "support usb device: cdc_acm"
+		    default n
+		config CHERRY_USB_DEVICE_AUDIO
+		    bool "support usb device: audio"
+		    default n
+		config CHERRY_USB_DEVICE_DFU
+		    bool "support usb device: dfu"
+		    default n
+		config CHERRY_USB_DEVICE_HID
+		    bool "support usb device: hid"
+		    default n
+		config CHERRY_USB_DEVICE_VIDEO
+		    bool "support usb device: video"
+		    default n
+		config CHERRY_USB_DEVICE_WIRELESS
+		    bool "support usb device: wireless"
+		    default n
+		config CHERRY_USB_DEVICE_ADB
+		    bool "support usb device: adb"
+		    default n
+		config CHERRY_ADB_SOCKET
+		    bool "support adb socket"
+			depends on CHERRY_USB_DEVICE_ADB
+			default n
+
+	endmenu
+
+endmenu
+
+menu "CHERRY USB Module"
+config USB_EC800M_CN
+	bool "enable ec800m-cn module"
+	default n
+endmenu
+
+config CHERRY_USB_DEMO
+	bool "enable CHERRY USB demo"
+	depends on DRIVERS_CHERRY_USB
+	default n
+
+config CHERRY_USB_ADB_DEMO
+	bool "enable CHERRY USB adb demo"
+	depends on DRIVERS_CHERRY_USB
+	default n
+
+config CHERRY_USB_MSC_DEMO
+	bool "enable CHERRY USB msc demo"
+	depends on DRIVERS_CHERRY_USB
+	default n
+
+config CHERRY_USB_UAC_DEMO
+	bool "enable CHERRY USB uac demo"
+	depends on DRIVERS_CHERRY_USB
+	default n
+
+config CHERRY_USB_HID_DEMO
+	bool "enable CHERRY USB hid demo"
+	depends on DRIVERS_CHERRY_USB
+	default n
+
+endmenu
+

@@ -1,0 +1,44 @@
+menu "AllWinner Audio Driver Device"
+
+config SUNXI_SOUND_AUDIO_DRIVER_DEVICE
+	bool "Allwinner Audio Driver Device support"
+	default n
+	help
+	  Select Y to add support Allwinner Audio Driver Device.
+
+config SUNXI_SOUND_AUDIO_DRIVER_DEVICE_CORE
+	bool "Allwinner Audio Driver Device Core support"
+	default y
+	depends on SUNXI_SOUND_AUDIO_DRIVER_DEVICE
+	help
+	  Select Y to add support Allwinner Audio Driver Device Core.
+
+config SUNXI_SOUND_AUDIO_DRIVER_CONTROL
+	bool "Allwinner Audio Driver Device Control support"
+	default y
+	depends on SUNXI_SOUND_AUDIO_DRIVER_DEVICE_CORE
+	help
+	  Select Y to add support Allwinner Audio Control Driver Device.
+
+config SUNXI_SOUND_AUDIO_DRIVER_PCM_LIB
+	bool "Allwinner Audio Driver Pcm lib support"
+	default y
+	depends on SUNXI_SOUND_AUDIO_DRIVER_DEVICE_CORE
+	help
+	  Select Y to add support Allwinner Audio Pcm lib.
+
+config SUNXI_SOUND_AUDIO_DRIVER_PCM_DMA
+	bool "Allwinner Audio Driver Pcm dma support"
+	default y
+	depends on SUNXI_SOUND_AUDIO_DRIVER_DEVICE_CORE
+	help
+	  Select Y to add support Allwinner Audio Pcm dma .
+
+config SUNXI_SOUND_AUDIO_DRIVER_PCM
+	bool "Allwinner Audio Driver Pcm support"
+	default y
+	depends on SUNXI_SOUND_AUDIO_DRIVER_PCM_DMA && SUNXI_SOUND_AUDIO_DRIVER_PCM_LIB
+	help
+	  Select Y to add support Allwinner Audio Pcm  Driver.
+
+endmenu

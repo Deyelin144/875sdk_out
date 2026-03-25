@@ -1,0 +1,401 @@
+!<thin>
+//                                              14638     `
+xr875s1h10/solution_c906/src/main.o/
+xr875s1h10/solution_c906/src/sdk_entry.o/
+xr875s1h10/solution_c906/src/sdk_runtime.o/
+xr875s1h10/solution_c906/src/sdk_exception_runtime.o/
+xr875s1h10/solution_c906/src/sdk_log_runtime.o/
+xr875s1h10/solution_c906/src/sdk_mem_runtime.o/
+xr875s1h10/solution_c906/src/assert.o/
+xr875s1h10/solution_c906/src/hooks.o/
+xr875s1h10/solution_c906/src/alsa_config.o/
+xr875s1h10/solution_c906/src/card_v2_default.o/
+xr875s1h10/solution_c906/src/drivers/drv_log.o/
+xr875s1h10/solution_c906/src/drivers/pa/dev_pa.o/
+xr875s1h10/solution_c906/src/drivers/battery/dev_battery.o/
+xr875s1h10/solution_c906/src/drivers/extio/dev_extio.o/
+xr875s1h10/solution_c906/src/drivers/extio/drv_extio_aw9523b.o/
+xr875s1h10/solution_c906/src/drivers/extio/drv_extio_htr3316.o/
+xr875s1h10/solution_c906/src/drivers/extio/drv_extio_iface.o/
+xr875s1h10/solution_c906/src/drivers/key/dev_key.o/
+xr875s1h10/solution_c906/src/drivers/key/dev_touch_area.o/
+xr875s1h10/solution_c906/src/drivers/key/drv_key_adc.o/
+xr875s1h10/solution_c906/src/drivers/key/drv_key_iface.o/
+xr875s1h10/solution_c906/src/drivers/key/mfbd/mfbd.o/
+xr875s1h10/solution_c906/src/drivers/led/dev_led.o/
+xr875s1h10/solution_c906/src/drivers/led/rgb_led/drv_rgb_led_iface.o/
+xr875s1h10/solution_c906/src/drivers/pm/dev_pm.o/
+xr875s1h10/solution_c906/src/drivers/pm/drv_pm_iface.o/
+xr875s1h10/solution_c906/src/drivers/rtc/dev_rtc.o/
+xr875s1h10/solution_c906/src/drivers/rtc/drv_rtc_at8563.o/
+xr875s1h10/solution_c906/src/drivers/rtc/drv_rtc_iface.o/
+xr875s1h10/solution_c906/src/drivers/rtc/drv_rtc_inner.o/
+xr875s1h10/solution_c906/src/drivers/sd/dev_sd.o/
+xr875s1h10/solution_c906/src/drivers/atcmd/at_command_handler.o/
+xr875s1h10/solution_c906/src/drivers/atcmd/at_parser.o/
+xr875s1h10/solution_c906/src/drivers/atcmd/dev_mcu_upgrade.o/
+xr875s1h10/solution_c906/src/drivers/atcmd/drv_uart_iface.o/
+xr875s1h10/solution_c906/src/drivers/atcmd/mcu_at_device.o/
+xr875s1h10/solution_c906/src/drivers/atcmd/test_firmware_array.o/
+xr875s1h10/solution_c906/src/drivers/robot/dev_robot.o/
+xr875s1h10/solution_c906/src/realize/realize_lv_port/evdev.o/
+xr875s1h10/solution_c906/src/realize/realize_lv_port/lv_port_disp.o/
+xr875s1h10/solution_c906/src/realize/realize_lv_port/lv_port_indev.o/
+xr875s1h10/solution_c906/src/realize/realize_lv_port/sunxig2d.o/
+xr875s1h10/solution_c906/src/realize/realize_lv_port/sunximem.o/
+xr875s1h10/solution_c906/src/realize/realize_lv_port/disp2_thread/sunxifb_thread.o/
+xr875s1h10/solution_c906/src/realize/realize_lv_port/disp2_thread/extra_layer.o/
+xr875s1h10/solution_c906/src/realize/realize_lv_port/disp2_thread/spilcd_thread.o/
+xr875s1h10/solution_c906/src/realize/realize_mcu/realize_mcu.o/
+xr875s1h10/solution_c906/src/wrappers/sdk_wifi_wrapper.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/extra/lv_extra.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/extra/layouts/flex/lv_flex.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/extra/layouts/grid/lv_grid.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/extra/libs/bmp/lv_bmp.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/extra/libs/fsdrv/lv_fs_posix.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/extra/libs/fsdrv/lv_fs_stdio.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/extra/libs/fsdrv/lv_fs_win32.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/extra/libs/gif/gifdec.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/extra/libs/gif/lv_gif.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/extra/libs/png/lv_png.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/extra/libs/png/lodepng.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/extra/libs/qrcode/lv_qrcode.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/extra/libs/qrcode/qrcodegen.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/extra/libs/rlottie/lv_rlottie.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/extra/libs/sjpg/lv_sjpg.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/extra/libs/sjpg/tjpgd.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/extra/others/snapshot/lv_snapshot.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/extra/others/gridnav/lv_gridnav.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/extra/themes/basic/lv_theme_basic.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/extra/themes/default/lv_theme_default.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/extra/themes/mono/lv_theme_mono.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/extra/widgets/animimg/lv_animimg.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/extra/widgets/calendar/lv_calendar.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/extra/widgets/calendar/lv_calendar_header_arrow.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/extra/widgets/calendar/lv_calendar_header_dropdown.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/extra/widgets/chart/lv_chart.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/extra/widgets/colorwheel/lv_colorwheel.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/extra/widgets/imgbtn/lv_imgbtn.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/extra/widgets/keyboard/lv_keyboard.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/extra/widgets/led/lv_led.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/extra/widgets/list/lv_list.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/extra/widgets/menu/lv_menu.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/extra/widgets/meter/lv_meter.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/extra/widgets/msgbox/lv_msgbox.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/extra/widgets/span/lv_span.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/extra/widgets/spinbox/lv_spinbox.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/extra/widgets/spinner/lv_spinner.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/extra/widgets/tabview/lv_tabview.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/extra/widgets/tileview/lv_tileview.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/extra/widgets/win/lv_win.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/core/lv_disp.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/core/lv_event.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/core/lv_group.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/core/lv_indev.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/core/lv_indev_scroll.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/core/lv_obj.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/core/lv_obj_class.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/core/lv_obj_draw.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/core/lv_obj_pos.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/core/lv_obj_scroll.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/core/lv_obj_style.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/core/lv_obj_style_gen.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/core/lv_obj_tree.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/core/lv_refr.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/core/lv_theme.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/draw/lv_draw_arc.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/draw/lv_draw_img.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/draw/lv_draw_label.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/draw/lv_draw_line.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/draw/lv_draw_mask.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/draw/lv_draw_rect.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/draw/lv_draw_triangle.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/draw/lv_img_buf.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/draw/lv_img_cache.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/draw/lv_img_decoder.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/draw/lv_draw_transform.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/draw/lv_draw_layer.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/draw/lv_draw.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/font/lv_font.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/font/lv_font_fmt_txt.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/font/lv_font_loader.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/font/lv_font_dejavu_16_persian_hebrew.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/font/lv_font_montserrat_10.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/font/lv_font_montserrat_12.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/font/lv_font_montserrat_12_subpx.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/font/lv_font_montserrat_14.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/font/lv_font_montserrat_16.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/font/lv_font_montserrat_18.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/font/lv_font_montserrat_20.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/font/lv_font_montserrat_22.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/font/lv_font_montserrat_24.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/font/lv_font_montserrat_26.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/font/lv_font_montserrat_28.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/font/lv_font_montserrat_28_compressed.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/font/lv_font_montserrat_30.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/font/lv_font_montserrat_32.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/font/lv_font_montserrat_34.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/font/lv_font_montserrat_36.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/font/lv_font_montserrat_38.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/font/lv_font_montserrat_40.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/font/lv_font_montserrat_42.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/font/lv_font_montserrat_44.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/font/lv_font_montserrat_46.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/font/lv_font_montserrat_48.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/font/lv_font_montserrat_8.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/font/lv_font_simsun_16_cjk.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/font/lv_font_unscii_16.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/font/lv_font_unscii_8.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/hal/lv_hal_disp.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/hal/lv_hal_indev.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/hal/lv_hal_tick.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/misc/lv_anim.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/misc/lv_anim_timeline.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/misc/lv_area.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/misc/lv_async.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/misc/lv_bidi.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/misc/lv_color.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/misc/lv_fs.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/misc/lv_gc.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/misc/lv_ll.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/misc/lv_log.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/misc/lv_math.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/misc/lv_mem.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/misc/lv_printf.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/misc/lv_style.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/misc/lv_style_gen.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/misc/lv_templ.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/misc/lv_timer.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/misc/lv_tlsf.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/misc/lv_txt.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/misc/lv_txt_ap.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/misc/lv_utils.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/widgets/lv_arc.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/widgets/lv_bar.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/widgets/lv_btn.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/widgets/lv_btnmatrix.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/widgets/lv_canvas.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/widgets/lv_checkbox.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/widgets/lv_dropdown.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/widgets/lv_img.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/widgets/lv_label.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/widgets/lv_line.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/widgets/lv_objx_templ.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/widgets/lv_roller.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/widgets/lv_slider.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/widgets/lv_switch.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/widgets/lv_table.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/widgets/lv_textarea.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/draw/sw/lv_draw_sw_arc.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/draw/sw/lv_draw_sw_blend.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/draw/sw/lv_draw_sw_dither.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/draw/sw/lv_draw_sw_gradient.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/draw/sw/lv_draw_sw_img.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/draw/sw/lv_draw_sw_layer.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/draw/sw/lv_draw_sw_letter.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/draw/sw/lv_draw_sw_line.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/draw/sw/lv_draw_sw_polygon.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/draw/sw/lv_draw_sw_rect.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/draw/sw/lv_draw_sw_transform.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/draw/sw/lv_draw_sw.o/
+../components/common/thirdparty/littlevgl-8/lvgl/src/draw/sunxi_g2d/lv_draw_g2d.o/
+
+/0              0           0     0     644     69352     `
+/37             0           0     0     644     69288     `
+/79             0           0     0     644     52008     `
+/123            0           0     0     644     31112     `
+/177            0           0     0     644     63880     `
+/225            0           0     0     644     48904     `
+/273            0           0     0     644     19280     `
+/312            0           0     0     644     22768     `
+/350            0           0     0     644     32760     `
+/394            0           0     0     644     47552     `
+/442            0           0     0     644     24168     `
+/490            0           0     0     644     22008     `
+/540            0           0     0     644     64184     `
+/600            0           0     0     644     105488    `
+/656            0           0     0     644     118720    `
+/720            0           0     0     644     120568    `
+/784            0           0     0     644     80992     `
+/846            0           0     0     644     84432     `
+/898            0           0     0     644     114584    `
+/957            0           0     0     644     30096     `
+/1013          /0           0     0     644     51848     `
+/1071           0           0     0     644     47968     `
+/1125           0           0     0     644     64096     `
+/1177           0           0     0     644     228672    `
+/1247           0           0     0     644     255000    `
+/1297           0           0     0     644     86584     `
+/1353           0           0     0     644     118208    `
+/1405           0           0     0     644     113192    `
+/1464          /0           0     0     644     70960     `
+/1522          /0           0     0     644     84384     `
+/1580           0           0     0     644     91952     `
+/1630           0           0     0     644     270840    `
+/1695           0           0     0     644     35096     `
+/1751           0           0     0     644     197096    `
+/1813           0           0     0     644     58496     `
+/1874          /0           0     0     644     180520    `
+/1934           0           0     0     644     14608     `
+/2000           0           0     0     644     72720     `
+/2056           0           0     0     644     108504    `
+/2118           0           0     0     644     88448     `
+/2187          /0           0     0     644     96520     `
+/2257           0           0     0     644     96800     `
+/2322           0           0     0     644     58824     `
+/2387           0           0     0     644     131984    `
+/2471           0           0     0     644     140752    `
+/2552          /0           0     0     644     74344     `
+/2635           0           0     0     644     69648     `
+/2699           0           0     0     644     94792     `
+/2757           0           0     0     644     49216     `
+/2828           0           0     0     644     234232    `
+/2911           0           0     0     644     287040    `
+/2994           0           0     0     644     45768     `
+/3072           0           0     0     644     45824     `
+/3157           0           0     0     644     45824     `
+/3242           0           0     0     644     45824     `
+/3327           0           0     0     644     176488    `
+/3405           0           0     0     644     96176     `
+/3483           0           0     0     644     99360     `
+/3561           0           0     0     644     2000408   `
+/3640           0           0     0     644     111912    `
+/3724           0           0     0     644     381096    `
+/3808           0           0     0     644     45856     `
+/3894           0           0     0     644     220760    `
+/3974           0           0     0     644     208992    `
+/4052           0           0     0     644     117472    `
+/4142           0           0     0     644     153496    `
+/4230           0           0     0     644     144200    `
+/4320           0           0     0     644     293656    `
+/4414          /0           0     0     644     171856    `
+/4502           0           0     0     644     77320     `
+/4591           0           0     0     644     46088     `
+/4682           0           0     0     644     38904     `
+/4786           0           0     0     644     38904     `
+/4893           0           0     0     644     643392    `
+/4978          /0           0     0     644     45992     `
+/5073           0           0     0     644     144896    `
+/5160           0           0     0     644     135296    `
+/5251           0           0     0     644     45832     `
+/5332           0           0     0     644     67552     `
+/5415           0           0     0     644     38848     `
+/5498           0           0     0     644     45880     `
+/5583           0           0     0     644     122872    `
+/5670           0           0     0     644     353896    `
+/5753           0           0     0     644     45920     `
+/5842           0           0     0     644     79256     `
+/5931           0           0     0     644     180872    `
+/6020           0           0     0     644     38872     `
+/6111           0           0     0     644     45800     `
+/6192           0           0     0     644     216840    `
+/6261           0           0     0     644     201088    `
+/6331           0           0     0     644     204504    `
+/6401           0           0     0     644     285400    `
+/6471           0           0     0     644     242040    `
+/6548           0           0     0     644     356664    `
+/6616           0           0     0     644     98216     `
+/6690           0           0     0     644     211880    `
+/6763           0           0     0     644     503280    `
+/6835          /0           0     0     644     354088    `
+/6910           0           0     0     644     368976    `
+/6984           0           0     0     644     234640    `
+/7062           0           0     0     644     189952    `
+/7135           0           0     0     644     339216    `
+/7204           0           0     0     644     96928     `
+/7274           0           0     0     644     82928     `
+/7347           0           0     0     644     126944    `
+/7420          /0           0     0     644     134576    `
+/7495           0           0     0     644     57544     `
+/7569           0           0     0     644     374464    `
+/7643           0           0     0     644     42064     `
+/7717           0           0     0     644     34368     `
+/7795           0           0     0     644     132440    `
+/7867           0           0     0     644     66928     `
+/7941           0           0     0     644     206816    `
+/8017           0           0     0     644     40880     `
+/8096          /0           0     0     644     76616     `
+/8171           0           0     0     644     33216     `
+/8240           0           0     0     644     42472     `
+/8309           0           0     0     644     152032    `
+/8386           0           0     0     644     196456    `
+/8462           0           0     0     644     44328     `
+/8556           0           0     0     644     44312     `
+/8639           0           0     0     644     44312     `
+/8722           0           0     0     644     44328     `
+/8811           0           0     0     644     68384     `
+/8894           0           0     0     644     44312     `
+/8977           0           0     0     644     44312     `
+/9060           0           0     0     644     44312     `
+/9143           0           0     0     644     80192     `
+/9226           0           0     0     644     44312     `
+/9309           0           0     0     644     44312     `
+/9392           0           0     0     644     44312     `
+/9475           0           0     0     644     44328     `
+/9569           0           0     0     644     44312     `
+/9652           0           0     0     644     44312     `
+/9735           0           0     0     644     44312     `
+/9818           0           0     0     644     44312     `
+/9901           0           0     0     644     44312     `
+/9984           0           0     0     644     44312     `
+/10067          0           0     0     644     44312     `
+/10150          0           0     0     644     44312     `
+/10233          0           0     0     644     44312     `
+/10316          0           0     0     644     44312     `
+/10399          0           0     0     644     44312     `
+/10481          0           0     0     644     44312     `
+/10564          0           0     0     644     44296     `
+/10643          0           0     0     644     44296     `
+/10721          0           0     0     644     244848    `
+/10793          0           0     0     644     115168    `
+/10866          0           0     0     644     19864     `
+/10938          0           0     0     644     135224    `
+/11007          0           0     0     644     87528     `
+/11085          0           0     0     644     150240    `
+/11154          0           0     0     644     32440     `
+/11224          0           0     0     644     17992     `
+/11293          0           0     0     644     88032     `
+/11363          0           0     0     644     150424    `
+/11430          0           0     0     644     39640     `
+/11497          0           0     0     644     88824     `
+/11564          0           0     0     644     30352     `
+/11632          0           0     0     644     59552     `
+/11701          0           0     0     644     69608     `
+/11769          0           0     0     644     127456    `
+/11840          0           0     0     644     143320    `
+/11910          0           0     0     644     198368    `
+/11984          0           0     0     644     14192     `
+/12054          0           0     0     644     86360     `
+/12124          0           0     0     644     14424     `
+/12193          0           0     0     644     166352    `
+/12261          0           0     0     644     18000     `
+/12332          0           0     0     644     21440     `
+/12402          0           0     0     644     333008    `
+/12473          0           0     0     644     230088    `
+/12544          0           0     0     644     50840     `
+/12615          0           0     0     644     370632    `
+/12692          0           0     0     644     308744    `
+/12766          0           0     0     644     146024    `
+/12842          0           0     0     644     383912    `
+/12918          0           0     0     644     249184    `
+/12989          0           0     0     644     394832    `
+/13062          0           0     0     644     97648     `
+/13134         /0           0     0     644     14200     `
+/13212          0           0     0     644     282984    `
+/13286          0           0     0     644     210848    `
+/13360          0           0     0     644     133472    `
+/13434          0           0     0     644     382800    `
+/13507          0           0     0     644     454992    `
+/13583          0           0     0     644     148504    `
+/13662          0           0     0     644     305840    `
+/13743          0           0     0     644     18168     `
+/13825          0           0     0     644     109304    `
+/13909          0           0     0     644     139520    `
+/13988          0           0     0     644     96696     `
+/14069          0           0     0     644     160360    `
+/14151          0           0     0     644     146800    `
+/14231          0           0     0     644     66856     `
+/14314          0           0     0     644     408888    `
+/14394          0           0     0     644     165520    `
+/14479          0           0     0     644     58752     `
+/14554          0           0     0     644     38792     `

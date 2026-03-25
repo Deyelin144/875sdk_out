@@ -1,0 +1,44 @@
+!<thin>
+//                                              852       `
+wireless/xradio/driver/port/xr_drv_mem.o/
+wireless/xradio/driver/port/ffs.o/
+wireless/xradio/driver/port/workqueue.o/
+wireless/xradio/driver/port/wlan_info.o/
+wireless/xradio/ethernetif.o/
+wireless/xradio/adapter/cmd_wlan/utils.o/
+wireless/xradio/adapter/cmd_wlan/command.o/
+wireless/xradio/adapter/cmd_wlan/cmd_ifconfig.o/
+wireless/xradio/adapter/cmd_wlan/cmd_wlan.o/
+wireless/xradio/adapter/cmd_wlan/cmd_lmac.o/
+wireless/xradio/adapter/cmd_wlan/cmd_wlancmd.o/
+wireless/xradio/adapter/net_ctrl/net_ctrl.o/
+wireless/xradio/adapter/net_ctrl/net_init.o/
+wireless/xradio/adapter/net_ctrl/net_sys.o/
+wireless/xradio/adapter/net_ctrl/sc_assistant_port.o/
+wireless/xradio/adapter/sys_monitor/sys_monitor.o/
+wireless/xradio/adapter/wlan_user/wlan_user.o/
+input/sunxi-input.o/
+input/tp/axs5106/tp_axs5106.o/
+input/tp/config/tp_board_config.o/
+uart/uart_drv.o/
+/0              0           0     0     644     16512     `
+/42             0           0     0     644     21280     `
+/77             0           0     0     644     113200    `
+/118            0           0     0     644     20472     `
+/159            0           0     0     644     104232    `
+/189            0           0     0     644     30272     `
+/231            0           0     0     644     27376     `
+/275            0           0     0     644     33472     `
+/324            0           0     0     644     443584    `
+/369            0           0     0     644     20840     `
+/414            0           0     0     644     666544    `
+/462            0           0     0     644     200704    `
+/507            0           0     0     644     51408     `
+/552            0           0     0     644     64584     `
+/596            0           0     0     644     74368     `
+/650            0           0     0     644     21656     `
+/701            0           0     0     644     51808     `
+/748            0           0     0     644     131840    `
+/769            0           0     0     644     166360    `
+/800            0           0     0     644     89096     `
+/835            0           0     0     644     54856     `

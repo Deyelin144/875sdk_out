@@ -1,0 +1,71 @@
+# cannot find fixdep (scripts/build/fixdep)
+# using basic dep data
+
+build/xr875s1h10_solution_c906/projects/xr875s1h10/solution_c906/../../../components/common/thirdparty/littlevgl-8/lvgl/src/extra/libs/qrcode/qrcodegen.o: \
+ projects/xr875s1h10/solution_c906/../../../components/common/thirdparty/littlevgl-8/lvgl/src/extra/libs/qrcode/qrcodegen.c \
+ include/generated/xr875s1h10_solution_c906/autoconf.h \
+ kernel/Posix/include/FreeRTOS_POSIX.h \
+ kernel/Posix/include/FreeRTOS_POSIX_portable.h \
+ kernel/Posix/include/portable/FreeRTOS_POSIX_portable_default.h \
+ kernel/FreeRTOS-orig/Source/include/FreeRTOS.h \
+ /home/daiyun/workspace/875/clock_cm/test2/875sdk_out/lichee/rtos/tools/riscv64-elf-x86_64-20201104/lib/gcc/riscv64-unknown-elf/8.4.0/include/stddef.h \
+ /home/daiyun/workspace/875/clock_cm/test2/875sdk_out/lichee/rtos/tools/riscv64-elf-x86_64-20201104/lib/gcc/riscv64-unknown-elf/8.4.0/include/stdint.h \
+ /home/daiyun/workspace/875/clock_cm/test2/875sdk_out/lichee/rtos/tools/riscv64-elf-x86_64-20201104/riscv64-unknown-elf/include/stdint.h \
+ /home/daiyun/workspace/875/clock_cm/test2/875sdk_out/lichee/rtos/tools/riscv64-elf-x86_64-20201104/riscv64-unknown-elf/include/machine/_default_types.h \
+ /home/daiyun/workspace/875/clock_cm/test2/875sdk_out/lichee/rtos/tools/riscv64-elf-x86_64-20201104/riscv64-unknown-elf/include/sys/features.h \
+ /home/daiyun/workspace/875/clock_cm/test2/875sdk_out/lichee/rtos/tools/riscv64-elf-x86_64-20201104/riscv64-unknown-elf/include/_newlib_version.h \
+ /home/daiyun/workspace/875/clock_cm/test2/875sdk_out/lichee/rtos/tools/riscv64-elf-x86_64-20201104/riscv64-unknown-elf/include/sys/_intsup.h \
+ include/sys/_stdint.h \
+ projects/xr875s1h10/solution_c906/src/FreeRTOSConfig.h \
+ kernel/FreeRTOS-orig/Source/include/projdefs.h \
+ kernel/FreeRTOS-orig/Source/include/portable.h \
+ kernel/FreeRTOS-orig/Source/include/deprecated_definitions.h \
+ kernel/FreeRTOS-orig/Source/portable/GCC/RISC-V/portmacro.h \
+ arch/risc-v/includes/fpu.h \
+ kernel/FreeRTOS-orig/Source/include/mpu_wrappers.h \
+ kernel/FreeRTOS-orig/Source/include/event_groups.h \
+ kernel/FreeRTOS-orig/Source/include/timers.h \
+ kernel/FreeRTOS-orig/Source/include/task.h \
+ kernel/FreeRTOS-orig/Source/include/list.h \
+ kernel/FreeRTOS-orig/Source/include/semphr.h \
+ kernel/FreeRTOS-orig/Source/include/queue.h \
+ kernel/FreeRTOS-orig/Source/include/task.h \
+ include/FreeRTOS_POSIX/types.h \
+ kernel/Posix/include/FreeRTOS_POSIX_types.h \
+ kernel/Posix/include/FreeRTOS_POSIX_internal.h \
+ kernel/Posix/include/aws_doubly_linked_list.h \
+ include/FreeRTOS_POSIX/internal_types.h \
+ /home/daiyun/workspace/875/clock_cm/test2/875sdk_out/lichee/rtos/tools/riscv64-elf-x86_64-20201104/riscv64-unknown-elf/include/_ansi.h \
+ /home/daiyun/workspace/875/clock_cm/test2/875sdk_out/lichee/rtos/tools/riscv64-elf-x86_64-20201104/riscv64-unknown-elf/include/newlib.h \
+ /home/daiyun/workspace/875/clock_cm/test2/875sdk_out/lichee/rtos/tools/riscv64-elf-x86_64-20201104/riscv64-unknown-elf/include/sys/config.h \
+ /home/daiyun/workspace/875/clock_cm/test2/875sdk_out/lichee/rtos/tools/riscv64-elf-x86_64-20201104/riscv64-unknown-elf/include/machine/ieeefp.h \
+ /home/daiyun/workspace/875/clock_cm/test2/875sdk_out/lichee/rtos/tools/riscv64-elf-x86_64-20201104/riscv64-unknown-elf/include/sys/cdefs.h \
+ /home/daiyun/workspace/875/clock_cm/test2/875sdk_out/lichee/rtos/tools/riscv64-elf-x86_64-20201104/riscv64-unknown-elf/include/machine/_types.h \
+ /home/daiyun/workspace/875/clock_cm/test2/875sdk_out/lichee/rtos/tools/riscv64-elf-x86_64-20201104/riscv64-unknown-elf/include/sys/_types.h \
+ /home/daiyun/workspace/875/clock_cm/test2/875sdk_out/lichee/rtos/tools/riscv64-elf-x86_64-20201104/riscv64-unknown-elf/include/sys/lock.h \
+ /home/daiyun/workspace/875/clock_cm/test2/875sdk_out/lichee/rtos/tools/riscv64-elf-x86_64-20201104/riscv64-unknown-elf/include/machine/endian.h \
+ /home/daiyun/workspace/875/clock_cm/test2/875sdk_out/lichee/rtos/tools/riscv64-elf-x86_64-20201104/riscv64-unknown-elf/include/machine/_endian.h \
+ /home/daiyun/workspace/875/clock_cm/test2/875sdk_out/lichee/rtos/tools/riscv64-elf-x86_64-20201104/riscv64-unknown-elf/include/machine/types.h \
+ /home/daiyun/workspace/875/clock_cm/test2/875sdk_out/lichee/rtos/tools/riscv64-elf-x86_64-20201104/riscv64-unknown-elf/include/sys/stat.h \
+ /home/daiyun/workspace/875/clock_cm/test2/875sdk_out/lichee/rtos/tools/riscv64-elf-x86_64-20201104/riscv64-unknown-elf/include/time.h \
+ /home/daiyun/workspace/875/clock_cm/test2/875sdk_out/lichee/rtos/tools/riscv64-elf-x86_64-20201104/riscv64-unknown-elf/include/_ansi.h \
+ /home/daiyun/workspace/875/clock_cm/test2/875sdk_out/lichee/rtos/tools/riscv64-elf-x86_64-20201104/riscv64-unknown-elf/include/sys/reent.h \
+ /home/daiyun/workspace/875/clock_cm/test2/875sdk_out/lichee/rtos/tools/riscv64-elf-x86_64-20201104/riscv64-unknown-elf/include/machine/time.h \
+ /home/daiyun/workspace/875/clock_cm/test2/875sdk_out/lichee/rtos/tools/riscv64-elf-x86_64-20201104/riscv64-unknown-elf/include/sys/types.h \
+ /home/daiyun/workspace/875/clock_cm/test2/875sdk_out/lichee/rtos/tools/riscv64-elf-x86_64-20201104/riscv64-unknown-elf/include/sys/timespec.h \
+ /home/daiyun/workspace/875/clock_cm/test2/875sdk_out/lichee/rtos/tools/riscv64-elf-x86_64-20201104/riscv64-unknown-elf/include/sys/_timespec.h \
+ /home/daiyun/workspace/875/clock_cm/test2/875sdk_out/lichee/rtos/tools/riscv64-elf-x86_64-20201104/riscv64-unknown-elf/include/xlocale.h \
+ kernel/Posix/include/FreeRTOS_POSIX_internal.h \
+ /home/daiyun/workspace/875/clock_cm/test2/875sdk_out/lichee/rtos/tools/riscv64-elf-x86_64-20201104/riscv64-unknown-elf/include/assert.h \
+ /home/daiyun/workspace/875/clock_cm/test2/875sdk_out/lichee/rtos/tools/riscv64-elf-x86_64-20201104/lib/gcc/riscv64-unknown-elf/8.4.0/include-fixed/limits.h \
+ /home/daiyun/workspace/875/clock_cm/test2/875sdk_out/lichee/rtos/tools/riscv64-elf-x86_64-20201104/lib/gcc/riscv64-unknown-elf/8.4.0/include-fixed/syslimits.h \
+ /home/daiyun/workspace/875/clock_cm/test2/875sdk_out/lichee/rtos/tools/riscv64-elf-x86_64-20201104/riscv64-unknown-elf/include/limits.h \
+ /home/daiyun/workspace/875/clock_cm/test2/875sdk_out/lichee/rtos/tools/riscv64-elf-x86_64-20201104/riscv64-unknown-elf/include/stdlib.h \
+ /home/daiyun/workspace/875/clock_cm/test2/875sdk_out/lichee/rtos/tools/riscv64-elf-x86_64-20201104/riscv64-unknown-elf/include/machine/stdlib.h \
+ /home/daiyun/workspace/875/clock_cm/test2/875sdk_out/lichee/rtos/tools/riscv64-elf-x86_64-20201104/riscv64-unknown-elf/include/alloca.h \
+ /home/daiyun/workspace/875/clock_cm/test2/875sdk_out/lichee/rtos/tools/riscv64-elf-x86_64-20201104/riscv64-unknown-elf/include/string.h \
+ /home/daiyun/workspace/875/clock_cm/test2/875sdk_out/lichee/rtos/tools/riscv64-elf-x86_64-20201104/riscv64-unknown-elf/include/strings.h \
+ /home/daiyun/workspace/875/clock_cm/test2/875sdk_out/lichee/rtos/tools/riscv64-elf-x86_64-20201104/riscv64-unknown-elf/include/sys/string.h \
+ projects/xr875s1h10/solution_c906/../../../components/common/thirdparty/littlevgl-8/lvgl/src/extra/libs/qrcode/qrcodegen.h \
+ /home/daiyun/workspace/875/clock_cm/test2/875sdk_out/lichee/rtos/tools/riscv64-elf-x86_64-20201104/lib/gcc/riscv64-unknown-elf/8.4.0/include/stdbool.h
+cmd_build/xr875s1h10_solution_c906/projects/xr875s1h10/solution_c906/../../../components/common/thirdparty/littlevgl-8/lvgl/src/extra/libs/qrcode/qrcodegen.o := tools/riscv64-elf-x86_64-20201104/bin/riscv64-unknown-elf-gcc -Wp,-MD,build/xr875s1h10_solution_c906/projects/xr875s1h10/solution_c906/../../../components/common/thirdparty/littlevgl-8/lvgl/src/extra/libs/qrcode/.qrcodegen.o.d,-MT,build/xr875s1h10_solution_c906/projects/xr875s1h10/solution_c906/../../../components/common/thirdparty/littlevgl-8/lvgl/src/extra/libs/qrcode/qrcodegen.o -I projects/xr875s1h10/solution_c906/src/include -I projects/xr875s1h10/solution_c906/src -I projects/xr875s1h10/solution_c906/src/lvgl -I projects/xr875s1h10/solution_c906/src/include/platform -I projects/xr875s1h10/solution_c906/src/include/components/GUI -I projects/xr875s1h10/solution_c906/src/apps -I projects/xr875s1h10/solution_c906/src/realize/ -I projects/xr875s1h10/solution_c906/src/drivers/ -I projects/xr875s1h10/solution_c906/src/transparent/ -I components -I components/common/thirdparty/littlevgl-8 -I components/common/thirdparty/littlevgl-8/lvgl -I projects/xr875s1h10/solution_c906/src/module/mod_twecall/iot_video_ipc/include -I projects/xr875s1h10/solution_c906/src/module/mod_twecall/iot_video_ipc/include/explorer_inc -I projects/xr875s1h10/solution_c906/src/module/mod_twecall/iot_video_ipc/iot_video_ipc/av -I projects/xr875s1h10/solution_c906/src/module/mod_twecall/iot_video_ipc/iot_video_ipc/cloud_storage -I projects/xr875s1h10/solution_c906/src/module/mod_twecall/iot_video_ipc/iot_video_ipc/model -I projects/xr875s1h10/solution_c906/src/module/mod_twecall/iot_video_ipc/iot_video_ipc/system -I projects/xr875s1h10/solution_c906/src/module/mod_twecall/iot_video_ipc/iot_video_ipc/upgrade -I projects/xr875s1h10/solution_c906/src/module/mod_twecall/iot_video_ipc/iot_video_ipc/virtual_ipc -I projects/xr875s1h10/solution_c906/src/include -I projects/xr875s1h10/solution_c906/src/include/platform -I ../rtos-components/thirdparty/network/libevent/platform/include -I ../rtos-components/thirdparty/network/libevent/platform/utils/inc -I components/common/aw/xradio/include -I drivers/rtos-hal/hal/source/prcm/ -DLV_CONF_INCLUDE_SIMPLE -DLV_LVGL_H_INCLUDE_SIMPLE -I components/common/aw/AudioSystem/include -I components/common/aw/network/wlan_csfc -I components/common/thirdparty/libjpeg-turbo/source/ -I components/common/thirdparty/libjpeg-turbo/include/ -Os -g -march=rv64gcxthead -mcmodel=medany -mabi=lp64d -march=rv64gcxthead -fno-builtin-printf -ffunction-sections -fdata-sections -fno-common -D_POSIX_MONOTONIC_CLOCK -include include/generated/xr875s1h10_solution_c906/autoconf.h -I lib/include/ -I kernel/Posix/include -I kernel/Posix/include/portable -I include/ -I include/FreeRTOS_POSIX/ -I include/drivers/ -I include/cjson/ -I drivers/rtos-hal/include/hal -I drivers/rtos-hal/include/hal/video -I drivers/rtos-hal/include/hal/rtc -I drivers/rtos-hal/include/hal/sound -I drivers/rtos-hal/include/hal/aw-alsa-lib -I drivers/rtos-hal/include/hal/aw-alsa-lib/plugin -I drivers/rtos-hal/include/hal/sound_v2 -I drivers/rtos-hal/include/hal/aw-tiny-sound-lib -I drivers/rtos-hal/include/hal/csi -I drivers/rtos-hal/include/hal/sdmmc -I drivers/rtos-hal/include/hal/sdmmc/osal -I drivers/rtos-hal/include/hal/sdmmc/osal/FreeRTOS -I drivers/rtos-hal/include/hal/sdmmc/osal/RT-Thread -I drivers/rtos-hal/include/hal/sdmmc/hal -I drivers/rtos-hal/include/hal/sdmmc/cmd -I drivers/rtos-hal/include/hal/sdmmc/sys -I drivers/rtos-hal/include/ -I drivers/rtos-hal/include/osal -I drivers/rtos-hal/include/hal -I drivers/rtos-hal/include/hal/video -I drivers/rtos-hal/include/hal/rtc -I drivers/rtos-hal/include/hal/sound -I drivers/rtos-hal/include/hal/aw-alsa-lib -I drivers/rtos-hal/include/hal/aw-alsa-lib/plugin -I drivers/rtos-hal/include/hal/sound_v2 -I drivers/rtos-hal/include/hal/aw-tiny-sound-lib -I drivers/rtos-hal/include/hal/csi -I drivers/rtos-hal/include/hal/sdmmc -I drivers/rtos-hal/include/hal/sdmmc/osal -I drivers/rtos-hal/include/hal/sdmmc/osal/FreeRTOS -I drivers/rtos-hal/include/hal/sdmmc/osal/RT-Thread -I drivers/rtos-hal/include/hal/sdmmc/hal -I drivers/rtos-hal/include/hal/sdmmc/cmd -I drivers/rtos-hal/include/hal/sdmmc/sys -I drivers/rtos-hal/include/osal/ -I include/sys/ -I include/generated/xr875s1h10_solution_c906 -I kernel/ -I drivers/ -I components/common/aw/trace_event/include -I components/common/aw/ftrace/include -I components/common/aw/xradio/include -I kernel/FreeRTOS-orig/Source/include/ -I kernel/FreeRTOS-orig/Source/portable/GCC/RISC-V/ -I include/arch/riscv/ -I arch/risc-v/includes -I projects/xr875s1h10/solution_c906/src -DCONFIG_OS_TINA -include kernel/Posix/include/FreeRTOS_POSIX.h -I drivers/rtos-hal/hal/source/ -I include/osal/ -I drivers/rtos-hal/include/hal -c -I components/common/aw/pm/include -I components/common/aw/xradio/include/sdd -I drivers/rtos-hal/include/hal -D"BUILD_STR(s)=$(pound)s"    -c -o build/xr875s1h10_solution_c906/projects/xr875s1h10/solution_c906/../../../components/common/thirdparty/littlevgl-8/lvgl/src/extra/libs/qrcode/qrcodegen.o projects/xr875s1h10/solution_c906/../../../components/common/thirdparty/littlevgl-8/lvgl/src/extra/libs/qrcode/qrcodegen.c; set -e

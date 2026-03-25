@@ -1,0 +1,17 @@
+source components/thirdparty/common/Kconfig
+
+source components/thirdparty/console/Kconfig
+
+source components/thirdparty/cplusplus/Kconfig
+
+source components/thirdparty/smartlink/Kconfig
+
+source components/thirdparty/vfs/Kconfig
+
+source components/thirdparty/lfs/Kconfig
+
+source components/thirdparty/elmfat/Kconfig
+
+source components/thirdparty/speex/Kconfig
+
+source components/thirdparty/aispeech_duikit_sdk/Kconfig

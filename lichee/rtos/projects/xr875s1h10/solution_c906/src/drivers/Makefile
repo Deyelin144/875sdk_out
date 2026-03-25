@@ -1,0 +1,11 @@
+obj-y += drv_log.o
+obj-y += pa/
+obj-y += battery/
+obj-y += extio/
+obj-y += key/
+obj-y += led/
+obj-y += pm/
+obj-y += rtc/
+obj-y += sd/
+obj-y += atcmd/
+obj-y += robot/

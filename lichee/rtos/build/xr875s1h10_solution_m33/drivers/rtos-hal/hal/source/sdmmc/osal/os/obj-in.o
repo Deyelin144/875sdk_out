@@ -1,0 +1,15 @@
+!<thin>
+//                                              132       `
+FreeRTOS/os_debug.o/
+FreeRTOS/os_mutex.o/
+FreeRTOS/os_queue.o/
+FreeRTOS/os_semaphore.o/
+FreeRTOS/os_thread.o/
+FreeRTOS/os_timer.o/
+
+/0              0           0     0     644     11528     `
+/21             0           0     0     644     20180     `
+/42             0           0     0     644     18304     `
+/63             0           0     0     644     19280     `
+/88             0           0     0     644     15608     `
+/110            0           0     0     644     22904     `

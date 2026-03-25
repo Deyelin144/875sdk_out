@@ -1,0 +1,26 @@
+!<thin>
+//                                              326       `
+core/src/wifimg.o/
+core/src/wmg_common.o/
+core/src/log/wifi_log.o/
+core/src/os/freertos/freertos_common.o/
+core/src/wmg_sta.o/
+core/src/os/freertos/freertos_sta.o/
+core/src/wmg_ap.o/
+core/src/os/freertos/freertos_ap.o/
+demo/wifi.o/
+core/src/expand_cmd.o/
+core/src/os/freertos/expand/freertos_expand_cmd.o/
+demo/wifi_daemon.o/
+/0              0           0     0     644     168984    `
+/19             0           0     0     644     335688    `
+/42             0           0     0     644     30992     `
+/67             0           0     0     644     46352     `
+/107            0           0     0     644     114256    `
+/127            0           0     0     644     301624    `
+/164            0           0     0     644     102480    `
+/183            0           0     0     644     125360    `
+/219            0           0     0     644     52280     `
+/232            0           0     0     644     35888     `
+/255            0           0     0     644     117000    `
+/306            0           0     0     644     317512    `

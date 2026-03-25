@@ -1,0 +1,58 @@
+!<thin>
+//                                              578       `
+drv_log.o/
+pa/dev_pa.o/
+battery/dev_battery.o/
+extio/dev_extio.o/
+extio/drv_extio_aw9523b.o/
+extio/drv_extio_htr3316.o/
+extio/drv_extio_iface.o/
+key/dev_key.o/
+key/dev_touch_area.o/
+key/drv_key_adc.o/
+key/drv_key_iface.o/
+key/mfbd/mfbd.o/
+led/dev_led.o/
+led/rgb_led/drv_rgb_led_iface.o/
+pm/dev_pm.o/
+pm/drv_pm_iface.o/
+rtc/dev_rtc.o/
+rtc/drv_rtc_at8563.o/
+rtc/drv_rtc_iface.o/
+rtc/drv_rtc_inner.o/
+sd/dev_sd.o/
+atcmd/at_command_handler.o/
+atcmd/at_parser.o/
+atcmd/dev_mcu_upgrade.o/
+atcmd/drv_uart_iface.o/
+atcmd/mcu_at_device.o/
+atcmd/test_firmware_array.o/
+robot/dev_robot.o/
+/0              0           0     0     644     24168     `
+/11             0           0     0     644     22008     `
+/24             0           0     0     644     64184     `
+/47             0           0     0     644     105488    `
+/66             0           0     0     644     118720    `
+/93             0           0     0     644     120568    `
+/120            0           0     0     644     80992     `
+/145            0           0     0     644     84432     `
+/160            0           0     0     644     114584    `
+/182            0           0     0     644     30096     `
+/201           /0           0     0     644     51848     `
+/222            0           0     0     644     47968     `
+/239            0           0     0     644     64096     `
+/254            0           0     0     644     228672    `
+/287            0           0     0     644     255000    `
+/300            0           0     0     644     86584     `
+/319            0           0     0     644     118208    `
+/334            0           0     0     644     113192    `
+/356           /0           0     0     644     70960     `
+/377           /0           0     0     644     84384     `
+/398            0           0     0     644     91952     `
+/411            0           0     0     644     270840    `
+/439            0           0     0     644     35096     `
+/458            0           0     0     644     197096    `
+/483            0           0     0     644     58496     `
+/507           /0           0     0     644     180520    `
+/530            0           0     0     644     14608     `
+/559            0           0     0     644     72720     `

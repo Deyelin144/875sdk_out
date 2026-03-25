@@ -1,0 +1,97 @@
+{
+	"cn": {
+		"_Mon": "一",
+		"_Tue": "二",
+		"_Wed": "三",
+		"_Thu": "四",
+		"_Fri": "五",
+		"_Sat": "六",
+		"_Sun": "日",
+		"Mon": "周一",
+		"Tue": "周二",
+		"Wed": "周三",
+		"Thu": "周四",
+		"Fri": "周五",
+		"Sat": "周六",
+		"Sun": "周日",
+		"pressToStopClock": "长按OK，停止响铃",
+		"missedClock": "错过的闹钟",
+		"press": "按",
+		"toExit": "退出",
+		"missed": "已错过",
+		"Monday": "星期一",
+		"Tuesday": "星期二",
+		"Wednesday": "星期三",
+		"Thursday": "星期四",
+		"Friday": "星期五",
+		"Saturday": "星期六",
+		"Sunday": "星期日",
+		"year": "年",
+		"month": "月",
+		"day": "日",
+		"once": "仅响一次",
+		"today": "今天",
+		"everyday": "每天",
+		"everyWeek": "每周",
+		"wakeUpTip": "按 【OK】 唤醒我吧",
+		"networkTip": "show weather after networking",
+		"bootImg": "file:assets_images_boot.sjpg",
+		"interimImg": "file:assets_images_interim.sjpg",
+		"upGrade": {
+			"cancelText": "暂不",
+			"upgradeText": "立即升级",
+			"upgradeTextImg": "up_grade.png"
+		},
+		"networkDialog": {
+			"titleText": "网络断开了哦，快帮我连网吧",
+			"mainText1": "按",
+			"mainText2": "OK",
+			"mainText3": "开始连网",
+			"mainText4": "点击 检查网络"
+		},
+		"tomatoInfoBox": {
+			"totalTimeText": "总专注时长",
+			"totalExpendText": "总消耗番茄",
+			"durationTodayText": "今日专注时长",
+			"todayExpendText": "今日消耗番茄"
+		},
+		"lowPower": {
+			"warningText": "注意，电量已低于",
+			"dangerText1": "电量耗尽",
+			"dangerText3": "秒后关机'",
+			"contentText": "电量提醒",
+			"noticeText": "按 OK 关闭"
+		},
+		"standbyScreen": {
+			"noNetworkText": "联网后同步天气信息"
+		},
+		"voiceAssistant": {
+			"sayItText": "请说 ~",
+			"contentWrongText": "内容获取失败了，稍后再试试吧",
+			"networkErrorText": "网络连接不稳定，请再试一次吧",
+			"recognizeErrorText": "我没听清，请再试一次吧",
+			"breakErrorText": "对话被打断了，请再说一次吧",
+			"isHandlingText": "正在处理...",
+			"isWaitingText": "请稍候...",
+			"isPrefixText": "TiMI同学 ",
+			"pressText": "按",
+			"listTipsText": "查看上/下一页内容",
+			"firstPageText": "已经是第一页了",
+			"lastPageText": "已经是最后一页了",
+			"emptyErrorMP3": "empty_error.mp3",
+			"networkErrorMP3": "network_error.mp3"
+		},
+		"player": {
+			"playingText": "播放中... ",
+			"pauseText": "已暂停... "
+		},
+		"volume": {
+			"voicePromptUrl": "voice_prompt_volume.mp3"
+		},
+		"microphone": {
+			"tipTitle": "麦克风已关闭",
+			"tipContent1": "请长按",
+			"tipContent2": "开启麦克风"
+		}
+	}
+}

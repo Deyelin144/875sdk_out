@@ -1,0 +1,23 @@
+!<thin>
+//                                              190       `
+boot/head.o/
+boot/spare_head.o/
+common/exception.o/
+common/spinlock.o/
+nvic/nvic.o/
+mm/mmu_cache.o/
+sun20iw2p1/sun20i.o/
+sun20iw2p1/timer.o/
+sun20iw2p1/clocksource.o/
+sun20iw2p1/cpufreq.o/
+
+/0              0           0     0     644     4640      `
+/13             0           0     0     644     8352      `
+/32             0           0     0     644     25052     `
+/52             0           0     0     644     13512     `
+/71             0           0     0     644     45492     `
+/84             0           0     0     644     24624     `
+/100            0           0     0     644     57156     `
+/121            0           0     0     644     9624      `
+/141            0           0     0     644     12736     `
+/167            0           0     0     644     29776     `

@@ -1,0 +1,8 @@
+
+config PROJECT_BUILD_RECOVERY
+    bool "build ota recovery"
+    default n
+
+config DSP_USE_EXTIO_DCDC_EN_IO
+    bool "use external extio DCDC en IO"
+    default n

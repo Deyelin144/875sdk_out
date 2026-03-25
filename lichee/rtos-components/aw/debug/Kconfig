@@ -1,0 +1,7 @@
+menu "command-line interface"
+
+config COMMAND_MEMTESTER
+	bool "memtester command"
+    default n
+
+endmenu

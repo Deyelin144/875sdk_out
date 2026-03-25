@@ -1,0 +1,123 @@
+!<thin>
+//                                              1764      `
+ringbuffer/ringbuffer.o/
+virt_log/virt_log.o/
+sys_config_script/src/script.o/
+iobox/ls.o/
+iobox/cat.o/
+iobox/hexdump.o/
+iobox/cp.o/
+iobox/mv.o/
+iobox/rm.o/
+iobox/unlink.o/
+iobox/link.o/
+iobox/rwdev.o/
+iobox/df.o/
+iobox/grep.o/
+iobox/mkdir.o/
+iobox/tail.o/
+iobox/touch.o/
+network/tcpip/tcpip_adapter.o/
+wireless/common/src/api_action/api_action.o/
+wireless/common/src/os/freertos/mutex.o/
+wireless/common/src/os/freertos/queue.o/
+wireless/common/src/os/freertos/sem.o/
+wireless/common/src/os/freertos/thread.o/
+wireless/common/src/os/freertos/sync_notify.o/
+wireless/common/src/os/freertos/ring_buff.o/
+wireless/common/src/tracing/log_backend_hub.o/
+wireless/common/src/tracing/log_queue_block.o/
+wireless/common/src/tracing/log_worker.o/
+wireless/common/src/tracing/log_core.o/
+wireless/common/src/tracing/log_parse_cmd_rtos.o/
+wireless/wifimanager/core/src/wifimg.o/
+wireless/wifimanager/core/src/wmg_common.o/
+wireless/wifimanager/core/src/log/wifi_log.o/
+wireless/wifimanager/core/src/os/freertos/freertos_common.o/
+wireless/wifimanager/core/src/wmg_sta.o/
+wireless/wifimanager/core/src/os/freertos/freertos_sta.o/
+wireless/wifimanager/core/src/wmg_ap.o/
+wireless/wifimanager/core/src/os/freertos/freertos_ap.o/
+wireless/wifimanager/demo/wifi.o/
+wireless/wifimanager/demo/wifi_daemon.o/
+xradio/sdd/sdd.o/
+xradio/sys/atomic.o/
+xradio/os/os_mutex.o/
+xradio/os/os_queue.o/
+xradio/os/os_semaphore.o/
+xradio/os/os_thread.o/
+xradio/os/os_time.o/
+xradio/os/os_timer.o/
+xradio/os/os_error.o/
+xradio/os/os_util.o/
+xradio/cmd/cmd_util.o/
+xradio/sysinfo/sysinfo.o/
+xradio/sys_ctrl/container.o/
+xradio/sys_ctrl/event_queue.o/
+xradio/sys_ctrl/looper.o/
+xradio/sys_ctrl/observer.o/
+xradio/sys_ctrl/publisher.o/
+xradio/sys_ctrl/sys_ctrl.o/
+xradio/rf/cmd_rf.o/
+pm/pm_empty.o/
+
+/0              0           0     0     644     29480     `
+/25             0           0     0     644     17428     `
+/46             0           0     0     644     28736     `
+/78             0           0     0     644     23716     `
+/90             0           0     0     644     14168     `
+/103            0           0     0     644     22832     `
+/120            0           0     0     644     26448     `
+/132            0           0     0     644     18048     `
+/144            0           0     0     644     19936     `
+/156            0           0     0     644     13492     `
+/172            0           0     0     644     11640     `
+/186            0           0     0     644     23804     `
+/201            0           0     0     644     15132     `
+/213            0           0     0     644     11644     `
+/227            0           0     0     644     17312     `
+/242            0           0     0     644     15884     `
+/256            0           0     0     644     12028     `
+/271           /0           0     0     644     20144     `
+/302            0           0     0     644     25792     `
+/347            0           0     0     644     15540     `
+/388            0           0     0     644     14720     `
+/429            0           0     0     644     12384     `
+/468            0           0     0     644     12008     `
+/510            0           0     0     644     13248     `
+/557            0           0     0     644     30756     `
+/602            0           0     0     644     16100     `
+/649            0           0     0     644     16936     `
+/696            0           0     0     644     14348     `
+/738            0           0     0     644     16172     `
+/778            0           0     0     644     11644     `
+/828            0           0     0     644     51436     `
+/868            0           0     0     644     96036     `
+/912            0           0     0     644     12616     `
+/958            0           0     0     644     17456     `
+/1019           0           0     0     644     38060     `
+/1060           0           0     0     644     79640     `
+/1118           0           0     0     644     35952     `
+/1158           0           0     0     644     45088     `
+/1215           0           0     0     644     16792     `
+/1249           0           0     0     644     84024     `
+/1290           0           0     0     644     26340     `
+/1308           0           0     0     644     11752     `
+/1329           0           0     0     644     21100     `
+/1351           0           0     0     644     19852     `
+/1373           0           0     0     644     17064     `
+/1399           0           0     0     644     24860     `
+/1422           0           0     0     644     10436     `
+/1443           0           0     0     644     25580     `
+/1465           0           0     0     644     8524      `
+/1487           0           0     0     644     13604     `
+/1508           0           0     0     644     27600     `
+/1531           0           0     0     644     18676     `
+/1557           0           0     0     644     23524     `
+/1586           0           0     0     644     21852     `
+/1617           0           0     0     644     20204     `
+/1643           0           0     0     644     27940     `
+/1671           0           0     0     644     30796     `
+/1700           0           0     0     644     27116     `
+/1728           0           0     0     644     69088     `
+/1748           0           0     0     644     20664     `

@@ -1,0 +1,439 @@
+!<thin>
+//                                              10096     `
+osal/src/hal_atomic.o/
+osal/src/hal_cache.o/
+osal/src/hal_interrupt.o/
+osal/src/hal_mem.o/
+osal/src/hal_mutex.o/
+osal/src/hal_queue.o/
+osal/src/hal_sem.o/
+osal/src/hal_thread.o/
+osal/src/hal_timer.o/
+osal/src/hal_time.o/
+osal/src/hal_waitqueue.o/
+osal/src/hal_workqueue.o/
+osal/src/hal_cfg.o/
+osal/src/hal_cpu.o/
+osal/src/hal_event.o/
+rtos-hal/hal/source/ccu/hal_n_clk.o/
+rtos-hal/hal/source/ccu/hal_reset.o/
+rtos-hal/hal/source/ccu/clk_core/clk_core.o/
+rtos-hal/hal/source/ccu/clk_core/clk_source.o/
+rtos-hal/hal/source/ccu/clk_core/clk_fixed_factor.o/
+rtos-hal/hal/source/ccu/clk_core/aw_ccu.o/
+rtos-hal/hal/source/ccu/clk_core/ccu_reset.o/
+rtos-hal/hal/source/ccu/clk_core/ccu_gate.o/
+rtos-hal/hal/source/ccu/clk_core/ccu_mux.o/
+rtos-hal/hal/source/ccu/clk_core/ccu_div.o/
+rtos-hal/hal/source/ccu/clk_core/ccu_multiplier.o/
+rtos-hal/hal/source/ccu/clk_core/ccu_pll.o/
+rtos-hal/hal/source/ccu/platform/platform_common.o/
+rtos-hal/hal/source/ccu/platform/sun20iw2/sun20iw2_src_ccu.o/
+rtos-hal/hal/source/ccu/platform/sun20iw2/sun20iw2_aon_ccu.o/
+rtos-hal/hal/source/ccu/platform/sun20iw2/sun20iw2_gprcm_ccu.o/
+rtos-hal/hal/source/ccu/platform/sun20iw2/sun20iw2_app_ccu.o/
+rtos-hal/hal/source/uart/hal_uart.o/
+rtos-hal/hal/source/rtc/hal_rtc.o/
+rtos-hal/hal/source/rtc/rtc-lib.o/
+rtos-hal/hal/source/spi/hal_spi.o/
+rtos-hal/hal/source/dbi/hal_dbi.o/
+rtos-hal/hal/source/dbi/common_dbi.o/
+rtos-hal/hal/source/dbi/platform/dbi_sun20iw2.o/
+rtos-hal/hal/source/spilcd/lcd_fb/dev_lcd_fb.o/
+rtos-hal/hal/source/spilcd/lcd_fb/disp_lcd.o/
+rtos-hal/hal/source/spilcd/lcd_fb/lcd_fb_intf.o/
+rtos-hal/hal/source/spilcd/lcd_fb/disp_display.o/
+rtos-hal/hal/source/spilcd/lcd_fb/panels/panels.o/
+rtos-hal/hal/source/spilcd/lcd_fb/panels/lcd_source.o/
+rtos-hal/hal/source/spilcd/lcd_fb/panels/lcd_common_func.o/
+rtos-hal/hal/source/spilcd/lcd_fb/panels/lcd_st7789v3.o/
+rtos-hal/hal/source/spilcd/soc/disp_board_config.o/
+rtos-hal/hal/source/watchdog/hal_watchdog.o/
+rtos-hal/hal/source/gpio/hal_gpio.o/
+rtos-hal/hal/source/gpio/sun20iw2/gpio-sun20iw2.o/
+rtos-hal/hal/source/timer/hal_timer.o/
+rtos-hal/hal/source/timer/sunxi_timer.o/
+rtos-hal/hal/source/timer/sunxi_wuptimer.o/
+rtos-hal/hal/source/sdmmc/osal/os/FreeRTOS/os_debug.o/
+rtos-hal/hal/source/sdmmc/osal/os/FreeRTOS/os_mutex.o/
+rtos-hal/hal/source/sdmmc/osal/os/FreeRTOS/os_queue.o/
+rtos-hal/hal/source/sdmmc/osal/os/FreeRTOS/os_semaphore.o/
+rtos-hal/hal/source/sdmmc/osal/os/FreeRTOS/os_thread.o/
+rtos-hal/hal/source/sdmmc/osal/os/FreeRTOS/os_timer.o/
+rtos-hal/hal/source/sdmmc/core.o/
+rtos-hal/hal/source/sdmmc/hal_sdpin.o/
+rtos-hal/hal/source/sdmmc/hal_sdhost.o/
+rtos-hal/hal/source/sdmmc/mmc.o/
+rtos-hal/hal/source/sdmmc/quirks.o/
+rtos-hal/hal/source/sdmmc/sd.o/
+rtos-hal/hal/source/sdmmc/sdio.o/
+rtos-hal/hal/source/sdmmc/test.o/
+rtos-hal/hal/source/sdmmc/sdio_irq.o/
+rtos-hal/hal/source/sdmmc/cmd/cmd_sd.o/
+rtos-hal/hal/source/dma/hal_dma.o/
+rtos-hal/hal/source/sound/driver_v2/adf/sunxi_adf_core.o/
+rtos-hal/hal/source/sound/driver_v2/adf/sunxi_adf_component.o/
+rtos-hal/hal/source/sound/driver_v2/adf/sunxi_adf_dai.o/
+rtos-hal/hal/source/sound/driver_v2/adf/sunxi_adf_pcm.o/
+rtos-hal/hal/source/sound/driver_v2/core/sunxi_sound_device.o/
+rtos-hal/hal/source/sound/driver_v2/core/sunxi_sound_core.o/
+rtos-hal/hal/source/sound/driver_v2/core/sunxi_sound_io.o/
+rtos-hal/hal/source/sound/driver_v2/core/sunxi_sound_control.o/
+rtos-hal/hal/source/sound/driver_v2/core/sunxi_sound_pcm_lib.o/
+rtos-hal/hal/source/sound/driver_v2/core/sunxi_sound_pcm_dma.o/
+rtos-hal/hal/source/sound/driver_v2/core/sunxi_sound_pcm.o/
+rtos-hal/hal/source/sound/driver_v2/core/sunxi_sound_pcm_misc.o/
+rtos-hal/hal/source/sound/driver_v2/codecs/sun20iw2-codec-dac.o/
+rtos-hal/hal/source/sound/driver_v2/codecs/dummy_codec.o/
+rtos-hal/hal/source/sound/driver_v2/platform/sunxi-aaudio.o/
+rtos-hal/hal/source/sound/driver_v2/platform/sunxi-pcm.o/
+rtos-hal/hal/source/sound/driver_v2/platform/sunxi_machine.o/
+rtos-hal/hal/source/sound/driver_v2/component/aw-tiny-sound-lib/sunxi_tiny_sound_mixer.o/
+rtos-hal/hal/source/sound/driver_v2/component/aw-tiny-sound-lib/sunxi_tiny_sound_pcm.o/
+rtos-hal/hal/source/sound/driver_v2/component/aw-tiny-sound-lib/utils/tt-aw-tiny-sound-lib.o/
+rtos-hal/hal/source/sound/driver_v2/component/aw-tiny-sound-utils/common.o/
+rtos-hal/hal/source/sound/driver_v2/component/aw-tiny-sound-utils/wav_parser.o/
+rtos-hal/hal/source/sound/driver_v2/component/aw-tiny-sound-utils/card.o/
+rtos-hal/hal/source/sound/driver_v2/component/aw-tiny-sound-utils/aw_tinyplay.o/
+rtos-hal/hal/source/sound/driver_v2/component/aw-tiny-sound-utils/aw_tinycap.o/
+rtos-hal/hal/source/sound/driver_v2/component/aw-tiny-sound-utils/aw_tinymixer.o/
+rtos-hal/hal/source/sound/driver_v2/common/sunxi_sound_common.o/
+rtos-hal/hal/source/sound/driver_v2/common/sunxi_sound_alg_cfg.o/
+rtos-hal/hal/source/twi/hal_twi.o/
+rtos-hal/hal/source/pwm/hal_pwm.o/
+rtos-hal/hal/source/gpadc/hal_gpadc.o/
+rtos-hal/hal/source/gpadc/power_protect.o/
+rtos-hal/hal/source/usb/common/usb_init.o/
+rtos-hal/hal/source/usb/common/list_head_ext.o/
+rtos-hal/hal/source/usb/common/usb_phy.o/
+rtos-hal/hal/source/usb/udc/udc.o/
+rtos-hal/hal/source/usb/udc/udc_hal.o/
+rtos-hal/hal/source/usb/udc/usb_dma.o/
+rtos-hal/hal/source/usb/gadget/function/adb.o/
+rtos-hal/hal/source/usb/gadget/gadget.o/
+rtos-hal/hal/source/usb/gadget/gadget_hal.o/
+rtos-hal/hal/source/usb/manager/usb_manager.o/
+rtos-hal/hal/source/usb/manager/usb_msg_center.o/
+rtos-hal/hal/source/usb/manager/usb_hw_scan.o/
+rtos-hal/hal/source/usb/platform/sun20iw2/usb_sun20iw2.o/
+rtos-hal/hal/source/cherry_usb/core/usbh_core.o/
+rtos-hal/hal/source/cherry_usb/class/hub/usbh_hub.o/
+rtos-hal/hal/source/cherry_usb/osal/usb_osal_freertos.o/
+rtos-hal/hal/source/cherry_usb/port/sunxi/usb_hc_ehci.o/
+rtos-hal/hal/source/cherry_usb/port/sunxi/usb_glue_sunxi.o/
+rtos-hal/hal/source/g2d_rcq/g2d_mixer.o/
+rtos-hal/hal/source/g2d_rcq/g2d_ovl_v.o/
+rtos-hal/hal/source/g2d_rcq/g2d_ovl_u.o/
+rtos-hal/hal/source/g2d_rcq/g2d_rcq.o/
+rtos-hal/hal/source/g2d_rcq/g2d_scal.o/
+rtos-hal/hal/source/g2d_rcq/g2d_wb.o/
+rtos-hal/hal/source/g2d_rcq/g2d_bld.o/
+rtos-hal/hal/source/g2d_rcq/g2d.o/
+rtos-hal/hal/source/g2d_rcq/g2d_top.o/
+rtos-hal/hal/source/g2d_rcq/g2d_rotate.o/
+rtos-hal/hal/source/g2d_rcq/simple_idr.o/
+rtos-hal/hal/source/efuse/efuse.o/
+rtos-hal/hal/source/efuse/hal_efuse.o/
+rtos-hal/hal/source/ce/hal_ce.o/
+rtos-hal/hal/source/ce/ce_common.o/
+rtos-hal/hal/source/prcm/prcm-sun20iw2/pmu.o/
+rtos-hal/hal/source/prcm/prcm-sun20iw2/prcm.o/
+rtos-hal/hal/source/msgbox/msgbox_amp/msgbox_amp.o/
+rtos-hal/hal/source/hwspinlock/hal_hwspinlock.o/
+rtos-hal/hal/source/nand_flash/nand_init.o/
+rtos-hal/hal/source/nand_flash/nand_debug.o/
+rtos-hal/hal/source/nand_flash/src/nand_osal_for_rtos.o/
+rtos-hal/hal/source/nand_flash/src/nand_format.o/
+rtos-hal/hal/source/nand_flash/src/nand_phy.o/
+rtos-hal/hal/source/nand_flash/src/nand_scan.o/
+rtos-hal/hal/source/nand_flash/src/nand_global.o/
+rtos-hal/hal/source/nand_flash/src/uboot_tail_spinand.o/
+rtos-hal/hal/source/nand_flash/src/nand_id.o/
+rtos-hal/hal/source/nand_flash/src/nand_physic_interface_spinand.o/
+rtos-hal/hal/source/nand_flash/src/spic_op.o/
+rtos-hal/hal/source/nand_flash/src/nand_ecc_op.o/
+rtos-hal/hal/source/nand_flash/src/spi_nand2.o/
+rtos-hal/hal/source/nand_flash/src/build_nand_partition.o/
+rtos-hal/hal/source/nand_flash/src/build_phy_partition.o/
+rtos-hal/hal/source/nand_flash/src/nand_info_init.o/
+rtos-hal/hal/source/nand_flash/src/nand_physic_interface.o/
+rtos-hal/hal/source/nand_flash/src/nand_secure_storage.o/
+rtos-hal/hal/source/nand_flash/src/nand_ota.o/
+rtos-hal/hal/source/nand_flash/src/uboot_tail.o/
+rtos-hal/hal/source/nand_flash/libfreertos-nand-sun20iw2-c906.o/
+rtos-hal/hal/source/trng/drv_trng.o/
+rtos-hal/hal/source/trng/hal_trng.o/
+rtos-hal/hal/source/sysctl/hal_sysctl.o/
+rtos-hal/hal/source/csi/hal_csi_jpeg.o/
+rtos-hal/hal/source/csi/csi_camera/csi.o/
+rtos-hal/hal/source/csi/csi_camera/csi_reg/csi_reg.o/
+rtos-hal/hal/source/csi/csi_camera/sensor/sensor_helper.o/
+rtos-hal/hal/source/csi/csi_camera/sensor/drv_gc0328c.o/
+rtos-hal/hal/source/csi/jpeg/jpegenc.o/
+rtos-hal/hal/source/csi/jpeg/jpeglib.o/
+rtos-hal/hal/source/csi/jpeg/hal_jpeg.o/
+rtos-hal/hal/source/csi/jpeg/jpeg_reg/jpeg_reg.o/
+rtos-hal/hal/source/common/dma_alloc.o/
+rtos-hal/hal/source/power/gpadc_power.o/
+rtos-hal/hal/source/power/axp.o/
+rtos-hal/hal/source/power/sun20iw2p1/gpadc_power_core.o/
+rtos-hal/hal/source/lspsram/hal_psramctrl.o/
+rtos-hal/hal/source/lspsram/psram_core.o/
+rtos-hal/hal/source/lspsram/psram_opi32.o/
+rtos-hal/hal/source/lspsram/psram_opi64.o/
+rtos-hal/hal/test/ce/test_ce.o/
+rtos-hal/hal/test/gpio/test_gpio.o/
+rtos-hal/hal/test/dma/test_dma.o/
+rtos-hal/hal/test/twi/test_twi.o/
+rtos-hal/hal/test/spilcd/test_spilcd.o/
+rtos-hal/hal/test/pwm/test_pwm.o/
+rtos-hal/hal/test/gpadc/test_gpadc.o/
+rtos-hal/hal/test/rtc/test_rtc.o/
+rtos-hal/hal/test/usb/usb_test.o/
+rtos-hal/hal/test/usb/usb_test_phy.o/
+rtos-hal/hal/test/usb/usb_test_udc.o/
+rtos-hal/hal/test/msgbox/test_msgbox.o/
+rtos-hal/hal/test/power/main.o/
+rtos-hal/hal/test/trng/test_trng.o/
+rtos-hal/hal/test/efuse/test_efuse.o/
+rtos-hal/hal/test/efuse/test_efuse_write.o/
+drv/wireless/xradio/driver/port/xr_drv_mem.o/
+drv/wireless/xradio/driver/port/ffs.o/
+drv/wireless/xradio/driver/port/workqueue.o/
+drv/wireless/xradio/driver/port/wlan_info.o/
+drv/wireless/xradio/ethernetif.o/
+drv/wireless/xradio/adapter/cmd_wlan/utils.o/
+drv/wireless/xradio/adapter/cmd_wlan/command.o/
+drv/wireless/xradio/adapter/cmd_wlan/cmd_ifconfig.o/
+drv/wireless/xradio/adapter/cmd_wlan/cmd_wlan.o/
+drv/wireless/xradio/adapter/cmd_wlan/cmd_lmac.o/
+drv/wireless/xradio/adapter/cmd_wlan/cmd_wlancmd.o/
+drv/wireless/xradio/adapter/net_ctrl/net_ctrl.o/
+drv/wireless/xradio/adapter/net_ctrl/net_init.o/
+drv/wireless/xradio/adapter/net_ctrl/net_sys.o/
+drv/wireless/xradio/adapter/net_ctrl/sc_assistant_port.o/
+drv/wireless/xradio/adapter/sys_monitor/sys_monitor.o/
+drv/wireless/xradio/adapter/wlan_user/wlan_user.o/
+drv/input/sunxi-input.o/
+drv/input/tp/axs5106/tp_axs5106.o/
+drv/input/tp/config/tp_board_config.o/
+drv/uart/uart_drv.o/
+
+/0              0           0     0     644     35600     `
+/23             0           0     0     644     32896     `
+/45            /0           0     0     644     65168     `
+/71             0           0     0     644     25104     `
+/91             0           0     0     644     47824     `
+/113            0           0     0     644     56520     `
+/135            0           0     0     644     66376     `
+/155            0           0     0     644     41360     `
+/178            0           0     0     644     117136    `
+/200            0           0     0     644     30968     `
+/221           /0           0     0     644     57424     `
+/247           /0           0     0     644     166928    `
+/273            0           0     0     644     37856     `
+/293            0           0     0     644     16728     `
+/313            0           0     0     644     46544     `
+/335            0           0     0     644     52816     `
+/372            0           0     0     644     39320     `
+/409            0           0     0     644     226184    `
+/454            0           0     0     644     21712     `
+/501            0           0     0     644     33944     `
+/554            0           0     0     644     57688     `
+/597            0           0     0     644     42656     `
+/643            0           0     0     644     43544     `
+/688            0           0     0     644     141984    `
+/732            0           0     0     644     205952    `
+/776            0           0     0     644     104624    `
+/827            0           0     0     644     132296    `
+/871            0           0     0     644     23608     `
+/923            0           0     0     644     28400     `
+/985            0           0     0     644     128640    `
+/1047           0           0     0     644     38120     `
+/1111           0           0     0     644     105560    `
+/1173           0           0     0     644     307184    `
+/1210           0           0     0     644     171296    `
+/1245           0           0     0     644     47360     `
+/1280           0           0     0     644     689344    `
+/1315           0           0     0     644     441272    `
+/1350           0           0     0     644     24032     `
+/1388           0           0     0     644     59216     `
+/1437           0           0     0     644     89544     `
+/1485           0           0     0     644     641408    `
+/1531           0           0     0     644     126800    `
+/1580           0           0     0     644     173448    `
+/1630           0           0     0     644     39256     `
+/1681           0           0     0     644     71016     `
+/1736           0           0     0     644     44904     `
+/1796           0           0     0     644     79272     `
+/1853           0           0     0     644     42816     `
+/1905           0           0     0     644     85368     `
+/1950           0           0     0     644     366656    `
+/1987          /0           0     0     644     20192     `
+/2038           0           0     0     644     42816     `
+/2077           0           0     0     644     101600    `
+/2118           0           0     0     644     101400    `
+/2162           0           0     0     644     29216     `
+/2217           0           0     0     644     61904     `
+/2272           0           0     0     644     52040     `
+/2327           0           0     0     644     58432     `
+/2386           0           0     0     644     40728     `
+/2442           0           0     0     644     74904     `
+/2497           0           0     0     644     249200    `
+/2531           0           0     0     644     74728     `
+/2570           0           0     0     644     592320    `
+/2610           0           0     0     644     108880    `
+/2643           0           0     0     644     15456     `
+/2679           0           0     0     644     206680    `
+/2711           0           0     0     644     309200    `
+/2745           0           0     0     644     126224    `
+/2779           0           0     0     644     115672    `
+/2817           0           0     0     644     240680    `
+/2857           0           0     0     644     238320    `
+/2892           0           0     0     644     297976    `
+/2950           0           0     0     644     138200    `
+/3013          /0           0     0     644     126600    `
+/3070          /0           0     0     644     191160    `
+/3127           0           0     0     644     189624    `
+/3190           0           0     0     644     115432    `
+/3251           0           0     0     644     63392     `
+/3310           0           0     0     644     233376    `
+/3374           0           0     0     644     204496    `
+/3438           0           0     0     644     125448    `
+/3502           0           0     0     644     441440    `
+/3562           0           0     0     644     48592     `
+/3627           0           0     0     644     314160    `
+/3692           0           0     0     644     59904     `
+/3750           0           0     0     644     109384    `
+/3811           0           0     0     644     135888    `
+/3869          /0           0     0     644     307248    `
+/3931           0           0     0     644     153120    `
+/4021           0           0     0     644     417992    `
+/4109           0           0     0     644     337136    `
+/4203           0           0     0     644     89744     `
+/4279           0           0     0     644     42440     `
+/4359           0           0     0     644     48368     `
+/4433           0           0     0     644     145936    `
+/4514           0           0     0     644     137696    `
+/4594           0           0     0     644     94792     `
+/4676           0           0     0     644     36360     `
+/4741           0           0     0     644     71600     `
+/4807           0           0     0     644     469856    `
+/4842           0           0     0     644     406032    `
+/4877           0           0     0     644     306200    `
+/4916          /0           0     0     644     43216     `
+/4959           0           0     0     644     16112     `
+/5002          /0           0     0     644     72664     `
+/5050           0           0     0     644     72848     `
+/5092           0           0     0     644     738448    `
+/5127           0           0     0     644     46552     `
+/5166           0           0     0     644     56128     `
+/5205           0           0     0     644     66264     `
+/5252           0           0     0     644     125008    `
+/5293           0           0     0     644     18056     `
+/5338           0           0     0     644     107960    `
+/5385           0           0     0     644     59472     `
+/5435           0           0     0     644     78624     `
+/5482           0           0     0     644     41160     `
+/5540           0           0     0     644     215680    `
+/5589           0           0     0     644     216928    `
+/5642           0           0     0     644     58568     `
+/5699           0           0     0     644     307312    `
+/5756           0           0     0     644     136456    `
+/5816           0           0     0     644     250328    `
+/5857           0           0     0     644     154816    `
+/5898           0           0     0     644     131768    `
+/5939           0           0     0     644     32560     `
+/5978           0           0     0     644     145848    `
+/6018           0           0     0     644     125232    `
+/6056           0           0     0     644     196936    `
+/6095           0           0     0     644     261512    `
+/6130           0           0     0     644     57416     `
+/6169           0           0     0     644     118472    `
+/6211           0           0     0     644     92752     `
+/6253           0           0     0     644     82408     `
+/6288           0           0     0     644     149232    `
+/6327           0           0     0     644     140112    `
+/6360           0           0     0     644     272032    `
+/6396           0           0     0     644     134488    `
+/6442           0           0     0     644     200504    `
+/6489           0           0     0     644     134448    `
+/6541           0           0     0     644     78648     `
+/6590           0           0     0     644     135392    `
+/6634           0           0     0     644     90512     `
+/6679           0           0     0     644     60584     `
+/6736           0           0     0     644     163904    `
+/6786           0           0     0     644     218952    `
+/6833           0           0     0     644     112944    `
+/6881           0           0     0     644     31736     `
+/6931           0           0     0     644     237448    `
+/6988           0           0     0     644     43192     `
+/7034           0           0     0     644     48264     `
+/7102           0           0     0     644     52104     `
+/7148           0           0     0     644     67856     `
+/7198           0           0     0     644     178608    `
+/7246           0           0     0     644     73104     `
+/7305           0           0     0     644     184376    `
+/7363           0           0     0     644     152152    `
+/7416           0           0     0     644     57736     `
+/7476           0           0     0     644     142608    `
+/7534           0           0     0     644     25208     `
+/7581           0           0     0     644     246872    `
+/7630           0           0     0     644     1931888   `
+/7695           0           0     0     644     104928    `
+/7732           0           0     0     644     23296     `
+/7769           0           0     0     644     44768     `
+/7810           0           0     0     644     304248    `
+/7850           0           0     0     644     99160     `
+/7892           0           0     0     644     33384     `
+/7946          /0           0     0     644     116840    `
+/8005           0           0     0     644     128304    `
+/8062           0           0     0     644     70552     `
+/8102           0           0     0     644     86016     `
+/8142           0           0     0     644     132056    `
+/8183           0           0     0     644     27720     `
+/8233           0           0     0     644     29744     `
+/8273           0           0     0     644     71960     `
+/8314           0           0     0     644     98424     `
+/8347           0           0     0     644     55680     `
+/8404          /0           0     0     644     245848    `
+/8449           0           0     0     644     168840    `
+/8491           0           0     0     644     34784     `
+/8534           0           0     0     644     31288     `
+/8577           0           0     0     644     288776    `
+/8609           0           0     0     644     98384     `
+/8645           0           0     0     644     50536     `
+/8679           0           0     0     644     58544     `
+/8713           0           0     0     644     43416     `
+/8753           0           0     0     644     60544     `
+/8787           0           0     0     644     31848     `
+/8825           0           0     0     644     30696     `
+/8859           0           0     0     644     42920     `
+/8893           0           0     0     644     36696     `
+/8931           0           0     0     644     28784     `
+/8969           0           0     0     644     63576     `
+/9009           0           0     0     644     73840     `
+/9041           0           0     0     644     25168     `
+/9077           0           0     0     644     38640     `
+/9115           0           0     0     644     127896    `
+/9159           0           0     0     644     16512     `
+/9205           0           0     0     644     21280     `
+/9244           0           0     0     644     113200    `
+/9289           0           0     0     644     20472     `
+/9334           0           0     0     644     104232    `
+/9368           0           0     0     644     30272     `
+/9414           0           0     0     644     27376     `
+/9462           0           0     0     644     33472     `
+/9515           0           0     0     644     443584    `
+/9564           0           0     0     644     20840     `
+/9613           0           0     0     644     666544    `
+/9665           0           0     0     644     200704    `
+/9714           0           0     0     644     51408     `
+/9763           0           0     0     644     64584     `
+/9811           0           0     0     644     74368     `
+/9869           0           0     0     644     21656     `
+/9924           0           0     0     644     51808     `
+/9975           0           0     0     644     131840    `
+/10000          0           0     0     644     166360    `
+/10035          0           0     0     644     89096     `
+/10074          0           0     0     644     54856     `

@@ -1,0 +1,21 @@
+!<thin>
+//                                              332       `
+aw-tiny-sound-lib/sunxi_tiny_sound_mixer.o/
+aw-tiny-sound-lib/sunxi_tiny_sound_pcm.o/
+aw-tiny-sound-lib/utils/tt-aw-tiny-sound-lib.o/
+aw-tiny-sound-utils/common.o/
+aw-tiny-sound-utils/wav_parser.o/
+aw-tiny-sound-utils/card.o/
+aw-tiny-sound-utils/aw_tinyplay.o/
+aw-tiny-sound-utils/aw_tinycap.o/
+aw-tiny-sound-utils/aw_tinymixer.o/
+
+/0              0           0     0     644     153120    `
+/44             0           0     0     644     417992    `
+/86             0           0     0     644     337136    `
+/134            0           0     0     644     89744     `
+/164            0           0     0     644     42440     `
+/198            0           0     0     644     48368     `
+/226            0           0     0     644     145936    `
+/261            0           0     0     644     137696    `
+/295            0           0     0     644     94792     `

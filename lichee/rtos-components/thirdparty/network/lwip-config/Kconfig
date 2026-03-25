@@ -1,0 +1,254 @@
+menu "mem size"
+	config MEM_SIZE
+		int "MEM_SIZE: the size of the heap memory.(bytes)"
+		default 32768
+endmenu
+
+menu "memp size"
+	menu "socket"
+		config MEMP_NUM_NETCONN
+			int "MEMP_NUM_NETCONN: the number of struct netconns.(num of socket)"
+			default 20
+	endmenu
+	menu "raw"
+		config MEMP_NUM_RAW_PCB
+			int "MEMP_NUM_RAW_PCB: Number of raw connection PCBs"
+			default 2
+	endmenu
+	menu "udp"
+		config MEMP_NUM_UDP_PCB
+			int "MEMP_NUM_UDP_PCB: the number of udp protocol control blocks. one per active udp connection."
+			default 10
+	endmenu
+	menu "tcp"
+		config MEMP_NUM_TCP_PCB
+			int "MEMP_NUM_TCP_PCB: the number of simultaneously active tcp connections."
+			default 8
+		config MEMP_NUM_TCP_SEG
+			int "MEMP_NUM_TCP_SEG: the number of simultaneously queued tcp segments."
+			default 48
+	endmenu
+	menu "arp"
+		config MEMP_NUM_ARP_QUEUE
+			int "MEMP_NUM_ARP_QUEUE: the number of simultaneously queued outgoing packets (pbufs)."
+			default 16
+	endmenu
+	menu "dns"
+		config MEMP_NUM_NETDB
+			int "MEMP_NUM_NETDB: the number of concurrently running lwip_addrinfo() calls."
+			default 1
+	endmenu
+	menu "input"
+		config MEMP_NUM_TCPIP_MSG_INPKT
+			int "MEMP_NUM_TCPIP_MSG_INPKT: the number of struct tcpip_msg, which are used for incoming packets."
+			default 72
+		config PBUF_POOL_SIZE
+			int "PBUF_POOL_SIZE: the number of buffers in the pbuf pool."
+			default 25
+	endmenu
+endmenu
+
+menu "socket"
+	config MEMP_NUM_NETCONN
+		int "MEMP_NUM_NETCONN: the number of struct netconns.(num of socket)"
+		default 20
+endmenu
+
+menu "raw"
+	config DEFAULT_RAW_RECVMBOX_SIZE
+		int "DEFAULT_RAW_RECVMBOX_SIZE: The mailbox size for the incoming packets on a NETCONN_RAW."
+		default 6
+endmenu
+
+menu "tcp"
+	config LWIP_TCP
+		bool "turn on tcp."
+		default y
+	if LWIP_TCP
+		config DEFAULT_TCP_RECVMBOX_SIZE
+			int "DEFAULT_TCP_RECVMBOX_SIZE: The mailbox size for the incoming packets on a NETCONN_TCP."
+			default 40
+		config TCP_WND
+			int "TCP_WND: the size (bytes) of a tcp window.  at least (2 * tcp_mss)."
+			default 20440
+		config TCP_MAXRTX
+			int "TCP_MAXRTX: maximum number of retransmissions of data segments."
+			default 12
+		config TCP_SYNMAXRTX
+			int "TCP_SYNMAXRTX: maximum number of retransmissions of syn segments."
+			default 6
+		menuconfig LWIP_TCP_SACK_OUT
+			bool "LWIP_TCP_SACK_OUT: tcp will support sending selective acknowledgements (sacks)"
+			default n
+			if LWIP_TCP_SACK_OUT
+			config LWIP_TCP_MAX_SACK_NUM
+				int "LWIP_TCP_MAX_SACK_NUM: the maximum number of sack values to include in tcp segments."
+				default 4
+			endif
+		config TCP_MSS
+			int "TCP_MSS: tcp maximum segment size. (default is 536, a conservative default,)"
+			default 1460
+		config TCP_SND_BUF
+			int "TCP_SND_BUF: tcp sender buffer space (bytes)."
+			default 20441
+	endif
+endmenu
+
+menu "udp"
+	config LWIP_UDP
+		bool "turn on udp."
+		default y
+	if LWIP_UDP
+		config DEFAULT_UDP_RECVMBOX_SIZE
+			int "DEFAULT_UDP_RECVMBOX_SIZE: the mailbox size for the incoming packets on a netconn_udp."
+			default 20
+		menuconfig LWIP_DHCP
+			bool "Enable DHCP"
+			default y
+			if LWIP_DHCP
+			config DHCP_DOES_ARP_CHECK
+				bool "DHCP_DOES_ARP_CHECK: do an arp check on the offered address."
+				default y
+			endif
+		config LWIP_DHCPS
+			bool "Enable DHCPS"
+			default y
+		menuconfig LWIP_DNS
+			bool "Enable DNS"
+			default y
+			if LWIP_DNS
+				config DNS_TABLE_SIZE
+					int "DNS_TABLE_SIZE: dns maximum number of entries to maintain locally."
+					default 4
+				config DNS_MAX_NAME_LENGTH
+					int "DNS_MAX_NAME_LENGTH: DNS maximum host name length supported in the name table."
+					default 256
+				config DNS_MAX_SERVERS
+					int "DNS_MAX_SERVERS: The maximum of DNS servers"
+					default 2
+				config DNS_MAX_RETRIES
+					int "DNS_MAX_RETRIES: DNS maximum number of retries when asking for a name, before timeout."
+					default 4
+				config DNS_LOCAL_HOSTLIST
+					bool "DNS_LOCAL_HOSTLIST: Implements a local host-to-address list."
+					default n
+			endif
+	endif
+endmenu
+
+menu "ip"
+	config LWIP_IPV4
+		bool "Enable IPv4"
+		default y
+	if LWIP_IPV4
+	endif
+endmenu
+
+menu "arp"
+	config LWIP_ARP
+		bool "Enable ARP"
+		default y
+	if LWIP_ARP
+		config ARP_TABLE_SIZE
+			int "ARP_TABLE_SIZE: Number of active MAC-IP address pairs cached."
+			default 8
+		config ARP_MAXAGE
+			int "ARP_MAXAGE: The time an ARP entry stays valid after its last update (s)"
+			default 300
+		config ARP_QUEUE_LEN
+			int "ARP_QUEUE_LEN: The maximum number of packets which may be queued for each unresolved address by other network layers."
+			default 3
+	endif
+endmenu
+
+menu "icmp"
+	config LWIP_ICMP
+		bool "Enable ICMP"
+		default y
+	if LWIP_ICMP
+	endif
+endmenu
+
+menu "tcpip thread"
+	config TCPIP_THREAD_STACKSIZE
+		int "TCPIP_THREAD_STACKSIZE: The stack size used by the main tcpip thread."
+		default 4608
+	config TCPIP_MBOX_SIZE
+		int "TCPIP_MBOX_SIZE: The mailbox size for the tcpip thread messages"
+		default 96
+endmenu
+
+menu "debug"
+	config LWIP_DEBUG
+		bool "Enable LWIP DEBUG"
+		default n
+	if LWIP_DEBUG
+		config NETIF_DEBUG
+			bool "NETIF_DEBUG: enable debugging in netif.c."
+			default n
+		config PBUF_DEBUG
+			bool "PBUF_DEBUG: enable debugging in pbuf.c."
+			default n
+		menu "socket debug"
+			config SOCKETS_DEBUG
+				bool "SOCKETS_DEBUG: enable debugging in sockets.c."
+				default n
+		endmenu
+		menu "mem/memp debug"
+			config MEM_DEBUG
+				bool "MEM_DEBUG: enable debugging in mem.c."
+				default n
+			config MEMP_DEBUG
+				bool "MEMP_DEBUG: enable debugging in memp.c."
+				default n
+		endmenu
+		menu "tcp debug"
+			if LWIP_TCP
+				config TCP_DEBUG
+					bool "TCP_DEBUG: enable debugging for tcp."
+					default n
+				config TCP_INPUT_DEBUG
+					bool "TCP_INPUT_DEBUG: enable debugging in tcp_in.c for incoming debug."
+					default n
+				config TCP_OUTPUT_DEBUG
+					bool "TCP_OUTPUT_DEBUG: enable debugging in tcp_out.c output functions."
+					default n
+				config TCP_RST_DEBUG
+					bool "TCP_RST_DEBUG: enable debugging for tcp with the rst message."
+					default n
+				config TCP_QLEN_DEBUG
+					bool "TCP_QLEN_DEBUG: enable debugging for tcp queue lengths."
+					default n
+			endif
+		endmenu
+		menu "udp debug"
+			if LWIP_UDP
+				config UDP_DEBUG
+					bool "UDP_DEBUG: enable debugging in udp."
+					default n
+				config DHCP_DEBUG
+					bool "DHCP_DEBUG: enable debugging in dhcp.c."
+					default n
+				config DNS_DEBUG
+					bool "DNS_DEBUG: enable debugging for dns."
+					default n
+			endif
+		endmenu
+		menu "ip debug"
+			if LWIP_IPV4
+				config ETHARP_DEBUG
+					bool "ETHARP_DEBUG: enable debugging in etharp.c."
+					default n
+				config ICMP_DEBUG
+					bool "ICMP_DEBUG: enable debugging in icmp.c."
+					default n
+				config IP_DEBUG
+					bool "IP_DEBUG: enable debugging for ip."
+					default n
+				config TCPIP_DEBUG
+					bool "TCPIP_DEBUG: enable debugging in tcpip.c."
+					default n
+			endif
+		endmenu
+	endif
+endmenu

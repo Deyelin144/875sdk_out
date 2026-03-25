@@ -1,0 +1,1 @@
+obj-$(CONFIG_PROJECT_MR527_E906_EVB) += evb/

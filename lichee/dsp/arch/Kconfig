@@ -1,0 +1,57 @@
+choice
+	prompt "Target SoC platform"
+	default ARCH_SUNXXIWX
+
+config ARCH_SUN20IW2
+	bool "sun20iw2"
+	select XTENSA_HIFI5
+
+config ARCH_SUNXXIWX
+	bool "sunXXiwX"
+
+endchoice
+
+# define arch
+config ARCH_DSP
+	bool
+	default y
+
+config XTENSA_HIFI5
+bool
+	depends on ARCH_SUN20IW2
+	default n
+
+# define include arch dir
+config ARCH_PLATFORM
+	string
+	default "sun20iw2" if ARCH_SUN20IW2
+
+# define the development board
+choice
+	prompt "Development boards"
+	default PRO_PLATFORM
+
+config FPGA_PLATFORM
+	bool "FPGA board"
+
+config PRO_PLATFORM
+	bool "PRO board"
+
+endchoice
+
+# define DSP core
+choice
+	prompt "Select DSP core"
+	default CORE_DSP0
+
+config CORE_DSP0
+	bool "Core 0"
+
+endchoice
+
+# define dsp core id
+config CORE_ID
+	string
+	default "dsp0" if CORE_DSP0
+
+source "arch/sun20iw2/Kconfig"

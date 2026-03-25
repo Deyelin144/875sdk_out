@@ -1,0 +1,11 @@
+obj-$(CONFIG_DRIVERS_TOUCHSCREEN_TLSC6X) += tlsc6x/
+obj-$(CONFIG_DRIVERS_TOUCHSCREEN_GT911) += gt911/
+obj-$(CONFIG_DRIVERS_TOUCHSCREEN_CST226SE) += cst226se/
+obj-$(CONFIG_DRIVERS_TOUCHSCREEN_AXS15231) += axs15231/
+obj-$(CONFIG_DRIVERS_TOUCHSCREEN_AXS5106) += axs5106/
+
+obj-y += config/
+
+CFLAGS += -I include/drivers/
+CFLAGS += -I include/arch/mach
+CFLAGS += -I include/freertos/

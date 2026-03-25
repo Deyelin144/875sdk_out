@@ -1,0 +1,21 @@
+!<thin>
+//                                              208       `
+hal_csi_jpeg.o/
+csi_camera/csi.o/
+csi_camera/csi_reg/csi_reg.o/
+csi_camera/sensor/sensor_helper.o/
+csi_camera/sensor/drv_gc0328c.o/
+jpeg/jpegenc.o/
+jpeg/jpeglib.o/
+jpeg/hal_jpeg.o/
+jpeg/jpeg_reg/jpeg_reg.o/
+
+/0              0           0     0     644     304248    `
+/16             0           0     0     644     99160     `
+/34             0           0     0     644     33384     `
+/64            /0           0     0     644     116840    `
+/99             0           0     0     644     128304    `
+/132            0           0     0     644     70552     `
+/148            0           0     0     644     86016     `
+/164            0           0     0     644     132056    `
+/181            0           0     0     644     27720     `

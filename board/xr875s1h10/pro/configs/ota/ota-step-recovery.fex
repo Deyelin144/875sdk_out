@@ -1,0 +1,11 @@
+[step2]
+	image-file="rv"
+	device="/dev/rv-hpsram"
+	image-file="xip"
+	device="/dev/rtos-xip"
+	image-file="arm-sram"
+	device="/dev/arm-sram"
+	image-file="arm-hpsram"
+	device="/dev/arm-hpsram"
+	image-file="dsp-hpsram"
+	device="/dev/dsp-hpsram"

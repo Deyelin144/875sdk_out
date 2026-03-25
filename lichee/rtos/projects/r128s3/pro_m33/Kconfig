@@ -1,0 +1,4 @@
+
+config PROJECT_BUILD_RECOVERY
+    bool "build ota recovery"
+    default n

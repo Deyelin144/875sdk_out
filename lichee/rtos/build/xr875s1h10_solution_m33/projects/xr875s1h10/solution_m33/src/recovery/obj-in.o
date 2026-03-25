@@ -1,0 +1,35 @@
+!<thin>
+//                                              458       `
+lv_port/lv_init.o/
+lv_port/lv_port_disp.o/
+lv_port/lv_port_indev.o/
+lv_port/evdev.o/
+lv_port/sunximem.o/
+lv_port/disp2_thread/sunxifb_thread.o/
+native_app_ota/native_app_ota.o/
+src/fs_adapter/fs_adapter.o/
+src/md5_adapter/md5_adapter.o/
+src/wifi_adapter/wifi_adapter.o/
+src/os_adapter/os_adapter.o/
+src/upgrade_logic/upgrade_logic.o/
+src/upgrade_logic/upgrade_fw.o/
+src/upgrade_logic/upgrade_app.o/
+lv_port/sunxig2d.o/
+lv_port/disp2_thread/spilcd_thread.o/
+
+/0              0           0     0     644     44924     `
+/19             0           0     0     644     43988     `
+/43            /0           0     0     644     50264     `
+/68             0           0     0     644     37732     `
+/85             0           0     0     644     25392     `
+/105            0           0     0     644     45088     `
+/144            0           0     0     644     203216    `
+/177            0           0     0     644     38448     `
+/206            0           0     0     644     16236     `
+/237            0           0     0     644     36512     `
+/270            0           0     0     644     54360     `
+/299           /0           0     0     644     141852    `
+/334            0           0     0     644     46728     `
+/366            0           0     0     644     45536     `
+/399            0           0     0     644     31812     `
+/419           /0           0     0     644     29596     `

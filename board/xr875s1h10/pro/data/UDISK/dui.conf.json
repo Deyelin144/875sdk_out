@@ -1,0 +1,19 @@
+{
+    "description": "duikit config and dds service config, json format. authMode range authInfo array index.",
+
+    "auth": {
+        "authSelect": 0,
+        "authInfo": [{
+            "productId": "请填写您创建的产品ID",
+            "aliasKey": "请填写您创建产品发布的分支号",
+            "productKey": "请填写您创建产品的Key",
+            "productSecret": "请填写您创建产品的Secret",
+            "devInfo": {
+                "deviceName": "",
+                "platform": "rtos"
+            }
+        }]
+    },
+
+    "use_local_vad": true
+}

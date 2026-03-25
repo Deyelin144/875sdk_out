@@ -1,0 +1,45 @@
+!<thin>
+//                                              748       `
+src/assert.o/
+src/hooks.o/
+src/alsa_config.o/
+src/card_default.o/
+src/recovery/lv_port/lv_init.o/
+src/recovery/lv_port/lv_port_disp.o/
+src/recovery/lv_port/lv_port_indev.o/
+src/recovery/lv_port/evdev.o/
+src/recovery/lv_port/sunximem.o/
+src/recovery/lv_port/disp2_thread/sunxifb_thread.o/
+src/recovery/native_app_ota/native_app_ota.o/
+src/recovery/src/fs_adapter/fs_adapter.o/
+src/recovery/src/md5_adapter/md5_adapter.o/
+src/recovery/src/wifi_adapter/wifi_adapter.o/
+src/recovery/src/os_adapter/os_adapter.o/
+src/recovery/src/upgrade_logic/upgrade_logic.o/
+src/recovery/src/upgrade_logic/upgrade_fw.o/
+src/recovery/src/upgrade_logic/upgrade_app.o/
+src/recovery/lv_port/sunxig2d.o/
+src/recovery/lv_port/disp2_thread/spilcd_thread.o/
+src/main_ota.o/
+
+/0              0           0     0     644     9376      `
+/14             0           0     0     644     10236     `
+/27             0           0     0     644     16320     `
+/46             0           0     0     644     9560      `
+/66             0           0     0     644     44924     `
+/98             0           0     0     644     43988     `
+/135           /0           0     0     644     50264     `
+/173            0           0     0     644     37732     `
+/203            0           0     0     644     25392     `
+/236            0           0     0     644     45088     `
+/288            0           0     0     644     203216    `
+/334            0           0     0     644     38448     `
+/376            0           0     0     644     16236     `
+/420            0           0     0     644     36512     `
+/466            0           0     0     644     54360     `
+/508           /0           0     0     644     141852    `
+/556            0           0     0     644     46728     `
+/601            0           0     0     644     45536     `
+/647            0           0     0     644     31812     `
+/680           /0           0     0     644     29596     `
+/731            0           0     0     644     39888     `

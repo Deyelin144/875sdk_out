@@ -1,0 +1,86 @@
+menu "AllWinner CODEC drivers V2"
+
+config SUNXI_SOUND_CODEC_SUN8IW18_AUDIOCODEC
+	bool "Allwinner AudioCodec support"
+	default n
+	select SUNXI_SOUND_PLATFORM_CPUDAI
+	select SUNXI_SOUND_PLATFORM_PCM
+	select SUNXI_SOUND_COMMON_SUNXI_COMMON
+	depends on (ARCH_SUN8IW18P1 || ARCH_SUN8IW18)
+	help
+	  Select Y to add support the Codec embedded in the Allwinner
+	  sun8iw18 and affiliated SoCs.
+
+config SUNXI_SOUND_CODEC_SUN8IW19_AUDIOCODEC
+	bool "Allwinner AudioCodec support"
+	default n
+	select SUNXI_SOUND_PLATFORM_CPUDAI
+	select SUNXI_SOUND_PLATFORM_PCM
+	select SUNXI_SOUND_COMMON_SUNXI_COMMON
+	depends on (ARCH_SUN8IW19P1 || ARCH_SUN8IW19)
+	help
+	  Select Y to add support the Codec embedded in the Allwinner
+	  sun8iw19 and affiliated SoCs.
+
+config SUNXI_SOUND_CODEC_SUN8IW20_AUDIOCODEC
+	bool "Allwinner AudioCodec V2 support"
+	default n
+	select SUNXI_SOUND_PLATFORM_CPUDAI
+	select SUNXI_SOUND_PLATFORM_PCM
+	select SUNXI_SOUND_COMMON_SUNXI_COMMON
+	depends on (SOC_SUN20IW1P1 || ARCH_SUN8IW20)
+	help
+	  Select Y to add support the Codec embedded in the Allwinner
+	  sun8iw20 and affiliated SoCs.
+
+config SUNXI_SOUND_CODEC_SUN20IW2_AUDIOCODEC
+	bool "Allwinner AudioCodec V2 support"
+	default n
+	select SUNXI_SOUND_PLATFORM_CPUDAI
+	select SUNXI_SOUND_PLATFORM_PCM
+	depends on (ARCH_SUN20IW2P1 || ARCH_SUN20IW2)
+	help
+	  Select Y to add support the Codec embedded in the Allwinner
+	  sun20iw2 and affiliated SoCs.
+
+if SUNXI_SOUND_CODEC_SUN20IW2_AUDIOCODEC
+menu "Allwinner AudioCodec V2 Choose"
+config SUNXI_SOUND_CODEC_AUDIOCODEC_DAC
+	bool "Allwinner AudioCodec DAC V2 Support"
+	default n
+	select SUNXI_SOUND_COMMON_SUNXI_COMMON
+	select SUNXI_SOUND_COMMON_ALG_CFG
+	help
+	  Select Y to add support for audiocodec dac.
+
+config SUNXI_SOUND_CODEC_AUDIOCODEC_ADC
+	bool "Allwinner AudioCodec ADC V2 Support"
+	default n
+	select SUNXI_SOUND_COMMON_SUNXI_COMMON
+	help
+	  Select Y to add support for audiocodec adc.
+
+config SUNXI_SOUND_CODEC_AUDIOCODEC_DAC_KEEP_AUDIO_PLL_ON
+	bool "keep audio pll on"
+	default n
+	depends on SUNXI_SOUND_CODEC_AUDIOCODEC_DAC
+	help
+	  Select Y to keep audio pll on during standby.
+
+endmenu
+endif
+
+config SUNXI_SOUND_CODEC_DUMMY
+	bool "Sunxi dummy codec V2"
+	default n
+
+config SUNXI_SOUND_CODEC_AC108
+	bool "Sunxi AC108 codec V2"
+	default n
+
+config SUNXI_SOUND_CODEC_AC101S
+	bool "Sunxi AC101S codec V2"
+	default n
+	select DRIVERS_TWI
+
+endmenu

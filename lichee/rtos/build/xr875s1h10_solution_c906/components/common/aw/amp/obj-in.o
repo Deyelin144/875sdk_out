@@ -1,0 +1,51 @@
+!<thin>
+//                                              622       `
+amp_core.o/
+amp_service.o/
+amp_stub.o/
+amp_msgbox.o/
+amp_test.o/
+msgbuffer.o/
+service/versioninfo/versioninfo_arm_ser.o/
+service/versioninfo/versioninfo_dsp_ser.o/
+service/versioninfo/versioninfo_stub.o/
+amp_threadpool.o/
+service/fsys/fsys_ser.o/
+service/net/network_stub.o/
+service/net/network_ser.o/
+service/rpcconsole/rpcconsole_stub.o/
+service/rpcconsole/rpcconsole_ser.o/
+service/misc/misc_stub.o/
+service/misc/misc_ser.o/
+service/audio/audio_stub.o/
+service/rpdata/rpdata_stub.o/
+service/rpdata/rpdata_ser.o/
+service/pm/pmofm33_stub.o/
+service/pm/pmofrv_ser.o/
+service/tjpeg/tjpeg_stub.o/
+service/xvid/xvid_stub.o/
+
+/0              0           0     0     644     154824    `
+/12             0           0     0     644     18648     `
+/27             0           0     0     644     67752     `
+/39             0           0     0     644     58120     `
+/53             0           0     0     644     28904     `
+/65             0           0     0     644     89840     `
+/78             0           0     0     644     14152     `
+/121            0           0     0     644     14152     `
+/164            0           0     0     644     22624     `
+/204            0           0     0     644     90360     `
+/222            0           0     0     644     84680     `
+/247            0           0     0     644     178992    `
+/275            0           0     0     644     55656     `
+/302            0           0     0     644     42504     `
+/340            0           0     0     644     27768     `
+/377            0           0     0     644     32808     `
+/403            0           0     0     644     27000     `
+/428            0           0     0     644     101648    `
+/456            0           0     0     644     29632     `
+/486            0           0     0     644     29432     `
+/515            0           0     0     644     33520     `
+/542            0           0     0     644     28120     `
+/567            0           0     0     644     25360     `
+/595            0           0     0     644     31912     `

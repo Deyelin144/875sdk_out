@@ -1,0 +1,44 @@
+if PORT_XCC_XTENSA
+menu "Xtensa components"
+
+config COMPONENTS_XTENSA
+	bool
+	default y
+
+source "components/thirdparty/xtensa/Kconfig"
+
+endmenu
+endif
+
+if KERNEL_FREERTOS
+menu "FreeRTOS components"
+
+config COMPONENTS_FREERTOS
+	bool
+	default y
+
+source "components/thirdparty/freertos/Kconfig"
+
+endmenu
+endif
+
+config COMPONENTS_MSGBOX_DEMO
+	bool "Msgbox demo"
+	default n
+	help
+	  This is a demo that introduces how to use msgbox
+
+config COMPONENTS_COREMARK
+	bool "Coremark"
+	default n
+
+config COMPONENTS_AISPEECH_SSPE
+        bool "AISPEECH SSPE"
+        default n
+        depends on COMPONENTS_AMP
+        depends on COMPONENTS_AW_AUDIO_SYSTEM_RECORD
+        select AMP_RPDATA_STUB
+        select AMP_RPDATA_SERVICE
+        select COMPONENTS_MD5
+        select COMPONENT_CJSON
+        select COMPONENTS_XTENSA_HIFI5_VFPU_LIBRARY

@@ -1,0 +1,10 @@
+*.d
+.vscode/
+out/
+*.patch
+*.swp
+*.swo
+*.swx
+# 软链接不提交
+lichee/rtos/components/common/
+lichee/rtos/drivers/rtos-hal

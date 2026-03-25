@@ -1,0 +1,19 @@
+menuconfig COMPONENTS_SONIC
+	bool "sonic"
+	default n
+
+if COMPONENTS_SONIC
+
+config SONIC_LITE
+    bool "sonic use lite"
+    default n
+        help
+        sonic use lite
+
+config SONIC_EXAMPLES
+	bool "sonic examples"
+	default n
+		help
+		enable sonic example
+
+endif

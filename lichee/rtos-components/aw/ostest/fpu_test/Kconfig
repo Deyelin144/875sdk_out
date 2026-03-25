@@ -1,0 +1,34 @@
+menuconfig COMPONENTS_OSTEST_FPU
+	bool "FPU Testcase"
+
+if COMPONENTS_OSTEST_FPU
+
+config FPU_GENERAL_REG_SIZE
+	int "FPU General Register Size"
+	default 4
+
+config FPU_GENERAL_REG_CNT
+	int "FPU General Register Count"
+	default 32
+
+config FPU_CTX_TEST
+    bool "FPU Context Save/Restore Test"
+    default n
+
+config FPU_CTX_TEST_WITH_ROUNDING_MODE
+	bool "FPU Context Save/Restore Test With Rounding Mode"
+	default n if ARCH_ARM
+	default y if ARCH_RISCV
+	depends on FPU_CTX_TEST
+	help
+		Float point rounding mode controll the rounding rule of float point arithmetic.
+		Due to this test currently depends on fegetround API and fesetround API which is
+		declared in fenv.h, so we need to turn off this configuration when the system
+		don't support these APIs.
+
+config SHOW_C906_FPU_CTX_STATISTICS_INFO
+    bool "Provide command to print C906 FPU context statistics info"
+    depends on RECORD_C906_FPU_CTX_STATISTICS
+    default n
+
+endif

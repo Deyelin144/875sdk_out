@@ -1,0 +1,35 @@
+!<thin>
+//                                              280       `
+osal/os/FreeRTOS/os_debug.o/
+osal/os/FreeRTOS/os_mutex.o/
+osal/os/FreeRTOS/os_queue.o/
+osal/os/FreeRTOS/os_semaphore.o/
+osal/os/FreeRTOS/os_thread.o/
+osal/os/FreeRTOS/os_timer.o/
+core.o/
+hal_sdpin.o/
+hal_sdhost.o/
+mmc.o/
+quirks.o/
+sd.o/
+sdio.o/
+test.o/
+sdio_irq.o/
+cmd/cmd_sd.o/
+
+/0              0           0     0     644     11528     `
+/29             0           0     0     644     20180     `
+/58             0           0     0     644     18304     `
+/87             0           0     0     644     19280     `
+/120            0           0     0     644     15608     `
+/150            0           0     0     644     22904     `
+/179            0           0     0     644     62260     `
+/187            0           0     0     644     24440     `
+/200            0           0     0     644     93668     `
+/214            0           0     0     644     34060     `
+/221            0           0     0     644     7512      `
+/231            0           0     0     644     54232     `
+/237            0           0     0     644     82008     `
+/245            0           0     0     644     39560     `
+/253            0           0     0     644     35432     `
+/265            0           0     0     644     64756     `

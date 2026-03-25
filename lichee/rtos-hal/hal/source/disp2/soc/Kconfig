@@ -1,0 +1,21 @@
+#
+
+menu "Board Select"
+
+config DEFAULT_LVDS
+	bool "board, disp with lvds"
+	default n
+	---help---
+	  board, disp with lvds
+
+endmenu
+
+menu "Soc Select"
+
+config ARCH_SUN20IW2
+	bool "soc sun20iw2 "
+	default n
+	---help---
+	  soc sun20iw2
+
+endmenu

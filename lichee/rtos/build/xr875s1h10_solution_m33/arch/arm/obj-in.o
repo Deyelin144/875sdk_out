@@ -1,0 +1,24 @@
+!<thin>
+//                                              292       `
+common/backtrace_machine_code.o/
+armv8m/boot/head.o/
+armv8m/boot/spare_head.o/
+armv8m/common/exception.o/
+armv8m/common/spinlock.o/
+armv8m/nvic/nvic.o/
+armv8m/mm/mmu_cache.o/
+armv8m/sun20iw2p1/sun20i.o/
+armv8m/sun20iw2p1/timer.o/
+armv8m/sun20iw2p1/clocksource.o/
+armv8m/sun20iw2p1/cpufreq.o/
+/0              0           0     0     644     63816     `
+/33             0           0     0     644     4640      `
+/53             0           0     0     644     8352      `
+/79             0           0     0     644     25052     `
+/106            0           0     0     644     13512     `
+/132            0           0     0     644     45492     `
+/152            0           0     0     644     24624     `
+/175            0           0     0     644     57156     `
+/203            0           0     0     644     9624      `
+/230            0           0     0     644     12736     `
+/263            0           0     0     644     29776     `

@@ -1,0 +1,11 @@
+source drivers/drv/wireless/Kconfig
+
+source drivers/drv/leds/Kconfig
+
+source drivers/drv/input/Kconfig
+
+source drivers/drv/uart/Kconfig
+
+source drivers/drv/bluetooth/Kconfig
+
+source drivers/drv/fdcm/Kconfig

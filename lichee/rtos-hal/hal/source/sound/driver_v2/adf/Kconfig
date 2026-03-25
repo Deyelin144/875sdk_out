@@ -1,0 +1,37 @@
+menu "AllWinner Audio Driver Framework"
+
+config SUNXI_SOUND_AUDIO_DRIVER_FRAMEWORK
+	bool "Allwinner Audio Driver Framework support"
+	default n
+	help
+	  Select Y to add support Allwinner Audio Driver Framework.
+
+config SUNXI_SOUND_AUDIO_DRIVER_FRAMEWORK_CORE
+	bool "Allwinner Audio Driver Framework Core support"
+	default y
+	depends on SUNXI_SOUND_AUDIO_DRIVER_FRAMEWORK
+	help
+	  Select Y to add support Allwinner Audio Driver Framework Core.
+
+config SUNXI_SOUND_AUDIO_DRIVER_FRAMEWORK_COMPONENT
+	bool "Allwinner Audio Driver Framework Component support"
+	default y
+	depends on SUNXI_SOUND_AUDIO_DRIVER_FRAMEWORK_CORE
+	help
+	  Select Y to add support Allwinner Audio Driver Framework Component.
+
+config SUNXI_SOUND_AUDIO_DRIVER_FRAMEWORK_DAI
+	bool "Allwinner Audio Driver Framework Dai support"
+	default y
+	depends on SUNXI_SOUND_AUDIO_DRIVER_FRAMEWORK_CORE
+	help
+	  Select Y to add support Allwinner Audio Driver Framework digtal audio interface.
+
+config SUNXI_SOUND_AUDIO_DRIVER_FRAMEWORK_PCM
+	bool "Allwinner Audio Driver Framework Pcm support"
+	default y
+	depends on SUNXI_SOUND_AUDIO_DRIVER_FRAMEWORK_CORE
+	help
+	  Select Y to add support Allwinner Audio Driver Framework pcm operation interface.
+
+endmenu

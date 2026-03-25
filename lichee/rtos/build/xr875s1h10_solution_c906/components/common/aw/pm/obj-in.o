@@ -1,0 +1,43 @@
+!<thin>
+//                                              424       `
+common/pm_base.o/
+common/pm_testlevel.o/
+common/pm_devops.o/
+common/pm_notify.o/
+common/pm_platops.o/
+common/pm_subsys.o/
+common/pm_syscore.o/
+common/pm_task.o/
+common/pm_wakecnt.o/
+common/pm_wakelock.o/
+common/pm_state.o/
+common/pm_suspend.o/
+common/pm_wakesrc.o/
+plat_riscv/cpu.o/
+plat_riscv/main.o/
+plat_riscv/platops.o/
+plat_riscv/pm_manager.o/
+plat_riscv/pm_rpc.o/
+plat_riscv/pm_wakesrc.o/
+plat_riscv/pm_systeminit.o/
+
+/0              0           0     0     644     60080     `
+/18             0           0     0     644     208480    `
+/41             0           0     0     644     162032    `
+/61             0           0     0     644     65496     `
+/81             0           0     0     644     31912     `
+/102            0           0     0     644     100336    `
+/122            0           0     0     644     106664    `
+/143            0           0     0     644     114752    `
+/161            0           0     0     644     69168     `
+/182            0           0     0     644     113376    `
+/204            0           0     0     644     58360     `
+/223            0           0     0     644     135000    `
+/244            0           0     0     644     140760    `
+/265            0           0     0     644     38984     `
+/283            0           0     0     644     36552     `
+/302            0           0     0     644     74464     `
+/324            0           0     0     644     21248     `
+/349            0           0     0     644     56064     `
+/370            0           0     0     644     66328     `
+/395           /0           0     0     644     17272     `

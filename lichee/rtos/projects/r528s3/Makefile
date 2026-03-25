@@ -1,0 +1,2 @@
+obj-$(CONFIG_PROJECT_R528S3_EVB3) += evb3/
+obj-$(CONFIG_PROJECT_R528S3_EVB3_NAND) += evb3_nand/

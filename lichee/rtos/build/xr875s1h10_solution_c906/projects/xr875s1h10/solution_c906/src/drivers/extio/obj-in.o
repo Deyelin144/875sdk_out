@@ -1,0 +1,10 @@
+!<thin>
+//                                              74        `
+dev_extio.o/
+drv_extio_aw9523b.o/
+drv_extio_htr3316.o/
+drv_extio_iface.o/
+/0              0           0     0     644     105488    `
+/13             0           0     0     644     118720    `
+/34             0           0     0     644     120568    `
+/55             0           0     0     644     80992     `

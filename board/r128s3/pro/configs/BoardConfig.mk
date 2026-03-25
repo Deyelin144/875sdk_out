@@ -1,0 +1,1 @@
+LICHEE_BRANDY_DEFCONF:=sun20iw2p1_r128s3_evb_hpsram_defconfig

@@ -1,0 +1,109 @@
+menu "Platform(Audio Interface) drivers V2"
+
+config SUNXI_SOUND_PLATFORM_PCM
+	bool
+	default n
+
+config SUNXI_SOUND_PLATFORM_MACH
+	bool
+	default n
+
+config SUNXI_SOUND_PLATFORM_CPUDAI
+	bool "Allwinner internal cpudai V2"
+	select SUNXI_SOUND_PLATFORM_PCM
+	select SUNXI_SOUND_PLATFORM_MACH
+	default n
+	help
+	  Only support for the Codec embedded in the Allwinner SoCs.
+
+config SUNXI_SOUND_PLATFORM_I2S
+	bool "Allwinner Digital Audio V2 Support"
+	select SUNXI_SOUND_PLATFORM_PCM
+	select SUNXI_SOUND_CODEC_DUMMY
+	select SUNXI_SOUND_COMMON_SUNXI_COMMON
+	select SUNXI_SOUND_PLATFORM_MACH
+ 	depends on (!ARCH_SUN8IW19)
+	default n
+	help
+	  Select Y to add support for I2S/PCM/TDM module in Allwinner SoCs.
+
+config SUNXI_SOUND_PLATFORM_SUN8IW19_I2S
+ 	bool "Allwinner Digital Audio V2 Support"
+ 	select SUNXI_SOUND_PLATFORM_PCM
+	select SUNXI_SOUND_CODEC_DUMMY
+	select SUNXI_SOUND_PLATFORM_MACH
+ 	depends on (ARCH_SUN8IW19P1 || ARCH_SUN8IW19)
+ 	default n
+ 	help
+ 	  Select Y to add support for I2S/PCM/TDM module in Allwinner SoCs.
+
+if SUNXI_SOUND_PLATFORM_I2S || SUNXI_SOUND_PLATFORM_SUN8IW19_I2S
+menu "Allwinner Digital Audio V2 Choose"
+config SUNXI_SOUND_PLATFORM_I2S0
+	bool "Allwinner I2S0 V2 Support"
+	default n
+	help
+	  Select Y to add support for I2S0.
+
+config SUNXI_SOUND_PLATFORM_I2S1
+	bool "Allwinner I2S1 V2 Support"
+	default n
+	help
+	  Select Y to add support for I2S1.
+
+config SUNXI_SOUND_PLATFORM_I2S2
+	bool "Allwinner I2S2 V2 Support"
+ 	depends on (!SUNXI_SOUND_PLATFORM_SUN8IW19_DAUDIO)
+	default n
+	help
+	  Select Y to add support forI2S2.
+
+config SUNXI_SOUND_PLATFORM_I2S3
+	bool "Allwinner I2S3 V2 Support"
+ 	depends on (!SUNXI_SOUND_PLATFORM_SUN8IW19_DAUDIO)
+	default n
+	help
+	  Select Y to add support for I2S3.
+endmenu
+endif
+
+config SUNXI_SOUND_PLATFORM_DMIC
+	bool "Allwinner DMIC V2 Support"
+	select SUNXI_SOUND_PLATFORM_PCM
+	select SUNXI_SOUND_CODEC_DUMMY
+	select SUNXI_SOUND_COMMON_SUNXI_COMMON
+	select SUNXI_SOUND_PLATFORM_MACH
+	default n
+	help
+	  Select Y to add support for DMIC module in Allwinner SoCs.
+
+config SUNXI_SOUND_PLATFORM_OWA
+	bool "Allwinner OWA V2 Support"
+	select SUNXI_SOUND_PLATFORM_PCM
+	select SUNXI_SOUND_CODEC_DUMMY
+	select SUNXI_SOUND_COMMON_SUNXI_COMMON
+	select SUNXI_SOUND_PLATFORM_MACH
+	default n
+	help
+	  Select Y to add support for OWA module in Allwinner SoCs.
+
+config SUNXI_SOUND_PLATFORM_MAD
+	bool "Allwinner MAD V2 Support"
+	default n
+	help
+	  Select Y to add support for MAD module in Allwinner SoCs.
+
+config SUNXI_SOUND_MAD_DEBUG
+	bool "Allwinner MAD Debug Support"
+	depends on SUNXI_SOUND_PLATFORM_MAD
+	default n
+	help
+	  Select Y to add support for MAD debug in Allwinner SoCs.
+
+config SUNXI_SOUND_DEBUG
+	bool "Allwinner Audio Debug Support"
+	default n
+	help
+	  Select Y to add support for audio debug in Allwinner SoCs.
+
+endmenu

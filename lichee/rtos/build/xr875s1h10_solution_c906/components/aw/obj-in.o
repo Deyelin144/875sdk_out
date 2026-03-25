@@ -1,0 +1,55 @@
+!<thin>
+//                                              1016      `
+newlibc/syscalls.o/
+newlibc/time.o/
+newlibc/ctype.o/
+newlibc/wrap_memcpy-riscv.o/
+newlibc/wrap_memmove.o/
+devfs/devfs.o/
+blkpart/blkpart.o/
+blkpart/gpt_part.o/
+multimedia/demo/rtplayer_test/rtplayer_test.o/
+multimedia/demo/mp4_test/cdx_interface/cdx_audio_decoder.o/
+multimedia/demo/mp4_test/cdx_interface/cdx_customer_stream.o/
+multimedia/demo/mp4_test/cdx_interface/cdx_audio_rendor.o/
+multimedia/demo/mp4_test/cdx_interface/cdx_video_rendor.o/
+multimedia/demo/mp4_test/video_core/video_fsm.o/
+multimedia/demo/mp4_test/video_core/video_message.o/
+multimedia/demo/mp4_test/video_core/video_stack.o/
+multimedia/demo/mp4_test/video_core/aac_packet.o/
+multimedia/demo/mp4_test/video_core/video_command.o/
+multimedia/demo/mp4_test/video_demo.o/
+multimedia/cedarx/sound_ctrl/rtosSound_as.o/
+multimedia/cedarx/rtplayer.o/
+multimedia/cedarx/sound_ctrl/rtosSoundControl.o/
+multimedia/cedarx/stream/CdxFifoStream.o/
+multimedia/cedarx/stream/CdxSSLStream.o/
+multimedia/cedarx/capture_ctrl/rtosCaptureControl.o/
+flag/flag.o/
+
+/0              0           0     0     644     117304    `
+/20             0           0     0     644     32856     `
+/36             0           0     0     644     14104     `
+/53             0           0     0     644     27440     `
+/82             0           0     0     644     37240     `
+/106            0           0     0     644     159576    `
+/121            0           0     0     644     187632    `
+/140            0           0     0     644     56552     `
+/160           /0           0     0     644     269408    `
+/207            0           0     0     644     97672     `
+/267            0           0     0     644     101008    `
+/329            0           0     0     644     37432     `
+/388            0           0     0     644     111168    `
+/447            0           0     0     644     329640    `
+/496           /0           0     0     644     51440     `
+/549            0           0     0     644     83208     `
+/600            0           0     0     644     43808     `
+/650           /0           0     0     644     42552     `
+/703            0           0     0     644     79304     `
+/742            0           0     0     644     84800     `
+/787            0           0     0     644     146592    `
+/817            0           0     0     644     56696     `
+/866           /0           0     0     644     185712    `
+/908            0           0     0     644     300368    `
+/949            0           0     0     644     102056    `
+/1002           0           0     0     644     133408    `

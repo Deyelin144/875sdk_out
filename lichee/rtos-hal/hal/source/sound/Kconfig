@@ -1,0 +1,26 @@
+menu "SOUND Driver"
+
+config DRIVERS_SUNXI_SOUND
+	bool "Sound card support"
+	default n
+
+choice
+	prompt "Allwinner Sound Driver"
+	depends on DRIVERS_SUNXI_SOUND
+	default AW_SOUND_DRIVER_NONE
+
+config AW_SOUND_DRIVER_NONE
+	bool "none"
+
+config AW_SOUND_DRIVER_V2
+	bool "Sound Driver V2"
+	help
+	  This is sound driver v2 for aw, only used for Allwinner FreeRTOS.
+endchoice
+
+if AW_SOUND_DRIVER_V2
+source "drivers/rtos-hal/hal/source/sound/driver_v2/Kconfig"
+endif
+
+
+endmenu

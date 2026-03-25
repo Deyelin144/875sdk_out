@@ -1,0 +1,66 @@
+menuconfig DYNAMIC_FTRACE
+	bool "Dynamic ftrace Support."
+	select DYNAMIC_FTRACE_FUNCTION
+	default n
+	help
+	  Dynamic ftrace Support.
+
+if DYNAMIC_FTRACE
+	menu "tracer type"
+
+	config DYNAMIC_FTRACE_FUNCTION
+		bool "Enable function tracer"
+		default y
+	config DYNAMIC_FTRACE_GRAPH
+		bool "Enable function graph tracer"
+		default y
+	menuconfig DYNAMIC_FTRACE_IRQSOFF
+		bool "Enable irqsoff tracer"
+		default n
+		if DYNAMIC_FTRACE_IRQSOFF
+			config DYNAMIC_FTRACE_ISR_CALL_XIPFUNC_CHECK
+				bool "Enable check call xip_func in isr"
+				default n
+			if DYNAMIC_FTRACE_ISR_CALL_XIPFUNC_CHECK
+				config FIND_MAX_INST_NUM
+					int "find max inst num"
+					default 500
+			endif
+		endif
+
+	endmenu
+
+config DYNAMIC_FTRACE_KALLSYMS
+	bool "Enable KALLSYMS"
+	default y
+
+config DYNAMIC_FTRACE_FILTER
+	bool "Enable function filter"
+	default y
+
+config MAX_BUF_SIZE
+	int "log save to ringbuf, the ringbuf size."
+	default 8192
+
+config MAX_FILTER_TABLE_SIZE
+	int "filter table size."
+	default 64
+
+config INIT_TASK_STACK_SIZE
+	int "init task stack size."
+	default 1024
+
+config DEINIT_TASK_STACK_SIZE
+	int "deinit task stack size."
+	default 1024
+
+config CMD_TASK_STACK_SIZE
+	int "cmd task stack size."
+	default 8192
+
+config CMD_TASK_PRI
+	int "cmd task pri."
+	default 2
+
+endif
+

@@ -1,0 +1,46 @@
+!<thin>
+//                                              790       `
+common/src/api_action/api_action.o/
+common/src/os/freertos/mutex.o/
+common/src/os/freertos/queue.o/
+common/src/os/freertos/sem.o/
+common/src/os/freertos/thread.o/
+common/src/os/freertos/sync_notify.o/
+common/src/os/freertos/ring_buff.o/
+common/src/tracing/log_backend_hub.o/
+common/src/tracing/log_queue_block.o/
+common/src/tracing/log_worker.o/
+common/src/tracing/log_core.o/
+common/src/tracing/log_parse_cmd_rtos.o/
+wifimanager/core/src/wifimg.o/
+wifimanager/core/src/wmg_common.o/
+wifimanager/core/src/log/wifi_log.o/
+wifimanager/core/src/os/freertos/freertos_common.o/
+wifimanager/core/src/wmg_sta.o/
+wifimanager/core/src/os/freertos/freertos_sta.o/
+wifimanager/core/src/wmg_ap.o/
+wifimanager/core/src/os/freertos/freertos_ap.o/
+wifimanager/demo/wifi.o/
+wifimanager/demo/wifi_daemon.o/
+/0              0           0     0     644     25792     `
+/36             0           0     0     644     15540     `
+/68             0           0     0     644     14720     `
+/100            0           0     0     644     12384     `
+/130            0           0     0     644     12008     `
+/163            0           0     0     644     13248     `
+/201            0           0     0     644     30756     `
+/237            0           0     0     644     16100     `
+/275            0           0     0     644     16936     `
+/313            0           0     0     644     14348     `
+/346            0           0     0     644     16172     `
+/377            0           0     0     644     11644     `
+/418            0           0     0     644     51436     `
+/449            0           0     0     644     96036     `
+/484            0           0     0     644     12616     `
+/521            0           0     0     644     17456     `
+/573            0           0     0     644     38060     `
+/605            0           0     0     644     79640     `
+/654            0           0     0     644     35952     `
+/685            0           0     0     644     45088     `
+/733            0           0     0     644     16792     `
+/758            0           0     0     644     84024     `

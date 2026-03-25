@@ -1,0 +1,21 @@
+!<thin>
+//                                              164       `
+src/ff.o/
+src/ffsystem.o/
+src/ffunicode.o/
+vfs/vfs_fat.o/
+diskio/diskio.o/
+vfs/aw_vfs_fat_sdmmc.o/
+diskio/diskio_sdmmc.o/
+diskio/sdmmc_part.o/
+diskio/sdmmc_drv.o/
+
+/0              0           0     0     644     1049504   `
+/10             0           0     0     644     28128     `
+/26             0           0     0     644     37352     `
+/43             0           0     0     644     262016    `
+/58             0           0     0     644     46056     `
+/75             0           0     0     644     36704     `
+/99             0           0     0     644     65696     `
+/122            0           0     0     644     93552     `
+/143            0           0     0     644     109048    `

@@ -1,0 +1,24 @@
+!<thin>
+//                                              374       `
+source/FreeRTOS_POSIX_clock.o/
+source/FreeRTOS_POSIX_mqueue.o/
+source/FreeRTOS_POSIX_pthread_barrier.o/
+source/FreeRTOS_POSIX_pthread.o/
+source/FreeRTOS_POSIX_pthread_cond.o/
+source/FreeRTOS_POSIX_pthread_mutex.o/
+source/FreeRTOS_POSIX_sched.o/
+source/FreeRTOS_POSIX_semaphore.o/
+source/FreeRTOS_POSIX_timer.o/
+source/FreeRTOS_POSIX_unistd.o/
+source/FreeRTOS_POSIX_utils.o/
+/0              0           0     0     644     39256     `
+/31             0           0     0     644     131536    `
+/63             0           0     0     644     39064     `
+/104            0           0     0     644     104088    `
+/137            0           0     0     644     58464     `
+/175            0           0     0     644     65232     `
+/214            0           0     0     644     18304     `
+/245            0           0     0     644     47376     `
+/280            0           0     0     644     65712     `
+/311            0           0     0     644     21008     `
+/343            0           0     0     644     61496     `

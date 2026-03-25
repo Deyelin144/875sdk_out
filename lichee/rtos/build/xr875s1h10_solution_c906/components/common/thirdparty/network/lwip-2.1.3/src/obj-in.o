@@ -1,0 +1,96 @@
+!<thin>
+//                                              758       `
+core/init.o/
+core/def.o/
+core/dns.o/
+core/inet_chksum.o/
+core/ip.o/
+core/mem.o/
+core/memp.o/
+core/netif.o/
+core/pbuf.o/
+core/raw.o/
+core/sys.o/
+core/tcp.o/
+core/tcp_in.o/
+core/tcp_out.o/
+core/timeouts.o/
+core/udp.o/
+core/ipv4/autoip.o/
+core/ipv4/etharp.o/
+core/ipv4/icmp.o/
+core/ipv4/igmp.o/
+core/ipv4/ip4_frag.o/
+core/ipv4/ip4.o/
+core/ipv4/ip4_addr.o/
+core/ipv6/dhcp6.o/
+core/ipv6/ethip6.o/
+core/ipv6/icmp6.o/
+core/ipv6/inet6.o/
+core/ipv6/ip6.o/
+core/ipv6/ip6_addr.o/
+core/ipv6/ip6_frag.o/
+core/ipv6/mld6.o/
+core/ipv6/nd6.o/
+arch/sys_arch.o/
+arch/checksum.o/
+arch/memcpy.o/
+api/api_lib.o/
+api/api_msg.o/
+api/err.o/
+api/netbuf.o/
+api/netdb.o/
+api/netifapi.o/
+api/sockets.o/
+api/tcpip.o/
+netif/ethernet.o/
+netif/slipif.o/
+netif/lowpan6.o/
+apps/dhcps/dhcps.o/
+/0              0           0     0     644     39216     `
+/13             0           0     0     644     42832     `
+/25             0           0     0     644     173472    `
+/37             0           0     0     644     67416     `
+/57             0           0     0     644     23696     `
+/68             0           0     0     644     114256    `
+/80             0           0     0     644     83504     `
+/93             0           0     0     644     182272    `
+/107            0           0     0     644     279808    `
+/120            0           0     0     644     96216     `
+/132            0           0     0     644     14384     `
+/144            0           0     0     644     391672    `
+/156            0           0     0     644     309808    `
+/171            0           0     0     644     335824    `
+/187            0           0     0     644     84936     `
+/204            0           0     0     644     143760    `
+/216            0           0     0     644     14400     `
+/236            0           0     0     644     181848    `
+/256            0           0     0     644     62992     `
+/274            0           0     0     644     122592    `
+/292            0           0     0     644     152192    `
+/314            0           0     0     644     124944    `
+/331            0           0     0     644     66504     `
+/353            0           0     0     644     14400     `
+/372            0           0     0     644     14400     `
+/392            0           0     0     644     14400     `
+/411            0           0     0     644     14400     `
+/430            0           0     0     644     14392     `
+/447            0           0     0     644     14408     `
+/469            0           0     0     644     21536     `
+/491            0           0     0     644     14400     `
+/509            0           0     0     644     14392     `
+/526            0           0     0     644     73344     `
+/543            0           0     0     644     14144     `
+/560            0           0     0     644     14144     `
+/575            0           0     0     644     218448    `
+/590            0           0     0     644     386448    `
+/605            0           0     0     644     18200     `
+/616            0           0     0     644     55008     `
+/630            0           0     0     644     73400     `
+/643            0           0     0     644     68992     `
+/659            0           0     0     644     596936    `
+/674            0           0     0     644     110512    `
+/687            0           0     0     644     47216     `
+/705            0           0     0     644     73408     `
+/721            0           0     0     644     14400     `
+/738            0           0     0     644     501528    `

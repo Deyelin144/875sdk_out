@@ -1,0 +1,25 @@
+[step1]
+	image-file="config"
+	device="/dev/config-b"
+	image-file="m33"
+	device="/dev/arm-b"
+	image-file="m33-hpsram"
+	device="/dev/arm-hpsram-b"
+	image-file="rv"
+	device="/dev/rv-hpsram-b"
+	image-file="xip"
+	device="/dev/xip-b"
+	env:xip_partition=xip-b
+
+[step2]
+	image-file="config"
+	device="/dev/config"
+	image-file="m33"
+	device="/dev/arm-sram"
+	image-file="m33-hpsram"
+	device="/dev/arm-hpsram"
+	image-file="rv"
+	device="/dev/rv-hpsram"
+	image-file="xip"
+	device="/dev/rtos-xip"
+	env:xip_partition=rtos-xip

@@ -1,0 +1,9 @@
+[step2]
+	image-file="m33"
+	device="/dev/arm-hpsram"
+	image-file="rv"
+	device="/dev/rv-hpsram"
+	image-file="dsp"
+	device="/dev/dsp-hpsram"
+	image-file="config"
+	device="/dev/config"

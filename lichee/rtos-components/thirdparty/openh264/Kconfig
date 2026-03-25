@@ -1,0 +1,8 @@
+menuconfig COMPONENT_OPENH264_DECODE
+    bool "open h264 decode"
+    default n
+
+menuconfig COMPONENT_OPENH264_DECODE_DEMO
+    bool "h264 decode demo"
+    default n
+

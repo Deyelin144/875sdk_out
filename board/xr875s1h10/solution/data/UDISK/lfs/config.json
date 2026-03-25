@@ -1,0 +1,9 @@
+{
+    "uiconfig": {
+        "boot": {
+            "src": "P:/data/lfs/microapp_launch.gupkg|assets_images_boot.png",
+            "bg_color": "0x000000",
+            "interim": "P:/data/lfs/microapp_launch.gupkg|assets_images_boot.png"
+        }
+    }
+}

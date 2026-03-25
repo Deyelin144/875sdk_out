@@ -1,0 +1,1 @@
+obj-y += tp_board_config.o

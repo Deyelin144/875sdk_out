@@ -1,0 +1,274 @@
+{
+    "app_root": "/microapp_launch",
+    "hor_res": 320,
+    "ver_res": 480,
+    "monitor_mem": false,
+    "mem_pool_size": 4000000,
+    "channel": "standard",
+    "default_font_name": "simsun18",
+    "fonts": [
+        {
+            "name": "font_icon",
+            "file": "data/lfs/font_icon.bin"
+        },
+        {
+            "name": "simsun9_pinyin",
+            "font_size": 9,
+            "file": "data/lfs/font.ttf"
+        },
+        {
+            "name": "simsun11_pinyin",
+            "font_size": 11,
+            "file": "data/lfs/font.ttf"
+        },
+        {
+            "name": "simsun15",
+            "font_size": 15,
+            "file": "data/lfs/font.ttf"
+        },
+        {
+            "name": "simsun18",
+            "font_size": 18,
+            "file": "data/lfs/font.ttf"
+        },
+        {
+            "name": "simsun19",
+            "font_size": 19,
+            "file": "data/lfs/font.ttf"
+        },
+        {
+            "name": "simsun22",
+            "font_size": 22,
+            "file": "data/lfs/font.ttf"
+        },
+        {
+            "name": "simsun28",
+            "font_size": 28,
+            "file": "data/lfs/font.ttf"
+        },
+        {
+            "name": "simsun40",
+            "font_size": 40,
+            "file": "data/lfs/font.ttf"
+        },
+        {
+            "name": "simsun44",
+            "font_size": 44,
+            "file": "data/lfs/countdown.ttf"
+        },
+        {
+            "name": "simsun58",
+            "font_size": 58,
+            "file": "data/lfs/font.ttf"
+        },
+        {
+            "name": "simsun60",
+            "font_size": 60,
+            "file": "data/lfs/font.ttf"
+        },
+        {
+            "name": "simsun80",
+            "font_size": 80,
+            "file": "data/lfs/font.ttf"
+        },
+        {
+            "name": "simsun90",
+            "font_size": 90,
+            "file": "data/lfs/font.ttf"
+        },
+        {
+            "name": "simsun100",
+            "font_size": 100,
+            "file": "data/lfs/font.ttf"
+        },
+        {
+            "name": "figure1_40",
+            "font_size": 40,
+            "file": "data/lfs/figurefont-1-Regular.ttf"
+        },
+        {
+            "name": "figure2_40",
+            "font_size": 40,
+            "file": "data/lfs/figurefont-2-Regular.ttf"
+        },
+        {
+            "name": "figure3_40",
+            "font_size": 40,
+            "file": "data/lfs/figurefont-3-Regular.ttf"
+        },
+        {
+            "name": "figure4_40",
+            "font_size": 40,
+            "file": "data/lfs/figurefont-4-Regular.ttf"
+        },
+        {
+            "name": "figure5_40",
+            "font_size": 40,
+            "file": "data/lfs/figurefont-5-Regular.ttf"
+        },
+        {
+            "name": "figure6_40",
+            "font_size": 40,
+            "file": "data/lfs/figurefont-6-Regular.ttf"
+        },
+        {
+            "name": "figure1_58",
+            "font_size": 58,
+            "file": "data/lfs/figurefont-1-Regular.ttf"
+        },
+        {
+            "name": "figure2_58",
+            "font_size": 58,
+            "file": "data/lfs/figurefont-2-Regular.ttf"
+        },
+        {
+            "name": "figure3_58",
+            "font_size": 58,
+            "file": "data/lfs/figurefont-3-Regular.ttf"
+        },
+        {
+            "name": "figure4_58",
+            "font_size": 58,
+            "file": "data/lfs/figurefont-4-Regular.ttf"
+        },
+        {
+            "name": "figure5_58",
+            "font_size": 58,
+            "file": "data/lfs/figurefont-5-Regular.ttf"
+        },
+        {
+            "name": "figure6_58",
+            "font_size": 58,
+            "file": "data/lfs/figurefont-6-Regular.ttf"
+        },
+        {
+            "name": "figure1_60",
+            "font_size": 60,
+            "file": "data/lfs/figurefont-1-Regular.ttf"
+        },
+        {
+            "name": "figure2_60",
+            "font_size": 60,
+            "file": "data/lfs/figurefont-2-Regular.ttf"
+        },
+        {
+            "name": "figure3_60",
+            "font_size": 60,
+            "file": "data/lfs/figurefont-3-Regular.ttf"
+        },
+        {
+            "name": "figure4_60",
+            "font_size": 60,
+            "file": "data/lfs/figurefont-4-Regular.ttf"
+        },
+        {
+            "name": "figure5_60",
+            "font_size": 60,
+            "file": "data/lfs/figurefont-5-Regular.ttf"
+        },
+        {
+            "name": "figure6_60",
+            "font_size": 60,
+            "file": "data/lfs/figurefont-6-Regular.ttf"
+        },
+        {
+            "name": "figure1_80",
+            "font_size": 80,
+            "file": "data/lfs/figurefont-1-Regular.ttf"
+        },
+        {
+            "name": "figure2_80",
+            "font_size": 80,
+            "file": "data/lfs/figurefont-2-Regular.ttf"
+        },
+        {
+            "name": "figure3_80",
+            "font_size": 80,
+            "file": "data/lfs/figurefont-3-Regular.ttf"
+        },
+        {
+            "name": "figure4_80",
+            "font_size": 80,
+            "file": "data/lfs/figurefont-4-Regular.ttf"
+        },
+        {
+            "name": "figure5_80",
+            "font_size": 80,
+            "file": "data/lfs/figurefont-5-Regular.ttf"
+        },
+        {
+            "name": "figure6_80",
+            "font_size": 80,
+            "file": "data/lfs/figurefont-6-Regular.ttf"
+        },
+        {
+            "name": "figure1_90",
+            "font_size": 90,
+            "file": "data/lfs/figurefont-1-Regular.ttf"
+        },
+        {
+            "name": "figure2_90",
+            "font_size": 90,
+            "file": "data/lfs/figurefont-2-Regular.ttf"
+        },
+        {
+            "name": "figure3_90",
+            "font_size": 90,
+            "file": "data/lfs/figurefont-3-Regular.ttf"
+        },
+        {
+            "name": "figure4_90",
+            "font_size": 90,
+            "file": "data/lfs/figurefont-4-Regular.ttf"
+        },
+        {
+            "name": "figure5_90",
+            "font_size": 90,
+            "file": "data/lfs/figurefont-5-Regular.ttf"
+        },
+        {
+            "name": "figure6_90",
+            "font_size": 90,
+            "file": "data/lfs/figurefont-6-Regular.ttf"
+        },
+        {
+            "name": "figure1_100",
+            "font_size": 100,
+            "file": "data/lfs/figurefont-1-Regular.ttf"
+        },
+        {
+            "name": "figure2_100",
+            "font_size": 100,
+            "file": "data/lfs/figurefont-2-Regular.ttf"
+        },
+        {
+            "name": "figure3_100",
+            "font_size": 100,
+            "file": "data/lfs/figurefont-3-Regular.ttf"
+        },
+        {
+            "name": "figure4_100",
+            "font_size": 100,
+            "file": "data/lfs/figurefont-4-Regular.ttf"
+        },
+        {
+            "name": "figure5_100",
+            "font_size": 100,
+            "file": "data/lfs/figurefont-5-Regular.ttf"
+        },
+        {
+            "name": "figure6_100",
+            "font_size": 100,
+            "file": "data/lfs/figurefont-6-Regular.ttf"
+        },
+        {
+            "name": "countdown_44",
+            "font_size": 44,
+            "file": "data/lfs/countdown.ttf"
+        },
+        {
+            "name": "iconfont20",
+            "file": "data/lfs/iconfont20.bin"
+        }
+    ]
+}

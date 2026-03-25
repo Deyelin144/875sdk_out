@@ -1,0 +1,64 @@
+/**
+ * @file sunxifb.h
+ *
+ */
+
+ #ifndef SUNXIFB_H
+ #define SUNXIFB_H
+ 
+ #ifdef __cplusplus
+ extern "C" {
+ #endif
+ 
+ /*********************
+  *      INCLUDES
+  *********************/
+ #if USE_SUNXIFB
+ #include "lvgl.h"
+ 
+ /*********************
+  *      DEFINES
+  *********************/
+ 
+ /**********************
+  *      TYPEDEFS
+  **********************/
+
+ typedef struct _lv_disp_ops {
+     int (*init)(void);
+     int (*exit)(void);
+     int (*flush)(void);
+     int (*get_sizes)(uint32_t *width, uint32_t *height);
+     char *(*get_buf)(void);
+ } lv_disp_ops;
+ 
+ extern lv_disp_ops lv_disp2_ops;
+ extern lv_disp_ops lv_spilcd_ops;
+
+ /**********************
+  * GLOBAL PROTOTYPES
+  **********************/
+ void sunxifb_init(uint32_t rotated);
+ void sunxifb_exit(void);
+ void sunxifb_flush(lv_disp_drv_t * drv, const lv_area_t * area, lv_color_t * color_p);
+ void sunxifb_get_sizes(uint32_t *width, uint32_t *height);
+ void* sunxifb_alloc(size_t size, char *label);
+ void sunxifb_free(void **data, char *label);
+ char* sunxifb_get_buf();
+ #ifdef USE_SUNXIFB_DOUBLE_BUFFER
+ bool sunxifb_get_dbuf_en();
+ int sunxifb_set_dbuf_en(lv_disp_drv_t * drv, bool dbuf_en);
+ #endif /* USE_SUNXIFB_DOUBLE_BUFFER */
+ 
+ /**********************
+  *      MACROS
+  **********************/
+ 
+ #endif  /*USE_SUNXIFB*/
+ 
+ #ifdef __cplusplus
+ } /* extern "C" */
+ #endif
+ 
+ #endif /*SUNXIFB_H*/
+ 

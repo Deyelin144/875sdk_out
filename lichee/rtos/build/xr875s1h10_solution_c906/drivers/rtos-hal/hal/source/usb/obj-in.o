@@ -1,0 +1,29 @@
+!<thin>
+//                                              270       `
+common/usb_init.o/
+common/list_head_ext.o/
+common/usb_phy.o/
+udc/udc.o/
+udc/udc_hal.o/
+udc/usb_dma.o/
+gadget/function/adb.o/
+gadget/gadget.o/
+gadget/gadget_hal.o/
+manager/usb_manager.o/
+manager/usb_msg_center.o/
+manager/usb_hw_scan.o/
+platform/sun20iw2/usb_sun20iw2.o/
+
+/0              0           0     0     644     16112     `
+/19            /0           0     0     644     72664     `
+/43             0           0     0     644     72848     `
+/61             0           0     0     644     738448    `
+/72             0           0     0     644     46552     `
+/87             0           0     0     644     56128     `
+/102            0           0     0     644     66264     `
+/125            0           0     0     644     125008    `
+/142            0           0     0     644     18056     `
+/163            0           0     0     644     107960    `
+/186            0           0     0     644     59472     `
+/212            0           0     0     644     78624     `
+/235            0           0     0     644     41160     `

@@ -1,0 +1,72 @@
+menu "SPI NOR Flash Controller Devices(Next Generation)"
+visible if !DRIVERS_FLASHC
+
+config DRIVERS_SNOR_FLASHC_NG
+    bool "Enable Allwinner SPI NOR Flash Controller Driver(Next Generation)"
+	default n
+
+if DRIVERS_SNOR_FLASHC_NG
+
+menu "Flash Controller Sample Delay(unit: half clock cycle)"
+	depends on !USE_FLASH_CONTROLLER_ON_AMP || FC_ON_AMP_BOOT_CPU
+
+config FC_SAMPLE_DELAY_0_MAX_CLK_FREQ
+	int "Maximal clock frequency(included) when add 0 sample delay"
+    default 40000000
+	help
+		When we read data from flash and after the address or dummy
+		data has been sended by controller, due to the signal delay
+		in hardware level, it will need some delay to sample correct
+		data. And the delay value is not same when we use different
+		hardware or use different clock frequency.
+
+config FC_SAMPLE_DELAY_1_MAX_CLK_FREQ
+	int "Maximal clock frequency(included) when add 1 sample delay"
+    default 64000000
+	help
+		When we read data from flash and after the address or dummy
+		data has been sended by controller, due to the signal delay
+		in hardware level, it will need some delay to sample correct
+		data. And the delay value is not same when we use different
+		hardware or use different clock frequency.
+
+config FC_SAMPLE_DELAY_2_MAX_CLK_FREQ
+	int "Maximal clock frequency(included) when add 2 sample delay"
+    default 144000000
+	help
+		When we read data from flash and after the address or dummy
+		data has been sended by controller, due to the signal delay
+		in hardware level, it will need some delay to sample correct
+		data. And the delay value is not same when we use different
+		hardware or use different clock frequency.
+
+endmenu
+
+config DISABLE_INTERRUPT_WHEN_USING_INDIRECT_MODE
+	bool "disable global interrupt when using indirect mode"
+	default n
+	help
+		In order to prevent the CPU execute code which is saved in
+		SPI NOR flash(it's also called XIP) when using indirect mode
+		to access flash, We need to suspend scheduler. But when the
+		interrupt handler or code which is called by interrupt handler
+		is saved in flash, we need to disable global interrupt.
+
+config USE_FLASH_CONTROLLER_ON_AMP
+	bool "Use flash controller on AMP"
+	depends on USE_SPI_NOR_ON_AMP
+	default n
+	help
+		support to use SPI NOR flash controller on AMP
+
+config FC_ON_AMP_BOOT_CPU
+    bool "boot CPU"
+	depends on USE_FLASH_CONTROLLER_ON_AMP && SNOR_ON_AMP_BOOT_CPU
+
+config FC_ON_AMP_NON_BOOT_CPU
+	bool "non-boot CPU"
+	depends on USE_FLASH_CONTROLLER_ON_AMP && SNOR_ON_AMP_NON_BOOT_CPU
+
+endif
+
+endmenu

@@ -1,0 +1,6 @@
+config COMPONENTS_AW_EFPG
+    bool "aw_efpg"
+    depends on (DRIVERS_EFUSE)
+    default n
+    help
+        sunxi aw efpg component.

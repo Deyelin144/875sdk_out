@@ -1,0 +1,27 @@
+!<thin>
+//                                              214       `
+common/exception.o/
+common/clocksource.o/
+common/backtrace.o/
+fpu/fpu_common.o/
+c906/head_s.o/
+c906/plic.o/
+c906/cache.o/
+c906/spinlock.o/
+c906/clic.o/
+c906/interrupt.o/
+sun20iw2p1/sun20i.o/
+sun20iw2p1/cpufreq.o/
+
+/0              0           0     0     644     80480     `
+/20             0           0     0     644     45776     `
+/42             0           0     0     644     204896    `
+/62             0           0     0     644     14472     `
+/80             0           0     0     644     13328     `
+/95             0           0     0     644     100920    `
+/108            0           0     0     644     47640     `
+/122            0           0     0     644     27816     `
+/139            0           0     0     644     64832     `
+/152            0           0     0     644     85616     `
+/170            0           0     0     644     36720     `
+/191            0           0     0     644     96992     `

@@ -1,0 +1,86 @@
+!<thin>
+//                                              818       `
+src/type42/type42.o/
+src/base/ftsynth.o/
+src/base/ftsystem.o/
+src/base/ftglyph.o/
+src/psnames/psnames.o/
+src/base/ftbbox.o/
+src/truetype/truetype.o/
+src/pfr/pfr.o/
+src/base/ftinit.o/
+src/sfnt/sfnt.o/
+src/raster/raster.o/
+src/cache/ftcache.o/
+src/bzip2/ftbzip2.o/
+src/lzw/ftlzw.o/
+src/psaux/psaux.o/
+src/base/ftpatent.o/
+src/base/ftmm.o/
+src/base/ftcid.o/
+src/winfonts/winfnt.o/
+src/sdf/sdf.o/
+src/pshinter/pshinter.o/
+src/pcf/pcf.o/
+src/base/ftfstype.o/
+src/bdf/bdf.o/
+src/svg/svg.o/
+src/base/ftbase.o/
+src/base/fttype1.o/
+src/base/ftbdf.o/
+src/base/ftgasp.o/
+src/cff/cff.o/
+src/base/ftwinfnt.o/
+src/base/ftpfr.o/
+src/base/ftstroke.o/
+src/cid/type1cid.o/
+src/gzip/ftgzip.o/
+src/autofit/autofit.o/
+src/base/ftotval.o/
+src/type1/type1.o/
+src/smooth/smooth.o/
+src/base/ftbitmap.o/
+src/base/ftgxval.o/
+src/base/ftdebug.o/
+/0              0           0     0     644     142988    `
+/21             0           0     0     644     30020     `
+/41             0           0     0     644     22596     `
+/62             0           0     0     644     65880     `
+/82             0           0     0     644     118860    `
+/105            0           0     0     644     26616     `
+/124            0           0     0     644     468668    `
+/149            0           0     0     644     152304    `
+/164            0           0     0     644     33556     `
+/183            0           0     0     644     496208    `
+/200            0           0     0     644     110032    `
+/221            0           0     0     644     169096    `
+/242            0           0     0     644     16000     `
+/263            0           0     0     644     43948     `
+/280            0           0     0     644     432552    `
+/299            0           0     0     644     26504     `
+/320            0           0     0     644     53696     `
+/337            0           0     0     644     35248     `
+/355            0           0     0     644     73404     `
+/378            0           0     0     644     144524    `
+/393            0           0     0     644     180920    `
+/418            0           0     0     644     104952    `
+/433            0           0     0     644     32760     `
+/454            0           0     0     644     134528    `
+/469            0           0     0     644     44892     `
+/484            0           0     0     644     415260    `
+/503            0           0     0     644     39348     `
+/523            0           0     0     644     34116     `
+/541            0           0     0     644     40388     `
+/560            0           0     0     644     315700    `
+/575            0           0     0     644     33084     `
+/596            0           0     0     644     37728     `
+/614            0           0     0     644     122668    `
+/635            0           0     0     644     152908    `
+/655            0           0     0     644     105548    `
+/674            0           0     0     644     390088    `
+/697            0           0     0     644     33796     `
+/717            0           0     0     644     241984    `
+/736            0           0     0     644     85768     `
+/757            0           0     0     644     67132     `
+/778            0           0     0     644     35776     `
+/798            0           0     0     644     13368     `

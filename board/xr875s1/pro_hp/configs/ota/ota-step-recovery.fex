@@ -1,0 +1,5 @@
+[step2]
+	image-file="rv"
+	device="/dev/rv-hpsram"
+	image-file="xip"
+	device="/dev/rtos-xip"

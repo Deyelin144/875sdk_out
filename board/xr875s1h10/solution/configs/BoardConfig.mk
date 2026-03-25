@@ -1,0 +1,1 @@
+LICHEE_BRANDY_DEFCONF:=sun20iw2p1_xr875_hpsram_defconfig

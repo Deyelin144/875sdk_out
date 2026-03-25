@@ -1,0 +1,3 @@
+obj-$(CONFIG_COMPONENTS_PROCESS_AEC) += aec/
+obj-$(CONFIG_COMPONENTS_PROCESS_EQ) += eq/
+obj-y += asr/

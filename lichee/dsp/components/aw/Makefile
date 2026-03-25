@@ -1,0 +1,10 @@
+obj-y += common/
+obj-$(CONFIG_COMPONENTS_AW) += sound/
+obj-$(CONFIG_DEBUG_BACKTRACE) += backtrace/
+obj-y += testbench/
+obj-y += oemhead/
+obj-y += misc/
+obj-y += elf_message/
+obj-$(CONFIG_COMPONENTS_WATCHPOINT) += watchpoint/
+obj-$(CONFIG_COMPONENTS_MALLOC) += malloc/
+obj-$(CONFIG_COMPONENTS_SAFE_PRINTF) += safe_printf/

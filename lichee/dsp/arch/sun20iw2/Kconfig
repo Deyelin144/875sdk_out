@@ -1,0 +1,13 @@
+config DSP_IS_POWERED_BY_INTERNAL_LDO
+	bool "dsp is powered by internal lod"
+	default n
+	help
+		Configuring the DSP_LDO at a voltage suitable for DSP.
+
+config DEFAULT_DSP_CORE_CLK_FREQ
+    int "DSP Core CPU Frequency"
+    default 400000000
+    range 0 400000000
+    help
+      Default DSP feq is set by M33 core, effect if M33 without setting.
+      The default frequency is 400 MHz.

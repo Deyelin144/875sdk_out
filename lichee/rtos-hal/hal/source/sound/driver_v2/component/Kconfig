@@ -1,0 +1,59 @@
+menu "AW Sound Components"
+
+choice
+	prompt "Allwinner tiny sound library"
+	depends on DRIVERS_SOUND_V2
+	default COMPONENTS_AW_AUDIO_LIB_NONE
+
+config COMPONENTS_AW_AUDIO_LIB_NONE
+	bool "none"
+
+config COMPONENTS_AW_TINY_SOUND_LIB
+	bool "AW tiny sound driver library"
+	help
+	  This is library package for aw-sound-drv, only used for Allwinner FreeRTOS.
+
+endchoice
+
+config COMPONENTS_AW_TINY_SOUND_LIB_UTILS
+	bool "AW tiny sound driver library utils"
+	depends on COMPONENTS_AW_TINY_SOUND_LIB
+	default n
+	help
+	  This is the choice of aw audio driver utils
+
+config COMPONENTS_AW_TINY_SOUND_UTILS
+	bool "AW tiny sound utils"
+	depends on COMPONENTS_AW_TINY_SOUND_LIB
+	default n
+	help
+	  This is the choice of aw audio driver utils
+
+config COMPONENTS_AW_TINY_SOUND_UTILS_AWTINYMIXER
+	bool "AW tiny sound utils aw_tinymixer"
+	depends on COMPONENTS_AW_TINY_SOUND_UTILS
+	default y
+	help
+	  This is the choice of compile aw_tinymixer
+
+config COMPONENTS_AW_TINY_SOUND_UTILS_AWTINYPLAY
+	bool "AW tiny sound utils aw_tinyplay"
+	depends on COMPONENTS_AW_TINY_SOUND_UTILS
+	default y
+	help
+	  This is the choice of compile aw_tinyplay
+
+config COMPONENTS_AW_TINY_SOUND_UTILS_AWTINYCAP
+	bool "AW tiny sound utils aw_tinycap"
+	depends on COMPONENTS_AW_TINY_SOUND_UTILS
+	default y
+	help
+	  This is the choice of compile aw_tinycap
+
+config COMPONENTS_AW_TINY_SOUND_UTILS_AWTINYLOOP
+	bool "AW tiny sound utils aw_tinyloop"
+	depends on COMPONENTS_AW_TINY_SOUND_UTILS
+	default n
+	help
+	  This is the choice of compile aw_tinyloop
+endmenu

@@ -1,0 +1,22 @@
+!<thin>
+//                                              316       `
+Source/list.o/
+Source/queue.o/
+Source/tasks.o/
+Source/timers.o/
+Source/FreeRTOS_tick_config.o/
+Source/event_groups.o/
+Source/portable/MemMang/heap_4.o/
+Source/portable/GCC/ARM_CM33_NTZ/non_secure/port.o/
+Source/portable/GCC/ARM_CM33_NTZ/non_secure/portasm.o/
+Source/portable/GCC/ARM_CM33_NTZ/non_secure/port_misc.o/
+/0              0           0     0     644     11352     `
+/15             0           0     0     644     69320     `
+/31             0           0     0     644     116320    `
+/47             0           0     0     644     45452     `
+/64             0           0     0     644     9468      `
+/95             0           0     0     644     30144     `
+/118            0           0     0     644     27668     `
+/152            0           0     0     644     16520     `
+/204            0           0     0     644     11324     `
+/259            0           0     0     644     9620      `

@@ -1,0 +1,15 @@
+config COMPONENT_AISPEECH_DUIKIT_SDK
+    bool "AIspeech Duikit SDK"
+    select DRIVERS_EFUSE
+    select CUSTOM_VSPRINTF
+    select COMPONENTS_RPDATA
+    select COMPONENTS_LWIP
+    select COMPONENTS_LWIP_2_1_3
+    select COMPONENTS_MBEDTLS
+    select COMPONENTS_MBEDTLS_2_16_0
+    select COMPONENT_CJSON
+    select COMPONENT_SPEEX
+    default n
+    help
+        AIspeech Duikit Rtos SDK.
+

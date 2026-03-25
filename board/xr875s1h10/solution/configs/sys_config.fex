@@ -1,0 +1,686 @@
+;---------------------------------------------------------------------------------------------------------
+; 说明： 脚本中的字符串区分大小写，用户可以修改"="后面的数值，但是不要修改前面的字符串
+; 描述gpio的形式：Port:端口+组内序号<功能分配><内部电阻状态><驱动能力><输出电平状态>
+;---------------------------------------------------------------------------------------------------------
+
+[product]
+version = "001"
+machine = "pro"
+
+[target]
+storage_type    = 5
+
+;----------------------------------------------------------------------------------
+;uart configuration
+;uart_type ---  2 (2 wire), 4 (4 wire), 8 (8 wire, full function)
+;----------------------------------------------------------------------------------
+[uart0]
+uart_debug_tx   = port:PA9<2><1><default><default>
+uart_debug_rx   = port:PA8<2><1><default><default>
+
+[uart1]
+;uart_tx         = port:PA22<3><1><default><default>
+;uart_rx         = port:PA21<3><1><default><default>
+
+[uart2]
+uart_tx         = port:PA16<7><1><default><default>
+uart_rx         = port:PA17<7><1><default><default>
+;uart_rts        = port:PA10<2><1><default><default>
+;uart_cts        = port:PA11<2><1><default><default>
+
+[twi0]
+twi0_sck        = port:PA0<5><1><default><default>
+twi0_sda        = port:PA1<5><1><default><default>
+;----------------------------------------------------------------------------------
+;AUDIO configuration
+;config daudio0 cause using I2S;config audiocodec cause using dac
+;----------------------------------------------------------------------------------
+;[daudio0]
+;daudio0_mclk    = port:PA6<6><0><1><default>
+;daudio0_bclk    = port:PA3<6><0><1><default>
+;daudio0_lrck    = port:PA2<6><0><1><default>
+;daudio0_dout0   = port:PA5<6><0><1><default>
+;daudio0_din0    = port:PA4<6><0><1><default>
+
+[audiocodec]
+dacl_vol    = 129
+dacr_vol    = 129
+lineout_vol = 5
+lineoutl_en = 1
+lineoutr_en = 1
+mic1_gain   = 31
+mic2_gain   = 31
+mic3_gain   = 14
+mic1_en     = 1
+mic2_en     = 1
+mic3_en     = 1
+mad_bind_en = 0
+pa_pin_msleep   = 0
+pa_close_delay  = 50
+pa_pin      = port:PB3<1><default><1><1>
+
+[audiocodec_plat]
+dac-playback-cma = 32
+adc-capture-cma = 8
+
+[audiocodec_mach]
+dac-name = "audiocodecdac"
+cpu-dac = "sunxi-snd-plat-dac-aaudio"
+cpu-dac-id = 0
+codecs-dac-num = 1
+codecs-dac = "sunxi-snd-codec-dac"
+codecs-dac-id-0 = 0
+dac-playback-only = 1
+
+adc-name = "audiocodecadc"
+cpu-adc = "sunxi-snd-plat-adc-aaudio"
+cpu-adc-id = 0
+codecs-adc-num = 1
+codecs-adc = "sunxi-snd-codec-adc"
+codecs-adc-id-0 = 0
+adc-capture-only = 1
+
+;[i2s0]
+;i2s0_used = 1
+;i2s_master = 4
+;audio_format = 1
+;signal_inversion =1
+;pcm_lrck_period = 64
+;slot_width_select = 32
+;mclk-fp = 1
+;mclk-fs = 2
+
+;tdm_num = 0
+;tx-pin-0 = 1
+;rx-pin-0 = 1
+;msb_lsb_first = 0
+;tx_data_mode = 0
+;rx_data_mode = 0
+;rx_sync_en = 0
+;rx_sync_ctl = 0
+
+;[i2s0_plat]
+;i2s_mclk                    = port:PA23<2><0><1><default>
+;i2s_bclk                    = port:PA20<2><0><1><default>
+;i2s_lrck                    = port:PA19<2><0><1><default>
+;i2s_dout0                   = port:PA22<2><0><1><default>
+;i2s_din0                    = port:PA21<2><0><1><default>
+;capture-cma = 32
+;playback-cma = 32
+
+;[i2s0_mach]
+;name = "sndi2s0"
+;cpu = "sunxi-snd-plat-i2s0"
+;cpu-id = 0
+
+[dmic_plat]
+capture-cma = 32
+
+[dmic_mach]
+name = "snddmic"
+cpu = "sunxi-snd-plat-dmic"
+cpu-id = 0
+capture-only = 1
+
+[sdc0]
+card_ctrl       = 0
+card_high_speed = 0
+card_line       = 4
+;sdc_d1          = port:PA27<2><1><3><default>
+;sdc_d0          = port:PA26<2><1><3><default>
+;sdc_clk         = port:PA29<2><1><3><default>
+;sdc_cmd         = port:PA25<2><1><3><default>
+;sdc_d3          = port:PA24<2><1><3><default>
+;sdc_d2          = port:PA28<2><1><3><default>
+
+sdc_d1          = port:PA2<5><1><3><default>
+sdc_d0          = port:PA3<5><1><3><default>
+sdc_clk         = port:PA4<5><1><3><default>
+sdc_cmd         = port:PA5<5><1><3><default>
+sdc_d3          = port:PA6<5><1><3><default>
+sdc_d2          = port:PA7<5><1><3><default>
+
+;[sdc0det_para]
+;sdc0_det        = port:PA23<0><1><3><default>
+sdc0_det        = port:PB1<0><1><3><default>
+
+[usbc0]
+usb_used = 1
+;0:device 1:host 2:otg
+usb_port_type = 2
+;0: dp/dm detect, 1: vbus/id detect
+usb_detect_type = 1
+;0: thread scan mode; 1: gpio interrupt mode
+usb_detect_mode     = 0
+;usb_det_vbus_gpio   = port:PB3<0><1><2><default>
+;usb_id_gpio         = port:PB2<0><1><2><default>
+usb_drv_vbus_gpio   = port:PB1<1><1><2><default>
+usb_drv_vbus_type   = 1
+usbh_driver_level   = 5
+usbh_irq_flag       = 0
+
+;for compatibility, provide the 'dram_para' configuration. otherwise update_boot0 program will exit without writing boot0 header
+; hspsram init if (dram_clk != 0); lspsram init if ( dram_no_lpsram == 0)
+[dram_para]
+dram_clk       = 800
+dram_type      = 0xA
+dram_zq        = 0x3dbdfda0
+dram_odt_en    = 0x1
+dram_para1     = 0x000010f2
+dram_para2     = 0x02000000
+dram_mr0       = 0x1c70
+dram_mr1       = 0x42
+dram_mr2       = 0x8
+dram_mr3       = 0x0
+dram_tpr0      = 0x004A2195
+dram_tpr1      = 0x02423190
+dram_tpr2      = 0x0008B061
+dram_tpr3      = 0xB4787896
+dram_tpr4      = 0x0
+dram_tpr5      = 0x48484848
+dram_tpr6      = 0x48
+dram_tpr7      = 0x1
+dram_tpr8      = 0x0
+dram_tpr9      = 0x00
+dram_tpr10     = 0x0
+dram_tpr11     = 0x00000000
+dram_tpr12     = 0x00000000
+dram_tpr13     = 0x34050f00
+dram_no_lpsram = 0x1
+lpsram_type    = 0x2
+
+
+
+;--------------------------------------------------------------------------------
+;vip (video input port) configuration
+;vip_used: 0:disable 1:enable
+;--------------------------------------------------------------------------------
+
+[csi0]
+
+vip_used                 = 1
+vip_csi_hsync            = port:PA18<7><0><3><default>
+vip_csi_vsync            = port:PA19<7><0><3><default>
+vip_csi_pck              = port:PA20<7><0><3><default>
+vip_csi_mck              = port:PA21<7><0><3><default>
+vip_csi_d0               = port:PA22<8><0><3><default>
+vip_csi_d1               = port:PA23<8><0><3><default>
+vip_csi_d2               = port:PA27<8><0><3><default>
+vip_csi_d3               = port:PA26<8><0><3><default>
+vip_csi_d4               = port:PA29<8><0><3><default>
+vip_csi_d5               = port:PA25<8><0><3><default>
+vip_csi_d6               = port:PA24<8><0><3><default>
+vip_csi_d7               = port:PA28<8><0><3><default>
+
+vip_dev0_twi_id          = 0
+;vip_dev0_reset           = port:PA10<1><0><3><0>
+;vip_dev0_pwdn            = port:PA11<1><0><3><0>
+
+;----------------------------------------------------------------------------------
+;SPI controller configuration
+;----------------------------------------------------------------------------------
+;Please config spi in dts
+[spi1]
+spi1_used       = 1
+spi1_cs_number  = 1
+spi1_cs_bitmap  = 1
+;dbi_csx
+spi1_cs0        = port:PA12<6><0><3><default>
+;dbi_sclk
+spi1_sclk       = port:PA13<6><0><3><default>
+;dbi_sdo
+spi1_mosi       = port:PA14<3><0><3><default>
+;dbi_sdi
+;spi1_miso       = port:PA05<2><0><2><default>
+;dbi_dcx
+spi1_hold       = port:PA15<3><0><3><default>
+;dbi_te
+;spi1_wp         = port:PB3<3><0><3><default>
+
+[pwm0]
+pwm_used        = 0
+pwm_positive    = port:PA8<4><0><3><default>
+
+[pwm1]
+pwm_used        = 0
+pwm_positive    = port:PA9<4><0><3><default>
+
+[pwm2]
+pwm_used        = 1
+pwm_positive    = port:PB2<2><0><0><default>
+
+[pwm3]
+pwm_used        = 0
+pwm_positive    = port:PA11<4><0><0><default>
+
+[pwm4]
+pwm_used        = 0
+pwm_positive    = port:PA19<4><0><0><default>
+
+[pwm5]
+pwm_used        = 0
+pwm_positive    = port:PB05<6><0><0><default>
+
+[pwm6]
+pwm_used        = 0
+pwm_positive    = port:PA26<4><0><0><default>
+
+[pwm7]
+pwm_used        = 0
+pwm_positive    = port:PA00<4><0><0><default>
+
+;----------------------------------------------------------------------------------
+;[spi_board0] spi device configuration
+;modalias      = spi device name
+;max_speed_hz  = max transfer speed
+;----------------------------------------------------------------------------------
+;[spi_board0]
+;modalias        = "bf3901"
+;max_speed_hz    = 96000000
+;sensor_twi_id   = 1
+;sensor_twi_addr = 0x6e
+;sensor_spi_id   = 1
+;sensor_pwdn     = port:PA13<1><0><3><0>
+;sensor_irq      = port:PA20<6><1><3><0>
+
+;----------------------------------------------------------------------------------
+;lcd_fb0 configuration
+;
+; [st7789v3 参数]
+;  1. lcd_driver_name 改为 "st7789v3"
+;  2. lcd_x           改为 240
+;  3. lcd_y           改为 320
+;  4. lcd_data_speed  改为 48/64/96 MHz
+;  若使用的是 DBI
+;  1. lcd_if          改为 1
+;  2. lcd_dbi_if      改为 2(DBI)
+;  若使用的是 SPI
+;  1. lcd_if          改为 0
+;  2. lcd_spi_if      改为 0(SPI)
+;
+; [axs15231 参数]
+;  1. lcd_driver_name 改为 "axs15231"
+;  2. lcd_x           改为 320
+;  3. lcd_y           改为 480
+;  4. lcd_data_speed  改为 48/64/96 MHz
+;  若使用的是 DBI
+;  1. lcd_if          改为 1
+;  2. lcd_dbi_if      改为 2(DBI), 4(双线DBI)
+;  若使用的是 SPI
+;  1. lcd_if          改为 0
+;  2. lcd_spi_if      改为 0(SPI), 1(QSPI, 不支持64/96MHz)
+;
+; 注意: 1. 若使用 DBI 或 QSPI, 则要确保已经在 menuconfig 中打开对应的配置
+
+;----------------------------------------------------------------------------------
+
+[lcd_fb0]
+lcd_used            = 1
+;Lcd 屏模型名字，非必须，可以用于同个屏驱动中进一步区分不同屏 − 自定义，如spilcd
+lcd_model_name      = "spilcd"
+;Lcd 屏驱动的名字 (字符串) - 必须与屏驱动中strcut __lcd_panel变量的name成员一致
+lcd_driver_name     = "st7789v3"
+lcd_x               = 240
+lcd_y               = 320
+lcd_width           = 48
+lcd_height          = 65
+lcd_data_speed      = 96
+lcd_pwm_used        = 1
+lcd_pwm_ch          = 2
+lcd_pwm_freq        = 23000
+lcd_pwm_pol         = 1
+; 配置 lcd_if = 1 为 DBI 模式，双缓冲  − 0：spi 接口； − 1：dbi 接口  备注：如果设置了 dbi 接口，那么还需要进一步区分 dbi 接口，需要设置lcd_dbi_if
+lcd_if              = 1
+fb_buffer_num       = 2
+; 配置屏幕传输数据的像素格式，这里是 LCDFB_FORMAT_RGB_565
+lcd_pixel_fmt       = 0x0a
+; 配置 DBI 接口像素格式，这里是 RGB565
+; − 0：RGB111
+; − 1：RGB444
+; − 2：RGB565
+; − 3：RGB666
+; − 4：RGB888
+; 必须配合lcd_pixel_fmt的选择，比如说选 RGB565 时，lcd_pixel_fmt 也要选 565 格式
+lcd_dbi_fmt         = 2
+; 配置 DBI 时钟的行为模式，这里是自动停止模式。有数据就有时钟，没发数据就没有时钟
+lcd_dbi_clk_mode    = 1
+; 屏幕 TE 脚
+lcd_dbi_te          = 0
+;0(SPI), 1(QSPI, 不支持64/96MHz)
+lcd_spi_if          = 1
+; 配置屏幕 DBI 格式 
+; − 0：L3I1，3 线模式，读写同一根数据线；
+; − 1：L3I2，3 线模式，读写不同数据线；
+; − 2：L4I1，4 线模式，读写同一根数据线；
+; − 3：L4I2，4 线模式，读写不同数据线；
+; − 4：D2LI，2 Data Lane 模式，读数据同 L3I1；
+lcd_dbi_if          = 2
+; 输入图像数据 RGB 顺序识别设置，这里配置是 RGB 格式
+lcd_rgb_order       = 0
+; 设置屏的刷新率，单位Hz。当lcd_dbi_te使能时，这个值设置无效
+lcd_fps             = 60
+; 使用 SPI1 作为通讯接口
+lcd_spi_bus_num     = 1
+lcd_frm             = 1
+lcd_gamma_en        = 1
+lcd_backlight       = 255
+
+lcd_power_num       = 0
+lcd_gpio_regu_num   = 0
+lcd_bl_percent_num  = 100
+
+
+;bl
+;lcd_bl_en            = port:PA8<4><1><3><1>
+
+lcd_sof_te          = 1
+lcd_softe_tri       = 1
+lcd_softe_pin       = port:PB3<3><0><1><default>
+
+;lcd_spi_dc_pin      = port:PA15<3><0><3><default>
+
+;----------------------------------------------------------------------------------
+;disp init configuration
+;
+;disp_mode             (0:screen0<screen0,fb0>)
+;screenx_output_type   (0:none; 1:lcd; 3:hdmi;)
+;screenx_output_mode   (used for hdmi output, 0:480i 1:576i 2:480p 3:576p 4:720p50)
+;                      (5:720p60 6:1080i50 7:1080i60 8:1080p24 9:1080p50 10:1080p60)
+;fbx format            (4:RGB655 5:RGB565 6:RGB556 7:ARGB1555 8:RGBA5551 9:RGB888 10:ARGB8888 12:ARGB4444)
+;fbx pixel sequence    (0:ARGB 1:BGRA 2:ABGR 3:RGBA)
+;fb0_scaler_mode_enable(scaler mode enable, used FE)
+;fbx_width,fbx_height  (framebuffer horizontal/vertical pixels, fix to output resolution while equal 0)
+;lcdx_backlight        (lcd init backlight,the range:[0,256],default:197
+;lcdx_yy               (lcd init screen bright/contrast/saturation/hue, value:0~100, default:50/50/57/50)
+;lcd0_contrast         (LCD contrast, 0~100)
+;lcd0_saturation       (LCD saturation, 0~100)
+;lcd0_hue              (LCD hue, 0~100)
+;----------------------------------------------------------------------------------
+[disp]
+disp_init_enable         = 1
+disp_mode                = 0
+
+screen0_output_type      = 1
+screen0_output_mode      = 4
+
+screen0_output_format    = 1
+screen0_output_bits      = 0
+screen0_output_eotf      = 4
+screen0_output_cs        = 257
+screen0_output_dvi_hdmi  = 2
+screen0_output_range     = 2
+screen0_output_scan      = 0
+screen0_output_aspect_ratio = 8
+
+screen1_output_type      = 2
+screen1_output_mode      = 11
+screen1_output_format    = 1
+screen1_output_bits      = 0
+screen1_output_eotf      = 4
+screen1_output_cs        = 257
+screen1_output_dvi_hdmi  = 2
+screen1_output_range     = 2
+screen1_output_scan      = 0
+screen1_output_aspect_ratio = 8
+
+
+fb0_format               = 0
+fb0_width                = 0
+fb0_height               = 0
+
+fb1_format               = 0
+fb1_width                = 0
+fb1_height               = 0
+
+;----------------------------------------------------------------------------------
+;lcd0 configuration
+
+;lcd_if:               0:hv(sync+de); 1:8080; 2:ttl; 3:lvds; 4:dsi; 5:edp; 6:extend dsi
+;lcd_x:                lcd horizontal resolution
+;lcd_y:                lcd vertical resolution
+;lcd_width:            width of lcd in mm
+;lcd_height:           height of lcd in mm
+;lcd_dclk_freq:        in MHZ unit
+;lcd_pwm_freq:         in HZ unit
+;lcd_pwm_pol:          lcd backlight PWM polarity
+;lcd_pwm_max_limit     lcd backlight PWM max limit(<=255)
+;lcd_hbp:              hsync back porch
+;lcd_ht:               hsync total cycle
+;lcd_vbp:              vsync back porch
+;lcd_vt:               vysnc total cycle
+;lcd_hspw:             hsync plus width
+;lcd_vspw:             vysnc plus width
+;lcd_lvds_if:          0:single link;  1:dual link
+;lcd_lvds_colordepth:  0:8bit; 1:6bit
+;lcd_lvds_mode:        0:NS mode; 1:JEIDA mode
+;lcd_frm:              0:disable; 1:enable rgb666 dither; 2:enable rgb656 dither
+;lcd_io_phase:         0:noraml; 1:intert phase(0~3bit: vsync phase; 4~7bit:hsync phase;
+;                      8~11bit:dclk phase; 12~15bit:de phase)
+;lcd_gamma_en          lcd gamma correction enable
+;lcd_bright_curve_en   lcd bright curve correction enable
+;lcd_cmap_en           lcd color map function enable
+;deu_mode              0:smoll lcd screen; 1:large lcd screen(larger than 10inch)
+;lcdgamma4iep:         Smart Backlight parameter, lcd gamma vale * 10;
+;                      decrease it while lcd is not bright enough; increase while lcd is too bright
+;smart_color           90:normal lcd screen 65:retina lcd screen(9.7inch)
+;----------------------------------------------------------------------------------
+;[lcd0]
+;lcd_used            = 0
+;
+;lcd_driver_name     = "default_lcd"
+;lcd_backlight       = 150
+;lcd_if              = 0
+;lcd_x               = 800
+;lcd_y               = 480
+;lcd_width           = 150
+;lcd_height          = 94
+;lcd_rb_swap         = 0
+;lcd_dclk_freq       = 33
+;lcd_pwm_used        = 1
+;lcd_pwm_ch          = 6
+;lcd_pwm_freq        = 5000
+;lcd_pwm_pol         = 1
+;lcd_hbp             = 46
+;lcd_ht              = 1055
+;lcd_hspw            = 0
+;lcd_vbp             = 23
+;lcd_vt              = 525
+;lcd_vspw            = 0
+;lcd_lvds_if         = 0
+;lcd_lvds_colordepth = 1
+;lcd_lvds_mode       = 0
+;lcd_frm             = 0
+;lcd_io_phase        = 0x0000
+;lcd_gamma_en        = 0
+;lcd_bright_curve_en = 0
+;lcd_cmap_en         = 0
+;
+;deu_mode            = 0
+;lcdgamma4iep        = 22
+;smart_color         = 90
+;
+;lcd_gpio_0               = port:PA00<8><0><3><0>
+;lcd_gpio_1               = port:PA01<8><0><3><0>
+;lcd_gpio_2               = port:PA02<8><0><3><0>
+;lcd_gpio_3               = port:PA03<8><0><3><0>
+;lcd_gpio_4               = port:PA04<8><0><3><0>
+;lcd_gpio_5               = port:PA05<8><0><3><0>
+;
+;lcd_gpio_6               = port:PA11<8><0><3><0>
+;lcd_gpio_7               = port:PA10<8><0><3><0>
+;lcd_gpio_8               = port:PA08<8><0><3><0>
+;lcd_gpio_9               = port:PA07<8><0><3><0>
+;lcd_gpio_10              = port:PA06<8><0><3><0>
+;lcd_gpio_11              = port:PA09<8><0><3><0>
+;
+;lcd_gpio_12              = port:PA12<8><0><3><0>
+;lcd_gpio_13              = port:PA13<8><0><3><0>
+;lcd_gpio_14              = port:PA14<8><0><3><0>
+;lcd_gpio_15              = port:PA15<8><0><3><0>
+;lcd_gpio_16              = port:PB03<8><0><3><0>
+;lcd_gpio_17              = port:PB02<8><0><3><0>
+;
+;lcd_gpio_18              = port:PA18<8><0><3><0>
+;lcd_gpio_19              = port:PA19<8><0><3><0>
+;lcd_gpio_20              = port:PA20<8><0><3><0>
+;lcd_gpio_21              = port:PA21<8><0><3><0>
+
+;--------------------------------------------------
+;MCU LCD
+;--------------------------------------------------
+[lcd0]
+lcd_used            = 0
+
+lcd_driver_name     = "st7796s_cpu"
+lcd_backlight       = 150
+lcd_if              = 1
+lcd_x               = 320
+lcd_y               = 480
+lcd_width           = 108
+lcd_height          = 64
+lcd_rb_swap         = 0
+lcd_pwm_used        = 1
+lcd_pwm_ch          = 4
+lcd_pwm_freq        = 5000
+lcd_pwm_pol         = 1
+lcd_cpu_mode = 0
+lcd_cpu_te = 0
+
+;st7796
+;lcd_cpu_if = 14
+;lcd_dclk_freq = 24
+;lcd_hbp             = 100
+;lcd_ht              = 778
+;lcd_hspw            = 50
+;lcd_vbp             = 8
+;lcd_vt              = 496
+;lcd_vspw            = 4
+
+lcd_cpu_if = 12
+lcd_dclk_freq = 32
+lcd_hbp             = 75
+lcd_ht              = 1060
+lcd_hspw            = 40
+lcd_vbp             = 6
+lcd_vt              = 490
+lcd_vspw            = 2
+
+lcd_lvds_if         = 0
+lcd_lvds_colordepth = 1
+lcd_lvds_mode       = 0
+lcd_frm             = 0
+lcd_io_phase        = 0x0000
+lcd_gamma_en        = 0
+lcd_bright_curve_en = 0
+lcd_cmap_en         = 0
+
+deu_mode            = 0
+lcdgamma4iep        = 22
+smart_color         = 90
+
+;lcd_gpio_0               = port:PB3<1><0><3><0>
+lcd_gpio_1               = port:PA12<1><0><3><0>
+;lcd_gpio_2               = port:PA1<8><0><3><0>
+;lcd_gpio_3               = port:PA2<8><0><3><0>
+;lcd_gpio_4               = port:PA3<8><0><3><0>
+;lcd_gpio_5               = port:PA4<8><0><3><0>
+;lcd_gpio_6               = port:PA5<8><0><3><0>
+lcd_gpio_7               = port:PA8<8><0><3><0>
+lcd_gpio_8               = port:PA10<8><0><3><0>
+lcd_gpio_9               = port:PA11<8><0><3><0>
+lcd_gpio_10              = port:PA6<7><0><3><0>
+lcd_gpio_11              = port:PA7<7><0><3><0>
+lcd_gpio_12              = port:PA9<7><0><3><0>
+
+;boot0 debug_mode
+;when debug_mode is 0, boot0 doesn't print debug message, otherwise print debug message
+[platform]
+debug_mode = 1
+
+;boot0 use. PA4 and PA6 test on ver board is ok
+[uart_para]
+uart_debug_port = 0
+uart_debug_tx   = port:PA9<2><1><default><default>
+uart_debug_rx   = port:PA8<2><1><default><default>
+;uart_debug_tx   = port:PB0<3><1><default><default>
+;uart_debug_rx   = port:PB1<3><1><default><default>
+;uart_debug_rx   = port:PA4<4><1><default><default>
+;uart_debug_tx   = port:PA6<4><1><default><default>
+
+[audio_hw_rv]
+pcm_pb_rate 		= 48000
+pcm_pb_channels 	= 2
+pcm_pb_period_size  = 960
+pcm_pb_periods  	= 8
+pcm_pb_card  		= "hw:audiocodecdac"
+;pcm_pb_card  		= "hw:snddaudio0"
+pcm_pb_card_num  	= 0
+pcm_pb_device_num  	= 0
+
+pcm_cap_rate 		= 16000
+pcm_cap_channels 	= 3
+pcm_cap_card  		= "hw:audiocodecadc"
+pcm_cap_card_num  	= 1
+pcm_cap_device_num  = 0
+
+[audio_hw_dsp]
+pcm_cap_rate 		= 16000
+pcm_cap_channels 	= 3
+pcm_cap_bits  		= 16
+pcm_cap_period_size  	= 320
+pcm_cap_periods  	= 4
+pcm_cap_silence_timems  = 300
+pcm_cap_card  		= "hw:audiocodecadc"
+pcm_cap_card_num  	= 0
+pcm_cap_device_num  = 0
+
+[gpio_irq_map]
+gpio_1_1 = 0xAAAAAAAA
+gpio_1_2 = 0xAAAAAAAA
+gpio_2_1 = 0xAAAAAAAA
+gpio_2_2 = 0xAAAAAAAA
+gpio_3_1 = 0xAAAAAAAA
+gpio_3_2 = 0xAAAAAAAA
+
+[touchscreen]
+tp_used                = 1
+tp_driver_name         = "axs5106"
+tp_int                 = port:PA10<14><1><default><default>
+;tp_reset               = port:PB3<1><0><default><default>
+;tp_revert_mode; 0: default; 1: revert x; 2: revery y
+tp_revert_mode         = 0
+;tp_exchange_flag; 0: default; 1:exchange x y
+tp_exchange_flag       = 0
+tp_max_x               = 320
+tp_max_y               = 240
+;tp_addr ;0x5D or 0x14
+tp_addr                = 0x63
+tp_twi_id              = 0
+
+;----------------------------------------------------------------------------------
+;wakeup-source configuration
+;wakesrc name	= <val>
+;val: Which processor is the wake source located on.
+;	0x1 - ARM, 0x2 - DSP, 0x4 - RISCV
+;----------------------------------------------------------------------------------
+[wakeup-source]
+lpuart		= 0x1
+rtc_alarm	= 0x4
+gpio		= 0x1
+gpadc		= 0x4
+mad-lpsd	= 0x2
+btc_slptmr	= 0x1
+wlan		= 0x1
+wupio		= 0x4
+
+;----------------------------------------------------------------------------------
+;thermal configuration
+;----------------------------------------------------------------------------------
+[thermal]
+critical_temperature = 105000
+
+;----------------------------------------------------------------------------------
+;aw9523 configuration gpio expansion
+;----------------------------------------------------------------------------------
+;[aw9523]
+;aw9523_twi_id   = 1

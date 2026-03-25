@@ -1,0 +1,59 @@
+!<thin>
+//                                              1188      `
+driver_v2/adf/sunxi_adf_core.o/
+driver_v2/adf/sunxi_adf_component.o/
+driver_v2/adf/sunxi_adf_dai.o/
+driver_v2/adf/sunxi_adf_pcm.o/
+driver_v2/core/sunxi_sound_device.o/
+driver_v2/core/sunxi_sound_core.o/
+driver_v2/core/sunxi_sound_io.o/
+driver_v2/core/sunxi_sound_control.o/
+driver_v2/core/sunxi_sound_pcm_lib.o/
+driver_v2/core/sunxi_sound_pcm_dma.o/
+driver_v2/core/sunxi_sound_pcm.o/
+driver_v2/core/sunxi_sound_pcm_misc.o/
+driver_v2/codecs/sun20iw2-codec-dac.o/
+driver_v2/codecs/dummy_codec.o/
+driver_v2/platform/sunxi-aaudio.o/
+driver_v2/platform/sunxi-pcm.o/
+driver_v2/platform/sunxi_machine.o/
+driver_v2/component/aw-tiny-sound-lib/sunxi_tiny_sound_mixer.o/
+driver_v2/component/aw-tiny-sound-lib/sunxi_tiny_sound_pcm.o/
+driver_v2/component/aw-tiny-sound-lib/utils/tt-aw-tiny-sound-lib.o/
+driver_v2/component/aw-tiny-sound-utils/common.o/
+driver_v2/component/aw-tiny-sound-utils/wav_parser.o/
+driver_v2/component/aw-tiny-sound-utils/card.o/
+driver_v2/component/aw-tiny-sound-utils/aw_tinyplay.o/
+driver_v2/component/aw-tiny-sound-utils/aw_tinycap.o/
+driver_v2/component/aw-tiny-sound-utils/aw_tinymixer.o/
+driver_v2/common/sunxi_sound_common.o/
+driver_v2/common/sunxi_sound_alg_cfg.o/
+
+/0              0           0     0     644     297976    `
+/32             0           0     0     644     138200    `
+/69            /0           0     0     644     126600    `
+/100           /0           0     0     644     191160    `
+/131            0           0     0     644     189624    `
+/168            0           0     0     644     115432    `
+/203            0           0     0     644     63392     `
+/236            0           0     0     644     233376    `
+/274            0           0     0     644     204496    `
+/312            0           0     0     644     125448    `
+/350            0           0     0     644     441440    `
+/384            0           0     0     644     48592     `
+/423            0           0     0     644     314160    `
+/462            0           0     0     644     59904     `
+/494            0           0     0     644     109384    `
+/529            0           0     0     644     135888    `
+/561           /0           0     0     644     307248    `
+/597            0           0     0     644     153120    `
+/661            0           0     0     644     417992    `
+/723            0           0     0     644     337136    `
+/791            0           0     0     644     89744     `
+/841            0           0     0     644     42440     `
+/895            0           0     0     644     48368     `
+/943            0           0     0     644     145936    `
+/998            0           0     0     644     137696    `
+/1052           0           0     0     644     94792     `
+/1108           0           0     0     644     36360     `
+/1147           0           0     0     644     71600     `

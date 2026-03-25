@@ -1,0 +1,25 @@
+menuconfig COMPONENTS_WEBRTC
+	bool "webrtc"
+	default n
+
+if COMPONENTS_WEBRTC
+
+config COMPONENTS_WEBRTC_AEC
+	bool "aec"
+	default n
+
+config COMPONENTS_WEBRTC_NS
+	bool "ns"
+	default n
+
+config COMPONENTS_WEBRTC_VAD
+	bool "vad"
+	default n
+
+config COMPONENTS_WEBRTC_AGC
+	bool "agc"
+	default n
+
+endif
+
+

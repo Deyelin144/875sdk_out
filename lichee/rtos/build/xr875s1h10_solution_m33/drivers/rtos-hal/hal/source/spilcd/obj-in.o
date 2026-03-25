@@ -1,0 +1,21 @@
+!<thin>
+//                                              226       `
+lcd_fb/dev_lcd_fb.o/
+lcd_fb/disp_lcd.o/
+lcd_fb/lcd_fb_intf.o/
+lcd_fb/disp_display.o/
+lcd_fb/panels/panels.o/
+lcd_fb/panels/lcd_source.o/
+lcd_fb/panels/lcd_common_func.o/
+lcd_fb/panels/lcd_st7789v3.o/
+soc/disp_board_config.o/
+
+/0              0           0     0     644     31012     `
+/21             0           0     0     644     161284    `
+/40             0           0     0     644     42656     `
+/62             0           0     0     644     55552     `
+/85             0           0     0     644     18148     `
+/109            0           0     0     644     27884     `
+/137            0           0     0     644     19204     `
+/170            0           0     0     644     30456     `
+/200            0           0     0     644     16440     `

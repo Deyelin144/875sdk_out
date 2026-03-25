@@ -1,0 +1,19 @@
+menu "SOUND Devices V2"
+
+config DRIVERS_SOUND_V2
+	bool "Sound card support"
+	depends on AW_SOUND_DRIVER_V2
+	default y
+
+if DRIVERS_SOUND_V2
+
+source "drivers/rtos-hal/hal/source/sound/driver_v2/adf/Kconfig"
+source "drivers/rtos-hal/hal/source/sound/driver_v2/core/Kconfig"
+source "drivers/rtos-hal/hal/source/sound/driver_v2/component/Kconfig"
+source "drivers/rtos-hal/hal/source/sound/driver_v2/codecs/Kconfig"
+source "drivers/rtos-hal/hal/source/sound/driver_v2/common/Kconfig"
+source "drivers/rtos-hal/hal/source/sound/driver_v2/platform/Kconfig"
+
+endif # DRIVERS_SOUND_V2
+
+endmenu

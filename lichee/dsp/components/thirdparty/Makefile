@@ -1,0 +1,5 @@
+obj-$(CONFIG_COMPONENTS_FREERTOS) += freertos/
+obj-$(CONFIG_COMPONENTS_XTENSA) += xtensa/
+obj-$(CONFIG_COMPONENTS_MSGBOX_DEMO) += msgbox_demo/
+obj-$(CONFIG_COMPONENTS_COREMARK) += coremark/
+obj-$(CONFIG_COMPONENTS_AISPEECH_SSPE) += aispeech_sspe/

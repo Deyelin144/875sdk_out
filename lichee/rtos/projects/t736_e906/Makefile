@@ -1,0 +1,1 @@
+obj-$(CONFIG_PROJECT_T736_E906_MINI) += mini/

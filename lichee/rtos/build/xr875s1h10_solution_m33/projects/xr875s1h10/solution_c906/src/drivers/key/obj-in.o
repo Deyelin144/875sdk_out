@@ -1,0 +1,12 @@
+!<thin>
+//                                              74        `
+dev_key.o/
+dev_touch_area.o/
+drv_key_adc.o/
+drv_key_iface.o/
+mfbd/mfbd.o/
+/0              0           0     0     644     26104     `
+/11             0           0     0     644     39632     `
+/29             0           0     0     644     12884     `
+/44            /0           0     0     644     20072     `
+/61             0           0     0     644     13228     `

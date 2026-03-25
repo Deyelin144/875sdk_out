@@ -1,0 +1,26 @@
+!<thin>
+//                                              334       `
+src/api_action/api_action.o/
+src/os/freertos/mutex.o/
+src/os/freertos/queue.o/
+src/os/freertos/sem.o/
+src/os/freertos/thread.o/
+src/os/freertos/sync_notify.o/
+src/os/freertos/ring_buff.o/
+src/tracing/log_backend_hub.o/
+src/tracing/log_queue_block.o/
+src/tracing/log_worker.o/
+src/tracing/log_core.o/
+src/tracing/log_parse_cmd_rtos.o/
+/0              0           0     0     644     78048     `
+/29             0           0     0     644     38704     `
+/54             0           0     0     644     34504     `
+/79             0           0     0     644     27744     `
+/102            0           0     0     644     29168     `
+/128            0           0     0     644     32840     `
+/159            0           0     0     644     107984    `
+/188            0           0     0     644     49032     `
+/219            0           0     0     644     51408     `
+/250            0           0     0     644     35040     `
+/276            0           0     0     644     41512     `
+/300            0           0     0     644     24504     `

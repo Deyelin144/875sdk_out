@@ -1,0 +1,23 @@
+!<thin>
+//                                              286       `
+cdx_interface/cdx_audio_decoder.o/
+cdx_interface/cdx_customer_stream.o/
+cdx_interface/cdx_audio_rendor.o/
+cdx_interface/cdx_video_rendor.o/
+video_core/video_fsm.o/
+video_core/video_message.o/
+video_core/video_stack.o/
+video_core/aac_packet.o/
+video_core/video_command.o/
+video_demo.o/
+
+/0              0           0     0     644     97672     `
+/35             0           0     0     644     101008    `
+/72             0           0     0     644     37432     `
+/106            0           0     0     644     111168    `
+/140            0           0     0     644     329640    `
+/164           /0           0     0     644     51440     `
+/192            0           0     0     644     83208     `
+/218            0           0     0     644     43808     `
+/243           /0           0     0     644     42552     `
+/271            0           0     0     644     79304     `

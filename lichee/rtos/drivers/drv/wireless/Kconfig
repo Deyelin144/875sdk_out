@@ -1,0 +1,9 @@
+menuconfig DRIVERS_WIRELESS
+	default n
+	bool "wireless devices"
+
+if DRIVERS_WIRELESS
+
+source drivers/drv/wireless/xradio/Kconfig
+
+endif #DRIVERS_WIRELESS

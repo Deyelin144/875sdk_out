@@ -1,0 +1,7 @@
+if PROJECT_R528S3_EVB3_NAND_DEMO
+
+config PROJECT_DEMO_TEST_QUEUE
+    bool "test freertos queue send and recv function"
+    default n
+
+endif

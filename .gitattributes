@@ -1,0 +1,9 @@
+lichee/brandy-2.0/tools/toolchain/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi.tar.xz filter=lfs diff=lfs merge=lfs -text
+lichee/brandy-2.0/tools/toolchain/riscv64-glibc-gcc-thead_20200702.tar.xz filter=lfs diff=lfs merge=lfs -text
+lichee/brandy-2.0/tools/toolchain/riscv64-linux-x86_64-20200528.tar.xz filter=lfs diff=lfs merge=lfs -text
+lichee/rtos/projects/xr875s1h10/solution_c906/src/lib/libgulitesf.a filter=lfs diff=lfs merge=lfs -text
+lichee/rtos/tools/Xuantie-900-gcc-elf-newlib-mingw-V2.6.1-20220906.tar.gz filter=lfs diff=lfs merge=lfs -text
+lichee/rtos/tools/gcc-arm-melis-eabi-8-2019-q3-update-linux.tar.bz2 filter=lfs diff=lfs merge=lfs -text
+lichee/rtos/tools/gcc-arm-none-eabi-8-2019-q3-update-linux.tar.bz2 filter=lfs diff=lfs merge=lfs -text
+lichee/rtos/tools/gcc-arm-none-eabi-8-2019-q3-update-win32.zip filter=lfs diff=lfs merge=lfs -text
+lichee/rtos/tools/riscv64-elf-x86_64-20201104.tar.gz filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,20 @@
+!<thin>
+//                                              178       `
+newlibc/syscalls.o/
+newlibc/time.o/
+newlibc/ctype.o/
+newlibc/wrap_memcpy-armv7m-ldm.o/
+newlibc/wrap_memmove.o/
+devfs/devfs.o/
+blkpart/blkpart.o/
+blkpart/gpt_part.o/
+flag/flag.o/
+/0              0           0     0     644     40560     `
+/20             0           0     0     644     12496     `
+/36             0           0     0     644     7288      `
+/53             0           0     0     644     1872      `
+/87             0           0     0     644     12528     `
+/111            0           0     0     644     43808     `
+/126            0           0     0     644     53100     `
+/145            0           0     0     644     18068     `
+/165            0           0     0     644     38388     `

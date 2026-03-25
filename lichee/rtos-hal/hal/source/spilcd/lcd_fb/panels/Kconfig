@@ -1,0 +1,47 @@
+config LCD_SUPPORT_KLD2844B
+	bool "LCD support kld2844B panel"
+	default n
+	---help---
+		If you want to support kld2844b panel for display driver, select it.
+
+config LCD_SUPPORT_KLD35512
+	bool "LCD support kld35512 panel"
+    default n
+    ---help---
+		If you want to support kld35512 panel for display driver, select it.
+
+config LCD_SUPPORT_KLD39501
+	bool "LCD support kld39501 panel"
+	default n
+	---help---
+		If you want to support kld39501 panel for display driver, select it.
+
+config LCD_SUPPORT_NV3029S
+	bool "LCD support nv3029s panel"
+	default n
+	---help---
+		If you want to support nv3029s panel for display driver, select it.
+
+config LCD_SUPPORT_JLT35031C
+	bool "LCD support JLT35031C panel"
+	default n
+	---help---
+		If you want to support JLT35031C panel for display driver, select it.
+
+config LCD_SUPPORT_ST7796_SPI
+	bool "LCD support ST7796_SPI panel"
+	default n
+	---help---
+		If you want to support ST7796_SPI panel for display driver, select it.
+
+config LCD_SUPPORT_ST7789V3
+	bool "LCD support st7789v3 panel"
+	default n
+	---help---
+		If you want to support st7789v3 panel for display driver, select it.
+
+config LCD_SUPPORT_AXS15231
+	bool "LCD support axs15231 panel"
+	default n
+	---help---
+		If you want to support axs15231 panel for display driver, select it.

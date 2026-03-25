@@ -1,0 +1,91 @@
+#
+# Video configuration for sunxi platform
+#
+
+menu "Video support for sunxi"
+
+config DISP2_SUNXI
+	tristate "DISP Driver Support(sunxi-disp2)"
+	default n
+	---help---
+	  Display driver for sunxi based boards.
+
+choice
+    prompt "DISP2 Framebuffer rotation support"
+	default SUNXI_DISP2_FB_DISABLE_ROTATE
+
+config SUNXI_DISP2_FB_DISABLE_ROTATE
+	bool "Disable rotation"
+	depends on (DISP2_SUNXI)
+	---help---
+	  Do not use framebuffer rotation
+
+config SUNXI_DISP2_FB_ROTATION_SUPPORT
+	bool "Software rotation support"
+	depends on (DISP2_SUNXI)
+	---help---
+	  Framebuffer software rotation on the top of disp2.
+
+config SUNXI_DISP2_FB_HW_ROTATION_SUPPORT
+	bool "Hardware(G2D) rotation support"
+	depends on (DISP2_SUNXI && SUNXI_G2D)
+	---help---
+	  Framebuffer hardware(G2D) rotation on the top of disp2.
+
+endchoice
+
+config HAL_TEST_DISP
+	bool "DISP2 hal APIs test"
+	depends on (DISP2_SUNXI)
+	default n
+	---help---
+	  Enable disp2 hal test command.
+config FPGA_V7_PLATFORM
+	bool "FPGA"
+	depends on (DISP2_SUNXI)
+	default n
+	---help---
+	  Enable fpga
+config SUNXI_DISP2_FB_DECOMPRESS_LZMA
+	bool "Framebuffer show bootlogo from lzma file"
+	depends on (DISP2_SUNXI)
+	default n
+	select DECOMPRESS_LZMA
+	---help---
+	  Show bootlogo from lzma file.
+
+config VDPO_DISP2_SUNXI
+	 tristate "VDPO Driver Support(sunxi-disp2)"
+	 depends on (DISP2_SUNXI)
+	 default n
+	 ---help---
+	  VDPO driver for sunxi based boards.
+
+config DISP2_SUNXI_BOOT_COLORBAR
+	bool "boot colorbar Support for disp driver(sunxi-disp2)"
+	depends on DISP2_SUNXI
+	default n
+	---help---
+	  If true, the framebuffer will be filled by specified data
+	  to display vertical colorbar.
+
+menu "LCD panels select"
+	depends on DISP2_SUNXI
+
+source "drivers/rtos-hal/hal/source/disp2/disp/lcd/Kconfig"
+endmenu
+
+
+menu "Display engine feature select"
+	depends on DISP2_SUNXI
+
+source "drivers/rtos-hal/hal/source/disp2/disp/Kconfig"
+endmenu
+
+menu "Soc and board select"
+	depends on DISP2_SUNXI
+
+source "drivers/rtos-hal/hal/source/disp2/soc/Kconfig"
+endmenu
+
+endmenu

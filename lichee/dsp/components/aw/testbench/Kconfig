@@ -1,0 +1,33 @@
+config AW_TEST_MEM
+	bool "Memory test"
+	default n
+
+config AW_TEST_CACHE
+	bool "Cache test"
+	default n
+
+config AW_TEST_TIMER
+	bool "Timer test"
+	default n
+
+menu "dump reg option features"
+config ADJUST_REG
+	bool "adujst and dump some reg when suspend."
+	default n
+
+config CLOSE_SUART_PIN
+	bool "close suart pins(PL8/PL9) when suspend."
+	default n
+
+endmenu
+
+config AW_HARDWARE_PERF
+	bool "HARDWARE performance"
+	select DRIVERS_TIMER
+	default n
+
+menu "Performance Testing"
+source "components/aw/testbench/performance/Kconfig"
+endmenu
+
+source "components/aw/testbench/vfpu_test/Kconfig"

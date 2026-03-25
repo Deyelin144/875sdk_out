@@ -1,0 +1,27 @@
+choice
+	prompt "Sun20iw2 Driver Controller"
+	default DRIVER_SUN20IW2_BT_CONTROLLER
+
+config DRIVER_SUN20IW2_BT_CONTROLLER
+	bool "Sun20iw2 BT Controller"
+	help
+	  If this option is enabled, Sun20iw2 BT Controller is used.
+
+config DRIVER_SUN20IW2_BT_CONTROLLER_BLE_ONLY
+	bool "Sun20iw2 BLE Only Controller"
+	help
+	  If this option is enabled, Sun20iw2 BLE only Controller is used.
+
+config DRIVER_SUN20IW2_BT_CONTROLLER_BR_ONLY
+	bool "Sun20iw2 BR/EDR Only Controller"
+	help
+	  If this option is enabled, Sun20iw2 BR/EDR only Controller is used.
+
+endchoice
+
+config BT_HOST_RUN_IN_M33
+	bool "host and controller all run in m33"
+	default n
+	depends on ARCH_ARM_CORTEX_M33
+	help
+	  If host and controller all run in m33, this option shold enable

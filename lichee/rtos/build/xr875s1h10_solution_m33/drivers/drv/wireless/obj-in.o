@@ -1,0 +1,44 @@
+!<thin>
+//                                              714       `
+xradio/driver/port/xr_drv_mem.o/
+xradio/driver/port/ffs.o/
+xradio/driver/port/workqueue.o/
+xradio/driver/port/wlan_info.o/
+xradio/ethernetif.o/
+xradio/adapter/cmd_wlan/utils.o/
+xradio/adapter/cmd_wlan/command.o/
+xradio/adapter/cmd_wlan/cmd_ifconfig.o/
+xradio/adapter/cmd_wlan/cmd_wlan.o/
+xradio/adapter/cmd_wlan/cmd_lmac.o/
+xradio/adapter/cmd_wlan/cmd_wlancmd.o/
+xradio/adapter/net_ctrl/net_ctrl.o/
+xradio/adapter/net_ctrl/net_init.o/
+xradio/adapter/net_ctrl/net_sys.o/
+xradio/adapter/net_ctrl/sc_assistant_port.o/
+xradio/adapter/sys_monitor/sys_monitor.o/
+xradio/adapter/wlan_user/wlan_user.o/
+xradio/os/sys/mbuf/mbuf_0.o/
+xradio/driver/port/gpio.o/
+xradio/driver/port/wlan_file.o/
+xradio/driver/port/xr_efuse.o/
+/0              0           0     0     644     8404      `
+/33             0           0     0     644     8900      `
+/59             0           0     0     644     32904     `
+/91             0           0     0     644     9732      `
+/123            0           0     0     644     37004     `
+/144            0           0     0     644     7312      `
+/177            0           0     0     644     12520     `
+/212            0           0     0     644     14312     `
+/252            0           0     0     644     75412     `
+/288            0           0     0     644     9808      `
+/324            0           0     0     644     170712    `
+/363            0           0     0     644     61260     `
+/399            0           0     0     644     19356     `
+/435            0           0     0     644     24528     `
+/470            0           0     0     644     26616     `
+/515            0           0     0     644     10828     `
+/557            0           0     0     644     20576     `
+/595            0           0     0     644     35120     `
+/624            0           0     0     644     13604     `
+/651            0           0     0     644     14880     `
+/683            0           0     0     644     8296      `

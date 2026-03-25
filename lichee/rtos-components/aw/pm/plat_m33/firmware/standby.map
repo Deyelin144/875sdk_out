@@ -1,0 +1,1127 @@
+Archive member included to satisfy reference by file (symbol)
+
+driver/hpsram/libhpsram.a(hpsram.o)
+                              driver/driver_hpsram.o (hpsram_standby2_enter)
+driver/lpsram/liblpsram.a(psram_core.o)
+                              driver/driver_lpsram.o (psram_suspend)
+driver/lpsram/liblpsram.a(psram_opi32.o)
+                              driver/lpsram/liblpsram.a(psram_core.o) (psram_aps32_init)
+driver/lpsram/liblpsram.a(psram_opi64.o)
+                              driver/lpsram/liblpsram.a(psram_core.o) (psram_aps64_init)
+driver/lpsram/liblpsram.a(hal_psramctrl.o)
+                              driver/lpsram/liblpsram.a(psram_core.o) (HAL_PsramCtrl_ConfigCCMU)
+
+Allocating common symbols
+Common symbol       size              file
+
+scb_bak             0x50              arch/standby_scb.o
+backup              0x8               main.o
+lpsram_resp         0x1               lib/head.o
+lpsram_buff         0x1               lib/head.o
+cpu_systick_context
+                    0x8               driver/systick.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ram              0x0000000004010000 0x0000000000010000
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+
+.paras          0x0000000004010000      0x1d0
+                0x0000000004010000                _standby_paras_start = .
+ *(.standby_head)
+ .standby_head  0x0000000004010000      0x1c8 lib/head.o
+                0x0000000004010000                g_standby_head
+                0x00000000040101d0                . = ALIGN (0x10)
+ *fill*         0x00000000040101c8        0x8 
+                0x00000000040101d0                _standby_paras_end = .
+                0x00000000040101d0                . = ALIGN (0x8)
+
+.text           0x00000000040101d0     0x21b0
+                0x00000000040101d0                _standby_code_start = .
+ main.o(.text)
+ .text          0x00000000040101d0       0x50 main.o
+                0x00000000040101d0                standby_main
+ *(.text)
+ .text          0x0000000004010220       0x30 lib/delay.o
+                0x0000000004010220                udelay
+                0x0000000004010228                mdelay
+ .text          0x0000000004010250       0xa8 lib/dwt_delay.o
+                0x0000000004010250                hal_dwt_tick_init
+                0x0000000004010280                hal_dwt_tick_read
+                0x000000000401028c                hal_dwt_delay
+ .text          0x00000000040102f8      0x418 lib/enter.o
+                0x00000000040102f8                suspend_moment_record
+                0x0000000004010310                resume_moment_record
+                0x0000000004010328                standby_enter
+ .text          0x0000000004010710        0x0 lib/head.o
+ .text          0x0000000004010710      0x140 lib/wakeup.o
+                0x0000000004010710                wakeup_check_callback
+                0x0000000004010714                enable_wuptimer
+                0x000000000401076c                disable_wuptimer
+                0x000000000401079c                pm_gettime_ns
+                0x00000000040107f0                pm_wdt_restart
+                0x0000000004010848                pm_wdt_stop
+                0x000000000401084c                pm_wdt_start
+ .text          0x0000000004010850       0x70 driver/driver_hpsram.o
+                0x0000000004010850                hpsram_enter_retention
+                0x000000000401085c                hpsram_exit_retention
+                0x000000000401086c                hpsram_crc
+                0x000000000401088c                hpsram_crc_save
+                0x00000000040108b4                hpsram_is_running
+ .text          0x00000000040108c0       0x7c driver/driver_lpsram.o
+                0x00000000040108c0                lpsram_enter_retention
+                0x00000000040108cc                lpsram_exit_retention
+                0x00000000040108ec                lpsram_crc
+                0x0000000004010908                lpsram_crc_save
+                0x0000000004010930                lpsram_is_running
+ .text          0x000000000401093c      0x774 driver/pmu.o
+                0x000000000401093c                HAL_PMU_GetDCXOStableRefTime
+                0x000000000401094c                HAL_PMU_SetDCXOStableRefTime
+                0x0000000004010968                HAL_PMU_GetDPLLStableRefTime
+                0x0000000004010974                HAL_PMU_SetDPLLStableRefTime
+                0x0000000004010988                HAL_PMU_GetLDOSettlingHFclkTime
+                0x0000000004010994                HAL_PMU_SetLDOSettlingHFclkTime
+                0x00000000040109a8                HAL_PMU_GetRFIPLDODIGStableRefTime
+                0x00000000040109b8                HAL_PMU_SetRFIPLDODIGStableRefTime
+                0x00000000040109d0                HAL_PMU_GetLDOSettlingLFclkTime
+                0x00000000040109dc                HAL_PMU_SetLDOSettlingLFclkTime
+                0x00000000040109f0                HAL_PMU_GetGigitalResetupRefTime
+                0x0000000004010a00                HAL_PMU_SetGigitalResetupRefTime
+                0x0000000004010a24                HAL_PMU_GetGigitalMTcmosSwSettlingTime
+                0x0000000004010a34                HAL_PMU_SetGigitalMTcmosSwSettlingTime
+                0x0000000004010a50                HAL_PMU_GetBandgapLDOStableRefTime
+                0x0000000004010a5c                HAL_PMU_SetBandgapLDOStableRefTime
+                0x0000000004010a70                HAL_PMU_GetLDOToPWMModeStableRefTime
+                0x0000000004010a7c                HAL_PMU_SetLDOToPWMModeStableRefTime
+                0x0000000004010a90                HAL_PMU_GetOtherWorkSwitchStableRefTime
+                0x0000000004010aa0                HAL_PMU_SetOtherWorkSwitchStableRefTime
+                0x0000000004010abc                HAL_PMU_SetDSPWakeupActive
+                0x0000000004010adc                HAL_PMU_SetRVWakeupActive
+                0x0000000004010afc                HAL_PMU_SetLowPowerMode
+                0x0000000004010b1c                HAL_PMU_GetLowPowerMode
+                0x0000000004010b2c                HAL_PMU_IsDSPSleepStatus
+                0x0000000004010b3c                HAL_PMU_IsDSPAliveStatus
+                0x0000000004010b4c                HAL_PMU_IsRVSleepStatus
+                0x0000000004010b5c                HAL_PMU_IsRVAliveStatus
+                0x0000000004010b6c                HAL_PMU_IsAPPSleepStatus
+                0x0000000004010b7c                HAL_PMU_IsAPPDeepSleepStatus
+                0x0000000004010b8c                HAL_PMU_IsAPPAliveStatus
+                0x0000000004010b9c                HAL_PMU_IsWLANSleepStatus
+                0x0000000004010bac                HAL_PMU_IsWLANStandbyStatus
+                0x0000000004010bbc                HAL_PMU_IsWLANAliveStatus
+                0x0000000004010bcc                HAL_PMU_IsWakeupTimerEnabled
+                0x0000000004010bdc                HAL_PMU_WakeupTimerEnable
+                0x0000000004010bf0                HAL_PMU_WakeupTimerDisable
+                0x0000000004010c04                HAL_PMU_WakeupTimerGetCurrentValue
+                0x0000000004010c14                HAL_PMU_WakeupTimerIsPending
+                0x0000000004010c24                HAL_PMU_WakeupTimerClearPending
+                0x0000000004010c38                HAL_PMU_SetWakeupTimerValue
+                0x0000000004010c54                HAL_PMU_GetWakeupTimerValue
+                0x0000000004010c64                HAL_PMU_WakeupIOEnable
+                0x0000000004010c78                HAL_PMU_WakeupIODisable
+                0x0000000004010c8c                HAL_PMU_EnableWakeupIOx
+                0x0000000004010cbc                HAL_PMU_WakeupIOSetRisingEvent
+                0x0000000004010cd0                HAL_PMU_WakeupIOSetFallingEvent
+                0x0000000004010ce4                HAL_PMU_WakeupIOGetEventStatus
+                0x0000000004010cf4                HAL_PMU_WakeupIOClearEventStatus
+                0x0000000004010d0c                HAL_PMU_WakeupIOGetEventDetected
+                0x0000000004010d20                HAL_PMU_WakeupIOClearEventDetected
+                0x0000000004010d34                HAL_PMU_WakeupIOEnableCfgHold
+                0x0000000004010d48                HAL_PMU_WakeupIODisableCfgHold
+                0x0000000004010d5c                HAL_PMU_WakeupIOEnableGlobal
+                0x0000000004010d70                HAL_PMU_WakeupIODisableGlobal
+                0x0000000004010d84                HAL_PMU_SetWakeupIOxDebSrc
+                0x0000000004010dbc                HAL_PMU_SetWakeupDebClk0
+                0x0000000004010dd4                HAL_PMU_SetWakeupDebClk1
+                0x0000000004010dec                HAL_PMU_SetWakeupIOxDebounce
+                0x0000000004010e28                HAL_PMU_WakeupIOxIndex2Mask
+                0x0000000004010e38                HAL_PMU_WakeupIOxMask2Index
+                0x0000000004010e98                HAL_PMU_SetDDRPhyPochEnable
+                0x0000000004010eb8                HAL_PMU_SetDDRPhyIOLatch0Enable
+                0x0000000004010ed8                HAL_PMU_SetDDRPhyIOLatch1Enable
+                0x0000000004010ef8                HAL_PMU_SetDSPLDOOvrShutDown
+                0x0000000004010f18                HAL_PMU_SetBTRstHighLevelWakeup
+                0x0000000004010f38                HAL_PMU_SetWlanIrqHighLevelWakeup
+                0x0000000004010f58                HAL_PMU_SetIgnoreWicWakeup
+                0x0000000004010f78                HAL_PMU_SetIgnoreWicNack
+                0x0000000004010f98                HAL_PMU_SetWakeupMode
+                0x0000000004010fb8                HAL_PMU_SetRtcAlarmWakeupToPowerCtrl
+                0x0000000004010fd8                HAL_PMU_SetRcoscCalibStartSrc
+                0x0000000004010ff0                HAL_PMU_SetCpuSlpNoRetention
+                0x0000000004011010                HAL_PMU_SetBTSlpRetentionOvr
+                0x0000000004011030                HAL_PMU_SetBLESlpTimerIrqToPowerctrl
+                0x0000000004011050                HAL_PMU_SetWupTimerIrqToPowerCtrl
+                0x0000000004011070                HAL_PMU_SetWupIOToPowerCtrl
+                0x0000000004011090                HAL_PMU_SetBTRstnAsWupPin
+ .text          0x00000000040110b0      0xa48 driver/prcm.o
+                0x00000000040110b0                HAL_PRCM_GetDCDCVoltage
+                0x00000000040110cc                HAL_PRCM_SetDCDCVoltage
+                0x00000000040110d4                HAL_PRCM_SetDCDCOffFlowAONLDOEnable
+                0x00000000040110f0                HAL_PRCM_GetDCDCOffFlowAONLDOStatus
+                0x0000000004011104                HAL_PRCM_SetDCDCOffWhenSYSStandbyEnable
+                0x0000000004011120                HAL_PRCM_GetDCDCOffWhenSYSStandbyStatus
+                0x0000000004011130                HAL_PRCM_SetDCDCPwmSelEnable
+                0x000000000401114c                HAL_PRCM_IsDCDCPwmSelEnabled
+                0x000000000401115c                HAL_PRCM_SelectDCDCPwmSrc
+                0x0000000004011170                HAL_PRCM_GetOvrDCDCDetctStatus
+                0x0000000004011180                HAL_PRCM_SetOvrDCDCDetctEnable
+                0x000000000401119c                HAL_PRCM_GetOvrDCDCDetctValueStatus
+                0x00000000040111ac                HAL_PRCM_SetOvrDCDCDetctValueEnable
+                0x00000000040111c8                HAL_PRCM_GetDCDCDetctStatus
+                0x00000000040111d8                HAL_PRCM_GetDCDCWorkMode
+                0x00000000040111e8                HAL_PRCM_SetDSPLDOLQModeEnable
+                0x0000000004011204                HAL_PRCM_SetAPPLDOLQModeEnable
+                0x0000000004011220                HAL_PRCM_SetAONLDOLQModeEnable
+                0x000000000401123c                HAL_PRCM_SetLDOModeSWSelEnable
+                0x0000000004011258                HAL_PRCM_SetDCDCPFMModeEnable
+                0x0000000004011274                HAL_PRCM_SetDCDCModeSWSelEnable
+                0x0000000004011290                HAL_PRCM_SetRTCLDOSlpVolt
+                0x00000000040112a4                HAL_PRCM_SetRTCLDOActVolt
+                0x00000000040112b8                HAL_PRCM_SetEXTLDOSwTrim
+                0x00000000040112d0                HAL_PRCM_SetEXTLDOSwModeEnable
+                0x00000000040112ec                HAL_PRCM_SelectEXTLDOVolt
+                0x0000000004011300                HAL_PRCM_SelectEXTLDOMode
+                0x0000000004011314                HAL_PRCM_GetAONLDOWorkVoltage
+                0x0000000004011330                HAL_PRCM_SetAONLDOWorkVoltage
+                0x0000000004011368                HAL_PRCM_GetAONLDOSlpVoltage
+                0x0000000004011384                HAL_PRCM_SetAONLDOSlpVoltage
+                0x00000000040113bc                HAL_PRCM_GetAONLDOLQMode
+                0x00000000040113cc                HAL_PRCM_IsAONLDOEnabled
+                0x00000000040113dc                HAL_PRCM_GetAPPLDOWorkVoltage
+                0x00000000040113f8                HAL_PRCM_SetAPPLDOWorkVoltage
+                0x0000000004011430                HAL_PRCM_GetAPPLDOSlpVoltage
+                0x000000000401144c                HAL_PRCM_SetAPPLDOSlpVoltage
+                0x0000000004011484                HAL_PRCM_GetAPPLDOLQMode
+                0x0000000004011494                HAL_PRCM_IsAPPLDOEnabled
+                0x00000000040114a4                HAL_PRCM_GetDSPLDOWorkVoltage
+                0x00000000040114c0                HAL_PRCM_SetDSPLDOWorkVoltage
+                0x00000000040114f8                HAL_PRCM_GetDSPLDOSlpVoltage
+                0x0000000004011514                HAL_PRCM_SetDSPLDOSlpVoltage
+                0x000000000401154c                HAL_PRCM_GetDSPLDOLQMode
+                0x000000000401155c                HAL_PRCM_IsDSPLDOEnabled
+                0x000000000401156c                HAL_PRCM_GetVBATMonLowVoltage
+                0x0000000004011584                HAL_PRCM_SetVBATMonLowVoltage
+                0x00000000040115bc                HAL_PRCM_SetVBATLowVoltMode
+                0x00000000040115d4                HAL_PRCM_SetVBATMonSwModeEnable
+                0x00000000040115f0                HAL_PRCM_SetVBATMonitorEnable
+                0x000000000401160c                HAL_PRCM_SetUSBBiasTrim
+                0x0000000004011624                HAL_PRCM_SetUSBBiasEnable
+                0x0000000004011640                HAL_PRCM_SetPadClkOut
+                0x0000000004011660                HAL_PRCM_SetPadClkOutSource
+                0x0000000004011678                HAL_PRCM_SetPadClkOutFactorM
+                0x0000000004011698                HAL_PRCM_SetLFCLKBaseSource
+                0x00000000040116c0                HAL_PRCM_GetInter32KFreq
+                0x00000000040116d8                HAL_PRCM_EnableInter32KCalib
+                0x00000000040116ec                HAL_PRCM_DisableInter32KCalib
+                0x0000000004011700                HAL_PRCM_IsInter32KCalibEnabled
+                0x0000000004011710                HAL_PRCM_GetBaseLFClock
+                0x000000000401174c                HAL_PRCM_SetCLK32kAutoSw
+                0x000000000401176c                HAL_PRCM_SetRcoCalib
+                0x00000000040117e4                HAL_PRCM_GetWLANRstStatus
+                0x00000000040117f4                HAL_PRCM_GetBLERstStatus
+                0x0000000004011804                HAL_PRCM_SetWlanSramShare
+                0x000000000401181c                HAL_PRCM_GetConnectModeFlag
+                0x000000000401182c                HAL_PRCM_IsFlashSip
+                0x000000000401184c                HAL_PRCM_SetFlashExt
+                0x0000000004011858                HAL_PRCM_EnableWlanCPUClk
+                0x0000000004011878                HAL_PRCM_ReleaseWlanCPUReset
+                0x000000000401188c                HAL_PRCM_ForceWlanCPUReset
+                0x00000000040118a0                HAL_PRCM_WakeUpWlan
+                0x00000000040118c0                HAL_PRCM_EnableWlanCPUClkOvrHIF
+                0x00000000040118d4                HAL_PRCM_DisableWlanCPUClkOvrHIF
+                0x00000000040118e8                HAL_PRCM_EnableResetWlanCPUOvrHIF
+                0x00000000040118fc                HAL_PRCM_DisableResetWlanCPUOvrHIF
+                0x0000000004011910                HAL_PRCM_EnableWlanWUPOvrHIF
+                0x0000000004011924                HAL_PRCM_DisableWlanWUPOvrHIF
+                0x0000000004011938                HAL_PRCM_EnableWlanIRQOvrHIF
+                0x000000000401194c                HAL_PRCM_DisableWlanIRQOvrHIF
+                0x0000000004011960                HAL_PRCM_SetFlashCryptoNonce
+                0x0000000004011978                HAL_PRCM_SetCPUBootFlag
+                0x00000000040119b0                HAL_PRCM_GetCPUBootFlag
+                0x00000000040119fc                HAL_PRCM_SetCPUBootAddr
+                0x0000000004011a24                HAL_PRCM_GetCPUBootAddr
+                0x0000000004011a64                HAL_PRCM_SetCPUBootArg
+                0x0000000004011a8c                HAL_PRCM_GetCPUBootArg
+                0x0000000004011acc                HAL_PRCM_SetSystemPrivateData
+                0x0000000004011ae0                HAL_PRCM_GetSystemPrivateData
+ .text          0x0000000004011af8       0x6c driver/systick.o
+                0x0000000004011af8                cpu_disable_systick
+                0x0000000004011b3c                cpu_enable_systick
+ .text          0x0000000004011b64      0x3a4 clk/standby_clk.o
+                0x0000000004011b64                clk_suspend
+                0x0000000004011d94                clk_resume
+ .text          0x0000000004011f08       0xd4 power/standby_power.o
+                0x0000000004011f08                hibernation_mode_set
+                0x0000000004011f48                hibernation_mode_restore
+                0x0000000004011f74                ldo_disable
+                0x0000000004011fb4                ldo_enable
+ .text          0x0000000004011fdc      0x1ac arch/cache.o
+                0x0000000004011fdc                standby_CleanDCache
+                0x000000000401202c                standby_CleanInvalidateDCache
+                0x000000000401207c                standby_DisableDCache
+                0x00000000040120e0                standby_EnableDCache
+                0x0000000004012150                standby_EnableICache
+ .text          0x0000000004012188       0x90 arch/standby_scb.o
+                0x0000000004012188                scb_save
+                0x00000000040121d0                scb_restore
+ .text          0x0000000004012218      0x14c arch/cpu.o
+                0x0000000004012218                _fw_cpu_sleep
+                0x0000000004012268                _fw_cpu_standby
+ .text          0x0000000004012364       0x1c arch/delay.o
+                0x0000000004012364                standby_delay
+                0x000000000401237a                standby_delay_cycle
+ .text          0x0000000004012380        0x0 driver/hpsram/libhpsram.a(hpsram.o)
+ .text          0x0000000004012380        0x0 driver/lpsram/liblpsram.a(psram_core.o)
+ .text          0x0000000004012380        0x0 driver/lpsram/liblpsram.a(psram_opi32.o)
+ .text          0x0000000004012380        0x0 driver/lpsram/liblpsram.a(psram_opi64.o)
+ .text          0x0000000004012380        0x0 driver/lpsram/liblpsram.a(hal_psramctrl.o)
+ *(.rodata.*)
+
+.ARM.extab      0x0000000004012380        0x0
+ .ARM.extab     0x0000000004012380        0x0 arch/cpu.o
+
+.rodata         0x0000000004012380        0xe
+ .rodata        0x0000000004012380        0x6 driver/lpsram/liblpsram.a(psram_opi32.o)
+ *fill*         0x0000000004012386        0x2 
+ .rodata        0x0000000004012388        0x6 driver/lpsram/liblpsram.a(psram_opi64.o)
+
+.glue_7         0x0000000004012390        0x0
+ .glue_7        0x0000000004012390        0x0 linker stubs
+
+.glue_7t        0x0000000004012390        0x0
+ .glue_7t       0x0000000004012390        0x0 linker stubs
+
+.vfp11_veneer   0x0000000004012390        0x0
+ .vfp11_veneer  0x0000000004012390        0x0 linker stubs
+
+.v4_bx          0x0000000004012390        0x0
+ .v4_bx         0x0000000004012390        0x0 linker stubs
+
+.iplt           0x0000000004012390        0x0
+ .iplt          0x0000000004012390        0x0 main.o
+
+.text.sr32      0x000000000401238e       0x20
+ .text.sr32     0x000000000401238e       0x20 driver/hpsram/libhpsram.a(hpsram.o)
+
+.text.hspsram_sim_delay
+                0x00000000040123ae        0x2
+ .text.hspsram_sim_delay
+                0x00000000040123ae        0x2 driver/hpsram/libhpsram.a(hpsram.o)
+                0x00000000040123ae                hspsram_sim_delay
+
+.text.hpsram_standby2_enter
+                0x00000000040123b0       0xd4
+ .text.hpsram_standby2_enter
+                0x00000000040123b0       0xd4 driver/hpsram/libhpsram.a(hpsram.o)
+                0x00000000040123b0                hpsram_standby2_enter
+
+.text.dramc_simple_wr_test
+                0x0000000004012484       0x58
+ .text.dramc_simple_wr_test
+                0x0000000004012484       0x58 driver/hpsram/libhpsram.a(hpsram.o)
+                0x0000000004012484                dramc_simple_wr_test
+
+.text.auto_cal_timing
+                0x00000000040124dc       0x18
+ .text.auto_cal_timing
+                0x00000000040124dc       0x18 driver/hpsram/libhpsram.a(hpsram.o)
+                0x00000000040124dc                auto_cal_timing
+
+.text.mc_init   0x00000000040124f4      0x5bc
+ .text.mc_init  0x00000000040124f4      0x5bc driver/hpsram/libhpsram.a(hpsram.o)
+                0x00000000040124f4                mc_init
+
+.text.phy_gate_mode_set
+                0x0000000004012ab0       0xcc
+ .text.phy_gate_mode_set
+                0x0000000004012ab0       0xcc driver/hpsram/libhpsram.a(hpsram.o)
+                0x0000000004012ab0                phy_gate_mode_set
+
+.text.phy_delay_timing
+                0x0000000004012b7c      0x1c0
+ .text.phy_delay_timing
+                0x0000000004012b7c      0x1c0 driver/hpsram/libhpsram.a(hpsram.o)
+                0x0000000004012b7c                phy_delay_timing
+
+.text.phy_init  0x0000000004012d3c       0x40
+ .text.phy_init
+                0x0000000004012d3c       0x40 driver/hpsram/libhpsram.a(hpsram.o)
+                0x0000000004012d3c                phy_init
+
+.text.uhs_psram_init
+                0x0000000004012d7c       0xc4
+ .text.uhs_psram_init
+                0x0000000004012d7c       0xc4 driver/hpsram/libhpsram.a(hpsram.o)
+                0x0000000004012d7c                uhs_psram_init
+
+.text.hpsram_init
+                0x0000000004012e40      0x174
+ .text.hpsram_init
+                0x0000000004012e40      0x174 driver/hpsram/libhpsram.a(hpsram.o)
+                0x0000000004012e40                hpsram_init
+
+.text.hpsram_standby2_exit
+                0x0000000004012fb4       0x2c
+ .text.hpsram_standby2_exit
+                0x0000000004012fb4       0x2c driver/hpsram/libhpsram.a(hpsram.o)
+                0x0000000004012fb4                hpsram_standby2_exit
+
+.text.mctl_init
+                0x0000000004012fe0       0x84
+ .text.mctl_init
+                0x0000000004012fe0       0x84 driver/hpsram/libhpsram.a(hpsram.o)
+                0x0000000004012fe0                mctl_init
+
+.text.psram_wait_for_req
+                0x0000000004013064       0x42
+ .text.psram_wait_for_req
+                0x0000000004013064       0x42 driver/lpsram/liblpsram.a(psram_core.o)
+
+.text.psram_set_read_latency
+                0x00000000040130a6       0xf0
+ .text.psram_set_read_latency
+                0x00000000040130a6       0xf0 driver/lpsram/liblpsram.a(psram_core.o)
+                0x00000000040130a6                psram_set_read_latency
+
+.text.psram_set_write_latency
+                0x0000000004013196       0xe0
+ .text.psram_set_write_latency
+                0x0000000004013196       0xe0 driver/lpsram/liblpsram.a(psram_core.o)
+                0x0000000004013196                psram_set_write_latency
+
+.text.psram_sw_reset
+                0x0000000004013276       0xc0
+ .text.psram_sw_reset
+                0x0000000004013276       0xc0 driver/lpsram/liblpsram.a(psram_core.o)
+                0x0000000004013276                psram_sw_reset
+
+.text.psram_set_refresh
+                0x0000000004013336       0x94
+ .text.psram_set_refresh
+                0x0000000004013336       0x94 driver/lpsram/liblpsram.a(psram_core.o)
+                0x0000000004013336                psram_set_refresh
+
+.text.psram_set_drv
+                0x00000000040133ca       0xb6
+ .text.psram_set_drv
+                0x00000000040133ca       0xb6 driver/lpsram/liblpsram.a(psram_core.o)
+                0x00000000040133ca                psram_set_drv
+
+.text.Psram_Read_Id
+                0x0000000004013480       0x92
+ .text.Psram_Read_Id
+                0x0000000004013480       0x92 driver/lpsram/liblpsram.a(psram_core.o)
+                0x0000000004013480                Psram_Read_Id
+
+.text.Psram_Read_Mr
+                0x0000000004013512       0x94
+ .text.Psram_Read_Mr
+                0x0000000004013512       0x94 driver/lpsram/liblpsram.a(psram_core.o)
+                0x0000000004013512                Psram_Read_Mr
+
+.text.Psram_Read_Info
+                0x00000000040135a6       0xae
+ .text.Psram_Read_Info
+                0x00000000040135a6       0xae driver/lpsram/liblpsram.a(psram_core.o)
+                0x00000000040135a6                Psram_Read_Info
+
+.text.psram_read_16byte_test
+                0x0000000004013654       0x7a
+ .text.psram_read_16byte_test
+                0x0000000004013654       0x7a driver/lpsram/liblpsram.a(psram_core.o)
+                0x0000000004013654                psram_read_16byte_test
+
+.text.Psram_Read_die_sta
+                0x00000000040136ce       0xa4
+ .text.Psram_Read_die_sta
+                0x00000000040136ce       0xa4 driver/lpsram/liblpsram.a(psram_core.o)
+                0x00000000040136ce                Psram_Read_die_sta
+
+.text.psram_enter_hsleep_mode
+                0x0000000004013772       0x72
+ .text.psram_enter_hsleep_mode
+                0x0000000004013772       0x72 driver/lpsram/liblpsram.a(psram_core.o)
+                0x0000000004013772                psram_enter_hsleep_mode
+
+.text.psram_idbus_op_cmd
+                0x00000000040137e4       0xd4
+ .text.psram_idbus_op_cmd
+                0x00000000040137e4       0xd4 driver/lpsram/liblpsram.a(psram_core.o)
+                0x00000000040137e4                psram_idbus_op_cmd
+
+.text.psram_chip_get_para
+                0x00000000040138b8       0x16
+ .text.psram_chip_get_para
+                0x00000000040138b8       0x16 driver/lpsram/liblpsram.a(psram_core.o)
+                0x00000000040138b8                psram_chip_get_para
+
+.text.psram_suspend
+                0x00000000040138ce      0x160
+ .text.psram_suspend
+                0x00000000040138ce      0x160 driver/lpsram/liblpsram.a(psram_core.o)
+                0x00000000040138ce                psram_suspend
+
+.text.psram_init_after_suspend
+                0x0000000004013a2e       0x7e
+ .text.psram_init_after_suspend
+                0x0000000004013a2e       0x7e driver/lpsram/liblpsram.a(psram_core.o)
+
+.text.psram_resume
+                0x0000000004013aac       0xb0
+ .text.psram_resume
+                0x0000000004013aac       0xb0 driver/lpsram/liblpsram.a(psram_core.o)
+                0x0000000004013aac                psram_resume
+
+.text.psram_chip_init
+                0x0000000004013b5c       0x3a
+ .text.psram_chip_init
+                0x0000000004013b5c       0x3a driver/lpsram/liblpsram.a(psram_core.o)
+                0x0000000004013b5c                psram_chip_init
+
+.text.psram_init
+                0x0000000004013b96       0xae
+ .text.psram_init
+                0x0000000004013b96       0xae driver/lpsram/liblpsram.a(psram_core.o)
+                0x0000000004013b96                psram_init
+
+.text.psram_deinit
+                0x0000000004013c44       0x14
+ .text.psram_deinit
+                0x0000000004013c44       0x14 driver/lpsram/liblpsram.a(psram_core.o)
+                0x0000000004013c44                psram_deinit
+
+.text.dump_psram_reg
+                0x0000000004013c58        0xc
+ .text.dump_psram_reg
+                0x0000000004013c58        0xc driver/lpsram/liblpsram.a(psram_core.o)
+                0x0000000004013c58                dump_psram_reg
+
+.text.platform_psram_chip_config
+                0x0000000004013c64       0xa2
+ .text.platform_psram_chip_config
+                0x0000000004013c64       0xa2 driver/lpsram/liblpsram.a(psram_core.o)
+                0x0000000004013c64                platform_psram_chip_config
+
+.text.platform_psram_init
+                0x0000000004013d06       0xfc
+ .text.platform_psram_init
+                0x0000000004013d06       0xfc driver/lpsram/liblpsram.a(psram_core.o)
+                0x0000000004013d06                platform_psram_init
+
+.text.psram_aps32_init
+                0x0000000004013e02      0x14c
+ .text.psram_aps32_init
+                0x0000000004013e02      0x14c driver/lpsram/liblpsram.a(psram_opi32.o)
+                0x0000000004013e02                psram_aps32_init
+
+.text.psram_aps64_init
+                0x0000000004013f4e       0xf2
+ .text.psram_aps64_init
+                0x0000000004013f4e       0xf2 driver/lpsram/liblpsram.a(psram_opi64.o)
+                0x0000000004013f4e                psram_aps64_init
+
+.text.__psram_init_io
+                0x0000000004014040      0x1e4
+ .text.__psram_init_io
+                0x0000000004014040      0x1e4 driver/lpsram/liblpsram.a(hal_psramctrl.o)
+
+.text.__psram_deinit_io
+                0x0000000004014224       0x80
+ .text.__psram_deinit_io
+                0x0000000004014224       0x80 driver/lpsram/liblpsram.a(hal_psramctrl.o)
+
+.text.__psram_ccmu_init
+                0x00000000040142a4       0x70
+ .text.__psram_ccmu_init
+                0x00000000040142a4       0x70 driver/lpsram/liblpsram.a(hal_psramctrl.o)
+
+.text.__psram_ccmu_deinit
+                0x0000000004014314       0x70
+ .text.__psram_ccmu_deinit
+                0x0000000004014314       0x70 driver/lpsram/liblpsram.a(hal_psramctrl.o)
+
+.text.__psram_ccmu_en_mclk
+                0x0000000004014384       0x40
+ .text.__psram_ccmu_en_mclk
+                0x0000000004014384       0x40 driver/lpsram/liblpsram.a(hal_psramctrl.o)
+
+.text.__psram_ccmu_dis_mclk
+                0x00000000040143c4       0x40
+ .text.__psram_ccmu_dis_mclk
+                0x00000000040143c4       0x40 driver/lpsram/liblpsram.a(hal_psramctrl.o)
+
+.text.__psram_pll_select
+                0x0000000004014404       0x76
+ .text.__psram_pll_select
+                0x0000000004014404       0x76 driver/lpsram/liblpsram.a(hal_psramctrl.o)
+
+.text.__psram_pll_freq_set
+                0x000000000401447a       0xf2
+ .text.__psram_pll_freq_set
+                0x000000000401447a       0xf2 driver/lpsram/liblpsram.a(hal_psramctrl.o)
+
+.text.__psram_pll_set
+                0x000000000401456c      0x142
+ .text.__psram_pll_set
+                0x000000000401456c      0x142 driver/lpsram/liblpsram.a(hal_psramctrl.o)
+
+.text.__psram_config_ccmu
+                0x00000000040146ae       0x72
+ .text.__psram_config_ccmu
+                0x00000000040146ae       0x72 driver/lpsram/liblpsram.a(hal_psramctrl.o)
+
+.text.HAL_PsramCtrl_ConfigCCMU
+                0x0000000004014720       0x50
+ .text.HAL_PsramCtrl_ConfigCCMU
+                0x0000000004014720       0x50 driver/lpsram/liblpsram.a(hal_psramctrl.o)
+                0x0000000004014720                HAL_PsramCtrl_ConfigCCMU
+
+.text.HAL_PLL_FREQ_SET
+                0x0000000004014770       0x42
+ .text.HAL_PLL_FREQ_SET
+                0x0000000004014770       0x42 driver/lpsram/liblpsram.a(hal_psramctrl.o)
+                0x0000000004014770                HAL_PLL_FREQ_SET
+
+.text.PSRAM_CTRL_PollHandler
+                0x00000000040147b2      0x2fc
+ .text.PSRAM_CTRL_PollHandler
+                0x00000000040147b2      0x2fc driver/lpsram/liblpsram.a(hal_psramctrl.o)
+
+.text.__psram_ctrl_request_done
+                0x0000000004014aae       0xb2
+ .text.__psram_ctrl_request_done
+                0x0000000004014aae       0xb2 driver/lpsram/liblpsram.a(hal_psramctrl.o)
+
+.text.__psram_wr_check
+                0x0000000004014b60       0x14
+ .text.__psram_wr_check
+                0x0000000004014b60       0x14 driver/lpsram/liblpsram.a(hal_psramctrl.o)
+
+.text.HAL_PsramCtrl_DQS_Delay_Cal_Policy
+                0x0000000004014b74       0xfe
+ .text.HAL_PsramCtrl_DQS_Delay_Cal_Policy
+                0x0000000004014b74       0xfe driver/lpsram/liblpsram.a(hal_psramctrl.o)
+                0x0000000004014b74                HAL_PsramCtrl_DQS_Delay_Cal_Policy
+
+.text.HAL_PsramCtrl_DQS_Delay_Calibration
+                0x0000000004014c72       0x9a
+ .text.HAL_PsramCtrl_DQS_Delay_Calibration
+                0x0000000004014c72       0x9a driver/lpsram/liblpsram.a(hal_psramctrl.o)
+                0x0000000004014c72                HAL_PsramCtrl_DQS_Delay_Calibration
+
+.text.__psram_ctrl_send_cmd
+                0x0000000004014d0c       0x20
+ .text.__psram_ctrl_send_cmd
+                0x0000000004014d0c       0x20 driver/lpsram/liblpsram.a(hal_psramctrl.o)
+
+.text.HAL_PsramCtrl_MaxCE_LowCyc
+                0x0000000004014d2c       0x72
+ .text.HAL_PsramCtrl_MaxCE_LowCyc
+                0x0000000004014d2c       0x72 driver/lpsram/liblpsram.a(hal_psramctrl.o)
+                0x0000000004014d2c                HAL_PsramCtrl_MaxCE_LowCyc
+
+.text.HAL_PsramCtrl_Request
+                0x0000000004014d9e      0x222
+ .text.HAL_PsramCtrl_Request
+                0x0000000004014d9e      0x222 driver/lpsram/liblpsram.a(hal_psramctrl.o)
+                0x0000000004014d9e                HAL_PsramCtrl_Request
+
+.text.HAL_PsramCtrl_IDbusCfg
+                0x0000000004014fc0       0x66
+ .text.HAL_PsramCtrl_IDbusCfg
+                0x0000000004014fc0       0x66 driver/lpsram/liblpsram.a(hal_psramctrl.o)
+                0x0000000004014fc0                HAL_PsramCtrl_IDbusCfg
+
+.text.HAL_PsramCtrl_Set_CBUS_WR_LATENCY
+                0x0000000004015026       0x30
+ .text.HAL_PsramCtrl_Set_CBUS_WR_LATENCY
+                0x0000000004015026       0x30 driver/lpsram/liblpsram.a(hal_psramctrl.o)
+                0x0000000004015026                HAL_PsramCtrl_Set_CBUS_WR_LATENCY
+
+.text.HAL_PsramCtrl_Set_SBUS_WR_LATENCY
+                0x0000000004015056       0x30
+ .text.HAL_PsramCtrl_Set_SBUS_WR_LATENCY
+                0x0000000004015056       0x30 driver/lpsram/liblpsram.a(hal_psramctrl.o)
+                0x0000000004015056                HAL_PsramCtrl_Set_SBUS_WR_LATENCY
+
+.text.HAL_PsramCtrl_Set_BusWidth
+                0x0000000004015086       0x22
+ .text.HAL_PsramCtrl_Set_BusWidth
+                0x0000000004015086       0x22 driver/lpsram/liblpsram.a(hal_psramctrl.o)
+                0x0000000004015086                HAL_PsramCtrl_Set_BusWidth
+
+.text.HAL_PsramCtrl_CacheCfg
+                0x00000000040150a8       0x4c
+ .text.HAL_PsramCtrl_CacheCfg
+                0x00000000040150a8       0x4c driver/lpsram/liblpsram.a(hal_psramctrl.o)
+                0x00000000040150a8                HAL_PsramCtrl_CacheCfg
+
+.text.HAL_PsramCtrl_CleanCache
+                0x00000000040150f4       0x2a
+ .text.HAL_PsramCtrl_CleanCache
+                0x00000000040150f4       0x2a driver/lpsram/liblpsram.a(hal_psramctrl.o)
+                0x00000000040150f4                HAL_PsramCtrl_CleanCache
+
+.text.HAL_PsramCtrl_DMACrossEnable
+                0x000000000401511e       0x40
+ .text.HAL_PsramCtrl_DMACrossEnable
+                0x000000000401511e       0x40 driver/lpsram/liblpsram.a(hal_psramctrl.o)
+                0x000000000401511e                HAL_PsramCtrl_DMACrossEnable
+
+.text.HAL_PsramCtrl_Set_Address_Field
+                0x000000000401515e       0x62
+ .text.HAL_PsramCtrl_Set_Address_Field
+                0x000000000401515e       0x62 driver/lpsram/liblpsram.a(hal_psramctrl.o)
+                0x000000000401515e                HAL_PsramCtrl_Set_Address_Field
+
+.text.HAL_PsramCtrl_Init
+                0x00000000040151c0      0x294
+ .text.HAL_PsramCtrl_Init
+                0x00000000040151c0      0x294 driver/lpsram/liblpsram.a(hal_psramctrl.o)
+                0x00000000040151c0                HAL_PsramCtrl_Init
+
+.text.HAL_PsramCtrl_Deinit
+                0x0000000004015454       0x2e
+ .text.HAL_PsramCtrl_Deinit
+                0x0000000004015454       0x2e driver/lpsram/liblpsram.a(hal_psramctrl.o)
+                0x0000000004015454                HAL_PsramCtrl_Deinit
+
+.text.HAL_PsramCtrl_Open
+                0x0000000004015482       0x2e
+ .text.HAL_PsramCtrl_Open
+                0x0000000004015482       0x2e driver/lpsram/liblpsram.a(hal_psramctrl.o)
+                0x0000000004015482                HAL_PsramCtrl_Open
+
+.text.HAL_PsramCtrl_Close
+                0x00000000040154b0       0x20
+ .text.HAL_PsramCtrl_Close
+                0x00000000040154b0       0x20 driver/lpsram/liblpsram.a(hal_psramctrl.o)
+                0x00000000040154b0                HAL_PsramCtrl_Close
+
+.text.HAL_PsramCtrl_Create
+                0x00000000040154d0       0x1a
+ .text.HAL_PsramCtrl_Create
+                0x00000000040154d0       0x1a driver/lpsram/liblpsram.a(hal_psramctrl.o)
+                0x00000000040154d0                HAL_PsramCtrl_Create
+
+.text.HAL_PsramCtrl_Destory
+                0x00000000040154ea       0x14
+ .text.HAL_PsramCtrl_Destory
+                0x00000000040154ea       0x14 driver/lpsram/liblpsram.a(hal_psramctrl.o)
+                0x00000000040154ea                HAL_PsramCtrl_Destory
+
+.data           0x0000000004015500      0x165
+ *(.data)
+ .data          0x0000000004015500        0x0 main.o
+ .data          0x0000000004015500        0x0 lib/delay.o
+ .data          0x0000000004015500        0x0 lib/dwt_delay.o
+ .data          0x0000000004015500        0x0 lib/enter.o
+ .data          0x0000000004015500       0x65 lib/head.o
+                0x0000000004015500                head
+                0x0000000004015504                ctrl
+                0x0000000004015538                lpsram_mrq
+                0x0000000004015560                lpsram_name
+ .data          0x0000000004015565        0x0 lib/wakeup.o
+ .data          0x0000000004015565        0x0 driver/driver_hpsram.o
+ .data          0x0000000004015565        0x0 driver/driver_lpsram.o
+ .data          0x0000000004015565        0x0 driver/pmu.o
+ .data          0x0000000004015565        0x0 driver/prcm.o
+ .data          0x0000000004015565        0x0 driver/systick.o
+ .data          0x0000000004015565        0x0 clk/standby_clk.o
+ .data          0x0000000004015565        0x0 power/standby_power.o
+ .data          0x0000000004015565        0x0 arch/cache.o
+ .data          0x0000000004015565        0x0 arch/standby_scb.o
+ .data          0x0000000004015565      0x100 arch/cpu.o
+ .data          0x0000000004015665        0x0 arch/delay.o
+ .data          0x0000000004015665        0x0 driver/hpsram/libhpsram.a(hpsram.o)
+ .data          0x0000000004015665        0x0 driver/lpsram/liblpsram.a(psram_core.o)
+ .data          0x0000000004015665        0x0 driver/lpsram/liblpsram.a(psram_opi32.o)
+ .data          0x0000000004015665        0x0 driver/lpsram/liblpsram.a(psram_opi64.o)
+ .data          0x0000000004015665        0x0 driver/lpsram/liblpsram.a(hal_psramctrl.o)
+
+.igot.plt       0x0000000004015668        0x0
+ .igot.plt      0x0000000004015668        0x0 main.o
+
+.ARM.exidx      0x0000000004015668        0x8
+ *(.ARM.exidx*)
+ .ARM.exidx     0x0000000004015668        0x8 arch/cpu.o
+                                         0x10 (size before relaxing)
+ *(.gnu.linkonce.armexidx.*)
+                0x0000000004015670                _standby_code_end = .
+
+.rel.dyn        0x0000000004015670        0x0
+ .rel.iplt      0x0000000004015670        0x0 main.o
+                0x0000000004015670                . = ALIGN (0x4)
+
+.bss            0x0000000004015670       0xa0
+                0x0000000004015670                _standby_bss_start = .
+ *(.sbss)
+ *(.scommon)
+ *(.bss)
+ .bss           0x0000000004015670        0x0 main.o
+ .bss           0x0000000004015670        0x0 lib/delay.o
+ .bss           0x0000000004015670        0x0 lib/dwt_delay.o
+ .bss           0x0000000004015670        0x0 lib/enter.o
+ .bss           0x0000000004015670        0x0 lib/head.o
+ .bss           0x0000000004015670        0x0 lib/wakeup.o
+ .bss           0x0000000004015670        0x0 driver/driver_hpsram.o
+ .bss           0x0000000004015670        0x0 driver/driver_lpsram.o
+ .bss           0x0000000004015670        0x0 driver/pmu.o
+ .bss           0x0000000004015670        0x1 driver/prcm.o
+ .bss           0x0000000004015671        0x0 driver/systick.o
+ *fill*         0x0000000004015671        0x3 
+ .bss           0x0000000004015674       0x24 clk/standby_clk.o
+ .bss           0x0000000004015698       0x14 power/standby_power.o
+ .bss           0x00000000040156ac        0x0 arch/cache.o
+ .bss           0x00000000040156ac        0x0 arch/standby_scb.o
+ .bss           0x00000000040156ac        0x0 arch/cpu.o
+ .bss           0x00000000040156ac        0x0 arch/delay.o
+ .bss           0x00000000040156ac        0x0 driver/hpsram/libhpsram.a(hpsram.o)
+ .bss           0x00000000040156ac        0x0 driver/lpsram/liblpsram.a(psram_core.o)
+ .bss           0x00000000040156ac        0x0 driver/lpsram/liblpsram.a(psram_opi32.o)
+ .bss           0x00000000040156ac        0x0 driver/lpsram/liblpsram.a(psram_opi64.o)
+ .bss           0x00000000040156ac        0x0 driver/lpsram/liblpsram.a(hal_psramctrl.o)
+ *(COMMON)
+ COMMON         0x00000000040156ac        0x8 main.o
+                0x00000000040156ac                backup
+ COMMON         0x00000000040156b4        0x2 lib/head.o
+                0x00000000040156b4                lpsram_resp
+                0x00000000040156b5                lpsram_buff
+ *fill*         0x00000000040156b6        0x2 
+ COMMON         0x00000000040156b8        0x8 driver/systick.o
+                0x00000000040156b8                cpu_systick_context
+ COMMON         0x00000000040156c0       0x50 arch/standby_scb.o
+                0x00000000040156c0                scb_bak
+                0x0000000004015710                _standby_bss_end = .
+                0x0000000004015710                . = ALIGN (0x8)
+                0x0000000004015710                _standby_stack_limit = .
+                0x0000000004020000                _standby_stack_base = ALIGN (0x4020000)
+LOAD main.o
+LOAD lib/delay.o
+LOAD lib/dwt_delay.o
+LOAD lib/enter.o
+LOAD lib/head.o
+LOAD lib/wakeup.o
+LOAD driver/driver_hpsram.o
+LOAD driver/driver_lpsram.o
+LOAD driver/pmu.o
+LOAD driver/prcm.o
+LOAD driver/systick.o
+LOAD clk/standby_clk.o
+LOAD power/standby_power.o
+LOAD arch/cache.o
+LOAD arch/standby_scb.o
+LOAD arch/cpu.o
+LOAD arch/delay.o
+LOAD driver/hpsram/libhpsram.a
+LOAD driver/lpsram/liblpsram.a
+OUTPUT(standby.elf elf32-littlearm)
+
+.bss.standby_flag
+                0x0000000004015710        0x5
+ .bss.standby_flag
+                0x0000000004015710        0x4 driver/hpsram/libhpsram.a(hpsram.o)
+                0x0000000004015710                standby_flag
+ .bss.standby_flag
+                0x0000000004015714        0x1 driver/lpsram/liblpsram.a(psram_core.o)
+
+.bss._chip_priv
+                0x0000000004015718        0x4
+ .bss._chip_priv
+                0x0000000004015718        0x4 driver/lpsram/liblpsram.a(psram_core.o)
+
+.bss.chip       0x000000000401571c       0x28
+ .bss.chip      0x000000000401571c       0x28 driver/lpsram/liblpsram.a(psram_core.o)
+
+.bss._psram_priv
+                0x0000000004015744        0x4
+ .bss._psram_priv
+                0x0000000004015744        0x4 driver/lpsram/liblpsram.a(hal_psramctrl.o)
+
+.debug_info     0x0000000000000000    0x10af8
+ .debug_info    0x0000000000000000      0x962 main.o
+ .debug_info    0x0000000000000962      0x17c lib/delay.o
+ .debug_info    0x0000000000000ade      0x82b lib/dwt_delay.o
+ .debug_info    0x0000000000001309      0xe91 lib/enter.o
+ .debug_info    0x000000000000219a      0x7dd lib/head.o
+ .debug_info    0x0000000000002977      0x252 lib/wakeup.o
+ .debug_info    0x0000000000002bc9      0x8c7 driver/driver_hpsram.o
+ .debug_info    0x0000000000003490      0x8f2 driver/driver_lpsram.o
+ .debug_info    0x0000000000003d82     0x166c driver/pmu.o
+ .debug_info    0x00000000000053ee     0x1c93 driver/prcm.o
+ .debug_info    0x0000000000007081       0xfc driver/systick.o
+ .debug_info    0x000000000000717d     0x1794 clk/standby_clk.o
+ .debug_info    0x0000000000008911      0x82f power/standby_power.o
+ .debug_info    0x0000000000009140      0x40a arch/cache.o
+ .debug_info    0x000000000000954a      0x167 arch/standby_scb.o
+ .debug_info    0x00000000000096b1       0x26 arch/cpu.o
+ .debug_info    0x00000000000096d7       0x26 arch/delay.o
+ .debug_info    0x00000000000096fd     0x1fce driver/hpsram/libhpsram.a(hpsram.o)
+ .debug_info    0x000000000000b6cb     0x196c driver/lpsram/liblpsram.a(psram_core.o)
+ .debug_info    0x000000000000d037      0xced driver/lpsram/liblpsram.a(psram_opi32.o)
+ .debug_info    0x000000000000dd24      0xce1 driver/lpsram/liblpsram.a(psram_opi64.o)
+ .debug_info    0x000000000000ea05     0x20f3 driver/lpsram/liblpsram.a(hal_psramctrl.o)
+
+.debug_abbrev   0x0000000000000000     0x2a01
+ .debug_abbrev  0x0000000000000000      0x1fe main.o
+ .debug_abbrev  0x00000000000001fe      0x144 lib/delay.o
+ .debug_abbrev  0x0000000000000342      0x170 lib/dwt_delay.o
+ .debug_abbrev  0x00000000000004b2      0x218 lib/enter.o
+ .debug_abbrev  0x00000000000006ca       0xe8 lib/head.o
+ .debug_abbrev  0x00000000000007b2      0x174 lib/wakeup.o
+ .debug_abbrev  0x0000000000000926      0x17b driver/driver_hpsram.o
+ .debug_abbrev  0x0000000000000aa1      0x1a4 driver/driver_lpsram.o
+ .debug_abbrev  0x0000000000000c45      0x30a driver/pmu.o
+ .debug_abbrev  0x0000000000000f4f      0x3da driver/prcm.o
+ .debug_abbrev  0x0000000000001329       0xd7 driver/systick.o
+ .debug_abbrev  0x0000000000001400      0x3af clk/standby_clk.o
+ .debug_abbrev  0x00000000000017af      0x179 power/standby_power.o
+ .debug_abbrev  0x0000000000001928       0xc4 arch/cache.o
+ .debug_abbrev  0x00000000000019ec       0xf0 arch/standby_scb.o
+ .debug_abbrev  0x0000000000001adc       0x14 arch/cpu.o
+ .debug_abbrev  0x0000000000001af0       0x14 arch/delay.o
+ .debug_abbrev  0x0000000000001b04      0x321 driver/hpsram/libhpsram.a(hpsram.o)
+ .debug_abbrev  0x0000000000001e25      0x3a9 driver/lpsram/liblpsram.a(psram_core.o)
+ .debug_abbrev  0x00000000000021ce      0x22a driver/lpsram/liblpsram.a(psram_opi32.o)
+ .debug_abbrev  0x00000000000023f8      0x223 driver/lpsram/liblpsram.a(psram_opi64.o)
+ .debug_abbrev  0x000000000000261b      0x3e6 driver/lpsram/liblpsram.a(hal_psramctrl.o)
+
+.debug_loc      0x0000000000000000     0x2a5f
+ .debug_loc     0x0000000000000000       0x97 main.o
+ .debug_loc     0x0000000000000097       0xa3 lib/delay.o
+ .debug_loc     0x000000000000013a       0xdd lib/dwt_delay.o
+ .debug_loc     0x0000000000000217      0x343 lib/enter.o
+ .debug_loc     0x000000000000055a      0x199 lib/wakeup.o
+ .debug_loc     0x00000000000006f3      0x146 driver/driver_hpsram.o
+ .debug_loc     0x0000000000000839      0x137 driver/driver_lpsram.o
+ .debug_loc     0x0000000000000970      0x5a7 driver/pmu.o
+ .debug_loc     0x0000000000000f17      0x762 driver/prcm.o
+ .debug_loc     0x0000000000001679      0x37b clk/standby_clk.o
+ .debug_loc     0x00000000000019f4       0x25 power/standby_power.o
+ .debug_loc     0x0000000000001a19      0x136 arch/cache.o
+ .debug_loc     0x0000000000001b4f      0x104 arch/standby_scb.o
+ .debug_loc     0x0000000000001c53      0xe0c driver/hpsram/libhpsram.a(hpsram.o)
+
+.debug_aranges  0x0000000000000000      0x4d0
+ .debug_aranges
+                0x0000000000000000       0x20 main.o
+ .debug_aranges
+                0x0000000000000020       0x20 lib/delay.o
+ .debug_aranges
+                0x0000000000000040       0x20 lib/dwt_delay.o
+ .debug_aranges
+                0x0000000000000060       0x20 lib/enter.o
+ .debug_aranges
+                0x0000000000000080       0x18 lib/head.o
+ .debug_aranges
+                0x0000000000000098       0x20 lib/wakeup.o
+ .debug_aranges
+                0x00000000000000b8       0x20 driver/driver_hpsram.o
+ .debug_aranges
+                0x00000000000000d8       0x20 driver/driver_lpsram.o
+ .debug_aranges
+                0x00000000000000f8       0x20 driver/pmu.o
+ .debug_aranges
+                0x0000000000000118       0x20 driver/prcm.o
+ .debug_aranges
+                0x0000000000000138       0x20 driver/systick.o
+ .debug_aranges
+                0x0000000000000158       0x20 clk/standby_clk.o
+ .debug_aranges
+                0x0000000000000178       0x20 power/standby_power.o
+ .debug_aranges
+                0x0000000000000198       0x20 arch/cache.o
+ .debug_aranges
+                0x00000000000001b8       0x20 arch/standby_scb.o
+ .debug_aranges
+                0x00000000000001d8       0x20 arch/cpu.o
+ .debug_aranges
+                0x00000000000001f8       0x20 arch/delay.o
+ .debug_aranges
+                0x0000000000000218       0x80 driver/hpsram/libhpsram.a(hpsram.o)
+ .debug_aranges
+                0x0000000000000298       0xd0 driver/lpsram/liblpsram.a(psram_core.o)
+ .debug_aranges
+                0x0000000000000368       0x20 driver/lpsram/liblpsram.a(psram_opi32.o)
+ .debug_aranges
+                0x0000000000000388       0x20 driver/lpsram/liblpsram.a(psram_opi64.o)
+ .debug_aranges
+                0x00000000000003a8      0x128 driver/lpsram/liblpsram.a(hal_psramctrl.o)
+
+.debug_ranges   0x0000000000000000      0x730
+ .debug_ranges  0x0000000000000000       0x18 main.o
+ .debug_ranges  0x0000000000000018       0x30 lib/delay.o
+ .debug_ranges  0x0000000000000048       0x88 lib/dwt_delay.o
+ .debug_ranges  0x00000000000000d0       0xe8 lib/enter.o
+ .debug_ranges  0x00000000000001b8       0x38 lib/wakeup.o
+ .debug_ranges  0x00000000000001f0      0x250 clk/standby_clk.o
+ .debug_ranges  0x0000000000000440       0xf8 driver/hpsram/libhpsram.a(hpsram.o)
+ .debug_ranges  0x0000000000000538       0xc0 driver/lpsram/liblpsram.a(psram_core.o)
+ .debug_ranges  0x00000000000005f8       0x10 driver/lpsram/liblpsram.a(psram_opi32.o)
+ .debug_ranges  0x0000000000000608       0x10 driver/lpsram/liblpsram.a(psram_opi64.o)
+ .debug_ranges  0x0000000000000618      0x118 driver/lpsram/liblpsram.a(hal_psramctrl.o)
+
+.debug_line     0x0000000000000000     0x5e4c
+ .debug_line    0x0000000000000000      0x231 main.o
+ .debug_line    0x0000000000000231      0x177 lib/delay.o
+ .debug_line    0x00000000000003a8      0x1cc lib/dwt_delay.o
+ .debug_line    0x0000000000000574      0x764 lib/enter.o
+ .debug_line    0x0000000000000cd8       0x51 lib/head.o
+ .debug_line    0x0000000000000d29      0x1f2 lib/wakeup.o
+ .debug_line    0x0000000000000f1b      0x139 driver/driver_hpsram.o
+ .debug_line    0x0000000000001054      0x16e driver/driver_lpsram.o
+ .debug_line    0x00000000000011c2      0x7e4 driver/pmu.o
+ .debug_line    0x00000000000019a6      0xac2 driver/prcm.o
+ .debug_line    0x0000000000002468       0xcc driver/systick.o
+ .debug_line    0x0000000000002534      0x7fe clk/standby_clk.o
+ .debug_line    0x0000000000002d32      0x187 power/standby_power.o
+ .debug_line    0x0000000000002eb9      0x4b4 arch/cache.o
+ .debug_line    0x000000000000336d      0x1dd arch/standby_scb.o
+ .debug_line    0x000000000000354a       0xb0 arch/cpu.o
+ .debug_line    0x00000000000035fa       0x48 arch/delay.o
+ .debug_line    0x0000000000003642      0x9e7 driver/hpsram/libhpsram.a(hpsram.o)
+ .debug_line    0x0000000000004029      0xa83 driver/lpsram/liblpsram.a(psram_core.o)
+ .debug_line    0x0000000000004aac      0x316 driver/lpsram/liblpsram.a(psram_opi32.o)
+ .debug_line    0x0000000000004dc2      0x2d8 driver/lpsram/liblpsram.a(psram_opi64.o)
+ .debug_line    0x000000000000509a      0xdb2 driver/lpsram/liblpsram.a(hal_psramctrl.o)
+
+.debug_str      0x0000000000000000     0x4a5c
+ .debug_str     0x0000000000000000      0x5d6 main.o
+                                        0x6bc (size before relaxing)
+ .debug_str     0x00000000000005d6       0x2e lib/delay.o
+                                        0x21f (size before relaxing)
+ .debug_str     0x0000000000000604       0x64 lib/dwt_delay.o
+                                        0x689 (size before relaxing)
+ .debug_str     0x0000000000000668      0x2c6 lib/enter.o
+                                        0x905 (size before relaxing)
+ .debug_str     0x000000000000092e       0xe4 lib/head.o
+                                        0x6d9 (size before relaxing)
+ .debug_str     0x0000000000000a12       0x95 lib/wakeup.o
+                                        0x2e8 (size before relaxing)
+ .debug_str     0x0000000000000aa7       0x50 driver/driver_hpsram.o
+                                        0x73a (size before relaxing)
+ .debug_str     0x0000000000000af7       0x32 driver/driver_lpsram.o
+                                        0x739 (size before relaxing)
+ .debug_str     0x0000000000000b29     0x1073 driver/pmu.o
+                                       0x12aa (size before relaxing)
+ .debug_str     0x0000000000001b9c     0x13a2 driver/prcm.o
+                                       0x19b3 (size before relaxing)
+ .debug_str     0x0000000000002f3e       0x62 driver/systick.o
+                                        0x244 (size before relaxing)
+ .debug_str     0x0000000000002fa0      0x51f clk/standby_clk.o
+                                        0xfb7 (size before relaxing)
+ .debug_str     0x00000000000034bf       0x81 power/standby_power.o
+                                        0x74b (size before relaxing)
+ .debug_str     0x0000000000003540       0x49 arch/cache.o
+                                        0x2ad (size before relaxing)
+ .debug_str     0x0000000000003589       0x1b arch/standby_scb.o
+                                        0x236 (size before relaxing)
+ .debug_str     0x00000000000035a4       0x19 arch/cpu.o
+                                         0x7c (size before relaxing)
+ .debug_str     0x00000000000035bd        0xd arch/delay.o
+                                         0x7e (size before relaxing)
+ .debug_str     0x00000000000035ca      0x332 driver/hpsram/libhpsram.a(hpsram.o)
+                                        0x51c (size before relaxing)
+ .debug_str     0x00000000000038fc      0x7e3 driver/lpsram/liblpsram.a(psram_core.o)
+                                        0xde6 (size before relaxing)
+ .debug_str     0x00000000000040df       0x4b driver/lpsram/liblpsram.a(psram_opi32.o)
+                                        0x84e (size before relaxing)
+ .debug_str     0x000000000000412a       0x43 driver/lpsram/liblpsram.a(psram_opi64.o)
+                                        0x84e (size before relaxing)
+ .debug_str     0x000000000000416d      0x8ef driver/lpsram/liblpsram.a(hal_psramctrl.o)
+                                       0x145f (size before relaxing)
+
+.comment        0x0000000000000000       0x76
+ .comment       0x0000000000000000       0x76 main.o
+                                         0x77 (size before relaxing)
+ .comment       0x0000000000000076       0x77 lib/delay.o
+ .comment       0x0000000000000076       0x77 lib/dwt_delay.o
+ .comment       0x0000000000000076       0x77 lib/enter.o
+ .comment       0x0000000000000076       0x77 lib/head.o
+ .comment       0x0000000000000076       0x77 lib/wakeup.o
+ .comment       0x0000000000000076       0x77 driver/driver_hpsram.o
+ .comment       0x0000000000000076       0x77 driver/driver_lpsram.o
+ .comment       0x0000000000000076       0x77 driver/pmu.o
+ .comment       0x0000000000000076       0x77 driver/prcm.o
+ .comment       0x0000000000000076       0x77 driver/systick.o
+ .comment       0x0000000000000076       0x77 clk/standby_clk.o
+ .comment       0x0000000000000076       0x77 power/standby_power.o
+ .comment       0x0000000000000076       0x77 arch/cache.o
+ .comment       0x0000000000000076       0x77 arch/standby_scb.o
+ .comment       0x0000000000000076       0x77 driver/hpsram/libhpsram.a(hpsram.o)
+ .comment       0x0000000000000076       0x77 driver/lpsram/liblpsram.a(psram_core.o)
+ .comment       0x0000000000000076       0x77 driver/lpsram/liblpsram.a(psram_opi32.o)
+ .comment       0x0000000000000076       0x77 driver/lpsram/liblpsram.a(psram_opi64.o)
+ .comment       0x0000000000000076       0x77 driver/lpsram/liblpsram.a(hal_psramctrl.o)
+
+.ARM.attributes
+                0x0000000000000000       0x36
+ .ARM.attributes
+                0x0000000000000000       0x30 main.o
+ .ARM.attributes
+                0x0000000000000030       0x30 lib/delay.o
+ .ARM.attributes
+                0x0000000000000060       0x30 lib/dwt_delay.o
+ .ARM.attributes
+                0x0000000000000090       0x30 lib/enter.o
+ .ARM.attributes
+                0x00000000000000c0       0x34 lib/head.o
+ .ARM.attributes
+                0x00000000000000f4       0x30 lib/wakeup.o
+ .ARM.attributes
+                0x0000000000000124       0x30 driver/driver_hpsram.o
+ .ARM.attributes
+                0x0000000000000154       0x30 driver/driver_lpsram.o
+ .ARM.attributes
+                0x0000000000000184       0x30 driver/pmu.o
+ .ARM.attributes
+                0x00000000000001b4       0x30 driver/prcm.o
+ .ARM.attributes
+                0x00000000000001e4       0x30 driver/systick.o
+ .ARM.attributes
+                0x0000000000000214       0x30 clk/standby_clk.o
+ .ARM.attributes
+                0x0000000000000244       0x30 power/standby_power.o
+ .ARM.attributes
+                0x0000000000000274       0x30 arch/cache.o
+ .ARM.attributes
+                0x00000000000002a4       0x30 arch/standby_scb.o
+ .ARM.attributes
+                0x00000000000002d4       0x24 arch/cpu.o
+ .ARM.attributes
+                0x00000000000002f8       0x24 arch/delay.o
+ .ARM.attributes
+                0x000000000000031c       0x38 driver/hpsram/libhpsram.a(hpsram.o)
+ .ARM.attributes
+                0x0000000000000354       0x30 driver/lpsram/liblpsram.a(psram_core.o)
+ .ARM.attributes
+                0x0000000000000384       0x30 driver/lpsram/liblpsram.a(psram_opi32.o)
+ .ARM.attributes
+                0x00000000000003b4       0x30 driver/lpsram/liblpsram.a(psram_opi64.o)
+ .ARM.attributes
+                0x00000000000003e4       0x30 driver/lpsram/liblpsram.a(hal_psramctrl.o)
+
+.debug_frame    0x0000000000000000     0x1a68
+ .debug_frame   0x0000000000000000       0x28 main.o
+ .debug_frame   0x0000000000000028       0x3c lib/delay.o
+ .debug_frame   0x0000000000000064       0x60 lib/dwt_delay.o
+ .debug_frame   0x00000000000000c4       0x5c lib/enter.o
+ .debug_frame   0x0000000000000120       0x98 lib/wakeup.o
+ .debug_frame   0x00000000000001b8       0x70 driver/driver_hpsram.o
+ .debug_frame   0x0000000000000228       0x70 driver/driver_lpsram.o
+ .debug_frame   0x0000000000000298      0x4fc driver/pmu.o
+ .debug_frame   0x0000000000000794      0x658 driver/prcm.o
+ .debug_frame   0x0000000000000dec       0x44 driver/systick.o
+ .debug_frame   0x0000000000000e30       0x5c clk/standby_clk.o
+ .debug_frame   0x0000000000000e8c       0x5c power/standby_power.o
+ .debug_frame   0x0000000000000ee8       0xa0 arch/cache.o
+ .debug_frame   0x0000000000000f88       0x48 arch/standby_scb.o
+ .debug_frame   0x0000000000000fd0      0x198 driver/hpsram/libhpsram.a(hpsram.o)
+ .debug_frame   0x0000000000001168      0x350 driver/lpsram/liblpsram.a(psram_core.o)
+ .debug_frame   0x00000000000014b8       0x34 driver/lpsram/liblpsram.a(psram_opi32.o)
+ .debug_frame   0x00000000000014ec       0x34 driver/lpsram/liblpsram.a(psram_opi64.o)
+ .debug_frame   0x0000000000001520      0x548 driver/lpsram/liblpsram.a(hal_psramctrl.o)

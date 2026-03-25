@@ -1,0 +1,7 @@
+config TESTCASE_OS
+	bool "OS Testcase."
+	default n
+	depends on OS_SCHEDULE_TEST || OS_TICK_FREQ_TEST || FPU_CTX_TEST
+	help
+	  This testcase used test os kernel API.
+

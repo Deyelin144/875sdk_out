@@ -1,0 +1,66 @@
+!<thin>
+//                                              738       `
+console/FreeRTOS_CLI.o/
+console/Sample-Commands.o/
+console/UARTCommandConsole.o/
+console/commands/domisc.o/
+console/commands/command_api.o/
+console/commands/dofork.o/
+console/commands/dotop.o/
+console/commands/cmd_csr.o/
+common/impure.o/
+common/serial.o/
+common/vsprintf.o/
+common/hexdump.o/
+common/printf_tiny.o/
+common/back_trace.o/
+elmfat/src/ff.o/
+elmfat/src/ffsystem.o/
+elmfat/src/ffunicode.o/
+elmfat/vfs/vfs_fat.o/
+elmfat/diskio/diskio.o/
+elmfat/vfs/aw_vfs_fat_sdmmc.o/
+elmfat/diskio/diskio_sdmmc.o/
+elmfat/diskio/sdmmc_part.o/
+elmfat/diskio/sdmmc_drv.o/
+lfs/lfs.o/
+lfs/lfs-vfs.o/
+lfs/littlefs-2.2.1/lfs.o/
+lfs/littlefs-2.2.1/lfs_util.o/
+vfs/vfs.o/
+vfs/tt-vfs.o/
+speex/test/test_speex.o/
+speex/speex_decode.o/
+speex/speex_encode.o/
+/0              0           0     0     644     55160     `
+/24             0           0     0     644     51944     `
+/51             0           0     0     644     42800     `
+/81             0           0     0     644     111776    `
+/108            0           0     0     644     47888     `
+/140            0           0     0     644     52328     `
+/167            0           0     0     644     113568    `
+/193            0           0     0     644     64176     `
+/221            0           0     0     644     17008     `
+/238            0           0     0     644     16128     `
+/255            0           0     0     644     150416    `
+/274            0           0     0     644     27544     `
+/292            0           0     0     644     260456    `
+/314            0           0     0     644     26072     `
+/335            0           0     0     644     1049504   `
+/352            0           0     0     644     28128     `
+/375            0           0     0     644     37352     `
+/399            0           0     0     644     262016    `
+/421            0           0     0     644     46056     `
+/445            0           0     0     644     36704     `
+/476            0           0     0     644     65696     `
+/506            0           0     0     644     93552     `
+/534            0           0     0     644     109048    `
+/561            0           0     0     644     94608     `
+/572            0           0     0     644     189312    `
+/587            0           0     0     644     1006288   `
+/613            0           0     0     644     20296     `
+/644            0           0     0     644     364560    `
+/655            0           0     0     644     115608    `
+/669            0           0     0     644     21928     `
+/694            0           0     0     644     62400     `
+/716            0           0     0     644     63264     `

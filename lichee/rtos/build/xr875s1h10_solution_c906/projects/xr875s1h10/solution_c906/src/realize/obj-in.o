@@ -1,0 +1,20 @@
+!<thin>
+//                                              310       `
+realize_lv_port/evdev.o/
+realize_lv_port/lv_port_disp.o/
+realize_lv_port/lv_port_indev.o/
+realize_lv_port/sunxig2d.o/
+realize_lv_port/sunximem.o/
+realize_lv_port/disp2_thread/sunxifb_thread.o/
+realize_lv_port/disp2_thread/extra_layer.o/
+realize_lv_port/disp2_thread/spilcd_thread.o/
+realize_mcu/realize_mcu.o/
+/0              0           0     0     644     108504    `
+/25             0           0     0     644     88448     `
+/57            /0           0     0     644     96520     `
+/90             0           0     0     644     96800     `
+/118            0           0     0     644     58824     `
+/146            0           0     0     644     131984    `
+/193            0           0     0     644     140752    `
+/237           /0           0     0     644     74344     `
+/283            0           0     0     644     69648     `

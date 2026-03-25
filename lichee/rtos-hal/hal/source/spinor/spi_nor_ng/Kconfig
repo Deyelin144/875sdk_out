@@ -1,0 +1,107 @@
+menu "SPI NOR Flash Devices(Next Generation)"
+visible if !DRIVERS_SPINOR && DRIVERS_SNOR_FLASHC_NG
+
+config DRIVERS_SPI_NOR_NG
+	bool "Enable Allwinner SPI NOR Flash Driver(Next Generation)"
+	default n
+
+if DRIVERS_SPI_NOR_NG
+
+config MAX_SPI_NOR_FLASH_NUM
+	int "Supported SPI NOR Flash num"
+	default 1
+
+config READ_SFDP_CLK_FREQ
+	int "Clock frequency when read SFDP"
+	range 1000000 50000000
+	default 50000000
+	help
+		JESD216 spec require the flash must support to read SFDP
+		at 50MHz condition.
+
+config SPI_NOR_RW_CLK_FREQ
+	int "Clock frequency when read or write flash"
+	range 1000000 100000000
+	default 100000000
+	depends on !USE_SPI_NOR_ON_AMP || SNOR_ON_AMP_BOOT_CPU
+	help
+		This parameter depends on specific SPI NOR flash hardware.
+
+config DRIVERS_SPINOR_PANIC_WRITE
+	bool
+	default n
+
+config USE_SPI_NOR_ON_AMP
+	bool "Use SPI NOR flash on AMP"
+	select USE_FLASH_CONTROLLER_ON_AMP
+	default n
+	help
+		support to use SPI NOR flash on AMP
+
+choice
+prompt "Current CPU role"
+depends on USE_SPI_NOR_ON_AMP
+default SNOR_ON_AMP_BOOT_CPU
+
+config SNOR_ON_AMP_BOOT_CPU
+	bool "boot CPU"
+	select FC_ON_AMP_BOOT_CPU
+
+config SNOR_ON_AMP_NON_BOOT_CPU
+	bool "non-boot CPU"
+	select FC_ON_AMP_NON_BOOT_CPU
+
+endchoice
+
+config ACCESS_SPI_NOR_BY_BLKPART
+	bool "Access SPI NOR flash by blkpart"
+	depends on COMPONENTS_AW_BLKPART
+	default n
+
+config XIP
+	bool "Enable SPI NOR flash XIP"
+	depends on DRIVERS_SNOR_FLASHC_NG
+	default y
+
+if XIP
+config XIP_NEED_INIT
+	bool
+	depends on !USE_SPI_NOR_ON_AMP || SNOR_ON_AMP_BOOT_CPU
+	select COMPONENTS_AW_BLKPART
+	select COMPONENT_ENV
+	select READ_ENV_IN_EARLY_STAGE
+	default y
+
+config XIP_CFG_ENV_NAME
+	string "XIP configuration environment variable name"
+	depends on !USE_SPI_NOR_ON_AMP || SNOR_ON_AMP_BOOT_CPU
+	default "xip_partition"
+
+config XIP_MEM_START_ADDR
+	hex "XIP memory start addr"
+	default "0x10000000"
+
+config XIP_MEM_LEN
+	hex "XIP memory length"
+	default "0x800000"
+
+config SECTION_ATTRIBUTE_XIP
+	bool "support xip_text section"
+	depends on XIP
+	default y
+
+config SECTION_ATTRIBUTE_NONXIP
+	bool "support nonxip_text section"
+	depends on XIP
+	default y
+
+config SECTION_ATTRIBUTE_SRAM
+	bool "support sram_text section"
+	depends on XIP
+	default y
+
+endif
+
+endif
+
+endmenu

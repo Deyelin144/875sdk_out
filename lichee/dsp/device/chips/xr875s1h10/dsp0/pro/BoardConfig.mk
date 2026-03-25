@@ -1,0 +1,2 @@
+LICHEE_KERN_DEFCONF:=sun20iw2p1_xr875s1h10_dsp0_defconfig
+LICHEE_LSP:=xr875s1h10

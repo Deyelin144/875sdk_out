@@ -1,0 +1,69 @@
+
+/* Event types */
+#define INPUT_EVENT_SYN			0x00
+#define INPUT_EVENT_KEY			0x01
+#define INPUT_EVENT_REL			0x02
+#define INPUT_EVENT_ABS			0x03
+#define INPUT_EVENT_MSC			0x04
+#define INPUT_EVENT_MAX			0x1f
+#define INPUT_EVENT_CNT			(INPUT_EVENT_MAX+1)
+
+/* Sync events */
+#define INPUT_SYNC_REPORT		0
+#define INPUT_SYNC_CONFIG		1
+#define INPUT_SYNC_MT_REPORT		2
+#define INPUT_SYNC_DROPPED		3
+#define INPUT_SYNC_MAX			0xf
+#define INPUT_SYNC_CNT			(INPUT_SYNC_MAX+1)
+
+#define INPUT_KEY_BACKSPACE		14
+#define INPUT_KEY_TAB			15
+#define INPUT_KEY_ENTER		28
+#define INPUT_KEY_UP			103
+#define INPUT_KEY_LEFT		105
+#define INPUT_KEY_RIGHT		106
+#define INPUT_KEY_DOWN		108
+#define INPUT_KEY_VOLUMEDOWN	114
+#define INPUT_KEY_VOLUMEUP		115
+#define INPUT_KEY_POWER			116
+#define INPUT_KEY_MENU			139
+#define INPUT_KEY_BACK				158	/* AC Back */
+#define INPUT_KEY_FORWARD				159	/* AC Forward */
+#define INPUT_KEY_PLAYPAUSE		164
+#define INPUT_KEY_PREVIOUSSONG	165
+#define INPUT_KEY_HOMEPAGE	172	/* AC Home */
+#define INPUT_KEY_NEXT		0x197
+#define INPUT_KEY_PREVIOUS		0x19c
+#define INPUT_KEY_MAX			0x2ff
+#define INPUT_KEY_CNT			(INPUT_KEY_MAX+1)
+
+/* Relative axes */
+#define INPUT_RELA_X			0x00
+#define INPUT_RELA_Y			0x01
+#define INPUT_RELA_MAX			0x0f
+#define INPUT_RELA_CNT			(INPUT_RELA_MAX+1)
+
+/* Absolute axes */
+#define INPUT_ABS_X			0x00
+#define INPUT_ABS_Y			0x01
+#define INPUT_ABS_PRESSURE  0x18
+#define INPUT_ABS_MAX			0x3f
+#define INPUT_ABS_CNT			(INPUT_ABS_MAX+1)
+
+#define INPUT_ABS_MT_TOUCH_MAJOR	0x30
+#define INPUT_ABS_MT_TOUCH_MINOR	0x31
+#define INPUT_ABS_MT_WIDTH_MAJOR	0x32
+#define INPUT_ABS_MT_WIDTH_MINOR	0x33
+#define INPUT_ABS_MT_POSITION_X	    0x35
+#define INPUT_ABS_MT_POSITION_Y  	0x36
+#define INPUT_ABS_MT_TRACKING_ID	0x39
+#define INPUT_ABS_MT_PRESSURE		0x3a
+
+#define INPUT_BTN_MOUSE		0x110
+#define INPUT_BTN_TOUCH		0x14a
+
+/* Misc events */
+#define INPUT_MISC_MAX			0x07
+#define INPUT_MISC_CNT			(INPUT_MISC_MAX+1)
+
+

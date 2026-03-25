@@ -1,0 +1,52 @@
+menu "AW OTA Compenents version 2"
+
+config COMPONENTS_AW_OTA_V2
+    bool "Tina RTOS OTA APP VERSION 2"
+    select COMPONENT_FLAG
+    default n
+    help
+        Tina RTOS OTA support version 2.
+        If unsure, say N.
+
+if COMPONENTS_AW_OTA_V2
+menu "OTA STREAM"
+config COMPONENTS_AW_OTA_FILE
+    bool "RTOS OTA SUPPORT FILE UPDATE"
+    depends on COMPONENTS_AW_OTA_V2
+    default n
+
+config COMPONENTS_AW_OTA_HTTP
+    bool "RTOS OTA SUPPORT HTTP UPDATE"
+    depends on COMPONENTS_AW_OTA_V2
+    select COMPONENTS_HTTPCLIENT
+    default n
+endmenu
+
+config COMPONENTS_AW_OTA_ROLLBACK
+    bool "SUPPORT AW OTA ROLLBACK"
+    select DRIVERS_WATCHDOG
+    default n
+
+config COMPONENTS_AW_OTA_COMPOENT
+    bool "SUPPORT AW OTA COMPOENT"
+    select COMPONENTS_MD5
+    default n
+
+if COMPONENTS_AW_OTA_COMPOENT
+    config COMPONENTS_AW_OTA_INFO_SIZE
+        int "ota max info size"
+        default 2048
+
+    choice
+        default COMPONENTS_AW_OTA_V2_RECOVERY
+        prompt "OTA TYPE"
+    config COMPONENTS_AW_OTA_V2_RECOVERY
+        bool "ota recovery"
+    config COMPONENTS_AW_OTA_V2_AB
+        bool "ota ab"
+    endchoice
+endif
+
+endif
+
+endmenu

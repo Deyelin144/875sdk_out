@@ -1,0 +1,6 @@
+config COMPONENTS_USB_GADGET_HIDD
+    bool "hidd service"
+    select DRIVERS_USB_UDC
+    default n
+    help
+	  hidd service

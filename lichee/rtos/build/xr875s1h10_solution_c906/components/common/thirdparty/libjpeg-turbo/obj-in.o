@@ -1,0 +1,132 @@
+!<thin>
+//                                              1196      `
+source/jdicc.o/
+source/wrtarga.o/
+source/wrppm.o/
+source/jdhuff.o/
+source/jdphuff.o/
+source/jdcolor.o/
+source/jquant2.o/
+source/jdmainct.o/
+source/jdcoefct.o/
+source/jaricom.o/
+source/jdarith.o/
+source/jidctflt.o/
+source/jidctfst.o/
+source/jidctint.o/
+source/jidctred.o/
+source/jddctmgr.o/
+source/jdpostct.o/
+source/jdmerge.o/
+source/jquant1.o/
+source/jsimd_none.o/
+source/jdsample.o/
+source/jdapistd.o/
+source/jdmaster.o/
+source/wrbmp.o/
+source/jdatasrc.o/
+source/cdjpeg.o/
+source/jdinput.o/
+source/jutils.o/
+source/jmemnobs.o/
+source/jmemmgr.o/
+source/jdapimin.o/
+source/jcomapi.o/
+source/jerror.o/
+source/rdcolmap.o/
+source/jdmarker.o/
+source/rdppm.o/
+source/rdbmp.o/
+source/jctrans.o/
+source/jdtrans.o/
+source/transupp.o/
+source/jchuff.o/
+source/jcphuff.o/
+source/jcmarker.o/
+source/jcmainct.o/
+source/jccoefct.o/
+source/jcarith.o/
+source/jfdctflt.o/
+source/jfdctfst.o/
+source/jfdctint.o/
+source/jcdctmgr.o/
+source/jcprepct.o/
+source/jcsample.o/
+source/jccolor.o/
+source/jcmaster.o/
+source/jcinit.o/
+source/jcapistd.o/
+source/jdatasrc-tj.o/
+source/jcparam.o/
+source/jdatadst-tj.o/
+source/jcapimin.o/
+source/turbojpeg.o/
+source/jcicc.o/
+source/jdatadst.o/
+source/rdtarga.o/
+source/rdswitch.o/
+/0              0           0     0     644     74824     `
+/16             0           0     0     644     97208     `
+/34             0           0     0     644     119696    `
+/50             0           0     0     644     322528    `
+/67             0           0     0     644     174096    `
+/85             0           0     0     644     392720    `
+/103            0           0     0     644     278840    `
+/121            0           0     0     644     114432    `
+/140            0           0     0     644     247760    `
+/159            0           0     0     644     16792     `
+/177            0           0     0     644     195088    `
+/195            0           0     0     644     78816     `
+/214            0           0     0     644     80888     `
+/233            0           0     0     644     690720    `
+/252            0           0     0     644     89832     `
+/271            0           0     0     644     90648     `
+/290            0           0     0     644     88144     `
+/309            0           0     0     644     405560    `
+/327            0           0     0     644     189832    `
+/345            0           0     0     644     90424     `
+/366            0           0     0     644     152136    `
+/385            0           0     0     644     161096    `
+/404            0           0     0     644     132632    `
+/423            0           0     0     644     154728    `
+/439            0           0     0     644     76256     `
+/458            0           0     0     644     63992     `
+/475            0           0     0     644     99416     `
+/493            0           0     0     644     32624     `
+/510            0           0     0     644     45456     `
+/529            0           0     0     644     200800    `
+/547            0           0     0     644     101984    `
+/566            0           0     0     644     51472     `
+/584            0           0     0     644     70624     `
+/601            0           0     0     644     92088     `
+/620            0           0     0     644     299632    `
+/639            0           0     0     644     307128    `
+/655            0           0     0     644     215224    `
+/671            0           0     0     644     113424    `
+/689            0           0     0     644     65424     `
+/707            0           0     0     644     493488    `
+/726            0           0     0     644     1079600   `
+/743            0           0     0     644     261664    `
+/761            0           0     0     644     149944    `
+/780            0           0     0     644     65464     `
+/799            0           0     0     644     120832    `
+/818            0           0     0     644     208440    `
+/836            0           0     0     644     43936     `
+/855            0           0     0     644     43056     `
+/874            0           0     0     644     50192     `
+/893            0           0     0     644     140472    `
+/912            0           0     0     644     99416     `
+/931            0           0     0     644     152088    `
+/950            0           0     0     644     273640    `
+/968            0           0     0     644     139320    `
+/987            0           0     0     644     44056     `
+/1004           0           0     0     644     65408     `
+/1023           0           0     0     644     62392     `
+/1045           0           0     0     644     175264    `
+/1063           0           0     0     644     64072     `
+/1085           0           0     0     644     88424     `
+/1104           0           0     0     644     822560    `
+/1124           0           0     0     644     57896     `
+/1140           0           0     0     644     78104     `
+/1159           0           0     0     644     132384    `
+/1177           0           0     0     644     113096    `
