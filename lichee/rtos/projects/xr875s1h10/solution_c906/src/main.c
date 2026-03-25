@@ -83,13 +83,16 @@
 #include <sunxi_hal_spinor.h>
 #endif
 
+#include <hal_gpio.h>
 #include <sys/stat.h>
 #include "kernel/os/os.h"
 #include <sunxi_hal_rtc.h>
 #include "drivers/pm/dev_pm.h"
 #include "drivers/led/dev_led.h"
 #include "drivers/rtc/dev_rtc.h"
+#include "drivers/sd/dev_sd.h"
 #include "drivers/atcmd/mcu_at_device.h"
+#include "fs_demo.h"
 #include "sdk_entry.h"
 #include "prcm-sun20iw2/prcm.h"
 
@@ -103,6 +106,8 @@ extern int sunxi_sound_card_initialize(void);
 extern int lcd_fb_probe(void);
 extern int disp_probe(void);
 extern int sunxi_gpadc_key_init(void);
+extern int cpufreq_vf_init(void);
+extern int sunxi_driver_sdmmc_init(void);
 #ifdef CONFIG_COMPONENT_THERMAL
 extern int thermal_init(void);
 #endif

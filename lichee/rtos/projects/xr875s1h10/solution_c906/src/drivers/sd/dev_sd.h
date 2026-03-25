@@ -1,5 +1,5 @@
-#ifndef _DEV_RTC_H_
-#define _DEV_RTC_H_
+#ifndef _DEV_SD_H_
+#define _DEV_SD_H_
 
 #include "../drv_common.h"
 

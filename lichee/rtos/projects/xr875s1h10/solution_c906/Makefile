@@ -7,6 +7,7 @@ obj-y += src/sdk_mem_runtime.o
 obj-y += src/assert.o
 obj-y += src/hooks.o
 obj-y += src/alsa_config.o
+obj-y += src/fs_demo.o
 
 ifeq ($(CONFIG_DRIVERS_SOUND),y)
 obj-y += src/card_default.o
